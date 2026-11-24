@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bass Master — essai de détection</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;800&display=swap">
+<style>
+/* VOICE: atelier de test, sobre et précis
+   IDEA: un banc d'essai d'ampli, cadrans et voyants
+   PICTURE: l'accordeur et le manche, en grand
+   COLOUR and TYPE: blanc, encre, vert d'atelier, un voyant corail ; Archivo
+   LAYOUT: cartes en grille, une colonne sur téléphone */
+:root{color-scheme:light dark;--bg:light-dark(#ffffff,#121417);--ink:light-dark(#16161d,#ecebe6);--mut:light-dark(#5d6068,#a0a4ab);--line:light-dark(#e2e3e5,#2b2f35);--card:light-dark(#f5f6f4,#1a1d21);--acc:light-dark(#e0533b,#ff7a5c);--sup:light-dark(#1f5c55,#62b8aa);--ok:light-dark(#1d7a46,#5fd08f);--ko:light-dark(#b8352a,#ff8a7a)}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 Archivo,system-ui,sans-serif;overflow-x:clip}
+header{background:var(--sup);color:#fff;padding:24px max(5vw,16px) 20px}
+h1{font-size:clamp(26px,4vw,38px);line-height:1.05;margin:0 0 6px;font-weight:800;text-wrap:balance}
+header p{margin:0;max-width:70ch;opacity:.92}
+main{display:grid;gap:16px;padding:16px max(5vw,16px) 40px;grid-template-columns:repeat(auto-fit,minmax(min(100%,430px),1fr));max-width:1240px;margin:auto}
+section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+section.wide{grid-column:1/-1}
+h2{font-size:20px;margin:0 0 4px;font-weight:700}
+.hint{color:var(--mut);margin:0 0 12px;font-size:15px}
+button,select{font:inherit;min-height:44px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink);padding:0 14px}
+button{font-weight:700;cursor:pointer}
+button.main{background:var(--acc);border-color:var(--acc);color:#fff}
+button:disabled{opacity:.45;cursor:default}
+button:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:10px 0}
+label{font-size:15px}
+.meter{position:relative;height:16px;border-radius:8px;background:var(--line);overflow:hidden;margin:12px 0 4px}
+.meter i{position:absolute;inset:0 auto 0 0;background:var(--sup);width:0}
+.meter b{position:absolute;top:-2px;bottom:-2px;width:3px;background:var(--acc)}
+.small{font-size:14px;color:var(--mut)}
+input[type=range]{width:100%;accent-color:var(--acc);height:32px}
+.err{color:var(--ko);font-weight:700}
+.tuner{text-align:center;padding:8px 0}
+.big{font-size:clamp(56px,12vw,88px);font-weight:800;line-height:1}
+.big small{font-size:.4em;font-weight:700;color:var(--mut)}
+.scale{position:relative;height:40px;margin:14px 6% 6px;border-bottom:2px solid var(--line)}
+.scale span{position:absolute;bottom:0;width:2px;height:14px;background:var(--mut)}
+.scale .z{height:28px;background:var(--ink)}
+.needle{position:absolute;bottom:0;width:6px;height:38px;margin-left:-3px;border-radius:3px;background:var(--mut);left:50%;transition:left .08s linear}
+.needle.in{background:var(--ok)}
+.chips{display:flex;justify-content:center;gap:8px;margin-top:12px}
+.chip{min-width:56px;padding:6px 10px;border-radius:20px;border:1px solid var(--line);font-weight:700;text-align:center}
+.chip.on{background:var(--sup);border-color:var(--sup);color:#fff}
+.target{display:flex;gap:16px;align-items:baseline;flex-wrap:wrap}
+.target .big{font-size:clamp(44px,9vw,64px)}
+svg.fb{width:100%;max-width:560px;height:auto;display:block;margin:6px 0}
+.verdict{min-height:28px;font-weight:700}
+.v-ok{color:var(--ok)}.v-oct{color:var(--sup)}.v-ko,.v-non{color:var(--ko)}
+table{width:100%;border-collapse:collapse;font-size:15px}
+th,td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line)}
+td.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.scroll{overflow-x:auto;max-height:280px;overflow-y:auto}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin:12px 0}
+.stat{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:10px}
+.stat b{display:block;font-size:26px;font-weight:800;font-variant-numeric:tabular-nums;white-space:nowrap}
+.stat span{font-size:13px;color:var(--mut)}
+.beat{font-size:clamp(48px,10vw,72px);font-weight:800;text-align:center;min-height:1.2em;transition:color .05s}
+.beat.hit{color:var(--acc)}
+ul.bilan{list-style:none;padding:0;margin:0}
+ul.bilan li{display:flex;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
+ul.bilan i{flex:none;width:26px;height:26px;border-radius:50%;background:var(--line);font-style:normal;color:#fff;text-align:center;font-weight:800;line-height:26px}
+ul.bilan i.ok{background:var(--ok)}ul.bilan i.ko{background:var(--ko)}
+ol.steps{margin:0 0 4px;padding-left:20px}
+@media(max-width:600px){section{padding:14px}table{font-size:13px}}
+@media(prefers-reduced-motion:reduce){.needle{transition:none}}
+</style>
+</head>
+<body>
+<header>
+<h1>Bass Master — essai de détection</h1>
+<p>Vérifie que la tablette entend la basse, reconnaît les notes et mesure le rythme assez précisément. Rien n'est envoyé : tout se calcule sur l'appareil.</p>
+</header>
+<main>
+
+<section>
+<h2>1. Entrée audio</h2>
+<ol class="steps hint">
+<li>Câble : branchez la basse au câble ou à l'interface, puis à la tablette.</li>
+<li>Micro : posez la tablette près de l'ampli, ou du corps de la basse.</li>
+<li>Activez l'entrée, choisissez-la, puis réglez le seuil juste au-dessus du bruit.</li>
+</ol>
+<div class="row"><button class="main" id="start">Activer l'entrée audio</button>
+<select id="dev" disabled aria-label="Entrée audio"><option>Aucune entrée</option></select></div>
+<div class="meter" aria-hidden="true"><i id="lv"></i><b id="fl"></b></div>
+<div class="row" style="justify-content:space-between;margin:0"><span class="small" id="lvt">Niveau : —</span><span class="small" id="clip"></span></div>
+<label for="sens">Seuil de détection : <b id="senst"></b></label>
+<input type="range" id="sens" min="-75" max="-20" step="1">
+<p class="small" id="info">Entrée inactive.</p>
+<p class="err" id="err"></p>
+</section>
+
+<section>
+<h2>2. Accordeur</h2>
+<p class="hint">Jouez une corde à vide et laissez-la sonner. Une basse mal accordée fausse tous les essais.</p>
+<div class="tuner">
+<div class="big" id="tn">—</div>
+<div class="small" id="ts">En attente d'une note</div>
+<div class="scale" aria-hidden="true"><span style="left:0"></span><span style="left:25%"></span><span class="z" style="left:50%"></span><span style="left:75%"></span><span style="left:calc(100% - 2px)"></span><div class="needle" id="nd"></div></div>
+<div class="row small" style="justify-content:space-between;margin:0 6%"><span>−50</span><span>cents</span><span>+50</span></div>
+<div class="chips" id="chips"></div>
+</div>
+</section>
+
+<section class="wide">
+<h2>3. Reconnaissance des notes</h2>
+<p class="hint">Jouez la note affichée, une fois. L'appli juge, puis passe à la suivante. Objectif du cahier des charges : au moins 95 % de notes reconnues.</p>
+<div class="row">
+<label>Cases <select id="nrange"><option value="5">0 à 5</option><option value="12">0 à 12</option></select></label>
+<label>Notes <select id="ncount"><option>10</option><option selected>20</option><option>40</option></select></label>
+<button class="main" id="nstart" disabled>Commencer</button>
+<button id="nskip" disabled>Passer</button>
+<span class="small" id="nprog"></span>
+</div>
+<div class="target"><div class="big" id="nt">—</div><div><div id="nstr" style="font-weight:700"></div><div class="small" id="nen"></div></div></div>
+<svg class="fb" id="fb" viewBox="0 0 360 140" role="img" aria-label="Position sur le manche"></svg>
+<div class="verdict" id="nv" aria-live="polite"></div>
+<div class="stats" id="nsum"></div>
+<div class="scroll"><table><thead><tr><th>#</th><th>Attendue</th><th>Entendue</th><th>Verdict</th><th class="n">Écart</th><th class="n">Délai</th></tr></thead><tbody id="nres"></tbody></table></div>
+</section>
+
+<section class="wide">
+<h2>4. Rythme et latence</h2>
+<p class="hint">Mesure le retard entre le clic et la détection de votre note, puis sa régularité. Une fois calibré, le placement doit rester stable à 10 ms près.</p>
+<div class="row">
+<button id="lstart" disabled>Mesure automatique (micro)</button>
+<span class="small">Le micro écoute les clics du haut-parleur, sans jouer. Inutile avec un câble.</span>
+</div>
+<p id="lres" class="small"></p>
+<div class="row">
+<label>Tempo <select id="bpm"><option>60</option><option selected>80</option><option>100</option><option>120</option></select></label>
+<button class="main" id="rstart" disabled>Jouer sur le clic</button>
+<button id="rcal" disabled>Enregistrer comme calibrage</button>
+<button id="rreset">Effacer le calibrage</button>
+</div>
+<p class="small">4 clics d'avance, puis 16 notes : une corde à vide sur chaque clic, en notes courtes.</p>
+<div class="beat" id="beat" aria-live="off"></div>
+<div class="stats" id="rsum"></div>
+<p class="small" id="calt"></p>
+</section>
+
+<section>
+<h2>5. Bilan</h2>
+<p class="hint">Les seuils viennent du cahier des charges. Faites les essais au câble puis au micro, et notez les deux bilans.</p>
+<ul class="bilan" id="bil"></ul>
+</section>
+
+<section>
+<h2>Journal des attaques</h2>
+<p class="hint">Chaque note détectée, avec sa hauteur. Utile pour régler le seuil.</p>
+<div class="scroll"><table><thead><tr><th class="n">Temps</th><th class="n">Niveau</th><th>Note</th><th class="n">Netteté</th></tr></thead><tbody id="jr"></tbody></table></div>
+</section>
+
+</main>
+
+<script id="dsp">
+const DSP=(()=>{
+  // Filtre biquad (formules RBJ). type 'lp' ou 'hp'.
+  function biq(type,f,fs,Q){
+    const w=2*Math.PI*f/fs,c=Math.cos(w),a=Math.sin(w)/(2*(Q||Math.SQRT1_2));
+    const b0=type==='lp'?(1-c)/2:(1+c)/2,b1=type==='lp'?1-c:-(1+c),a0=1+a;
+    const B0=b0/a0,B1=b1/a0,B2=b0/a0,A1=-2*c/a0,A2=(1-a)/a0;
+    let x1=0,x2=0,y1=0,y2=0;
+    return x=>{const y=B0*x+B1*x1+B2*x2-A1*y1-A2*y2;x2=x1;x1=x;y2=y1;y1=y;return y};
+  }
+  // Détecteur d'attaque : énergie par paquets de H échantillons, comparée à une moyenne lente.
+  function detector(H,ratio,tau,refr){
+    const buf=new Float32Array(H),al=Math.exp(-H/tau);
+    let acc=0,n=0,slow=1e-12,last=-1e12;
+    return (v,frame,floor,cb)=>{
+      buf[n++]=v;acc+=v*v;
+      if(n<H)return;
+      const e=acc/H;
+      if(e>ratio*slow&&e>floor&&frame-last>refr){
+        let mx=0;for(let i=0;i<H;i++){const q=buf[i]*buf[i];if(q>mx)mx=q}
+        let k=0;while(k<H-1&&buf[k]*buf[k]<0.25*mx)k++;
+        last=frame-H+1+k;cb(last,e);
+      }
+      slow=slow*al+e*(1-al);acc=0;n=0;
+    };
+  }
+  // Détecteur d'attaque pour la basse : suiveur de crête (montée instantanée, retombée lente),
+  // comparé à sa propre moyenne lente. Insensible à la phase, même sur un mi grave à 41 Hz.
+  function envDetector(ratio,rel,slowTau,refr){
+    const kr=Math.exp(-1/rel),ks=Math.exp(-1/slowTau);
+    let env=0,slow=1e-6,last=-1e12;
+    return (v,frame,floor,cb)=>{
+      const a=v<0?-v:v;
+      env=a>env?a:env*kr;
+      if(env>ratio*slow&&env*env>floor&&frame-last>refr){last=frame;cb(frame,env*env)}
+      slow=slow*ks+env*(1-ks);
+    };
+  }
+  // Hauteur par la méthode de McLeod (fonction de différence normalisée).
+  function mpm(x,fs,fmin,fmax){
+    const N=x.length,maxLag=Math.min(Math.floor(fs/fmin),N-2),minLag=Math.max(2,Math.floor(fs/fmax));
+    const ns=new Float32Array(maxLag+2);
+    let m=0;for(let j=0;j<N;j++)m+=2*x[j]*x[j];
+    if(m<=0)return null;
+    for(let t=0;t<=maxLag+1;t++){
+      if(t>0)m-=x[N-t]*x[N-t]+x[t-1]*x[t-1];
+      let a=0;for(let j=0;j<N-t;j++)a+=x[j]*x[j+t];
+      ns[t]=m>0?2*a/m:0;
+    }
+    const keys=[];let t=1;
+    while(t<=maxLag&&ns[t]>0)t++;
+    while(t<=maxLag){
+      while(t<=maxLag&&ns[t]<=0)t++;
+      let bt=-1,bv=-1;
+      while(t<=maxLag&&ns[t]>0){if(ns[t]>bv){bv=ns[t];bt=t}t++}
+      if(bt>=minLag&&bt<=maxLag)keys.push([bt,bv]);
+    }
+    if(!keys.length)return null;
+    const gm=Math.max(...keys.map(k=>k[1]));
+    const [kt,kv]=keys.find(k=>k[1]>=0.9*gm);
+    const y0=ns[kt-1],y1=ns[kt],y2=ns[kt+1],den=y0-2*y1+y2;
+    const lag=den!==0?kt+0.5*(y0-y2)/den:kt;
+    return {f:fs/lag,c:kv};
+  }
+  return {biq,detector,envDetector,mpm};
+})();
+</script>
+
+<script>
+{
+const $=id=>document.getElementById(id);
+const {biq,detector,envDetector,mpm}=DSP;
+const NF=['Do','Do♯','Ré','Ré♯','Mi','Fa','Fa♯','Sol','Sol♯','La','La♯','Si'];
+const NE=['C','C♯','D','D♯','E','F','F♯','G','G♯','A','A♯','B'];
+const parts=m=>{const r=Math.round(m),k=((r%12)+12)%12,o=Math.floor(r/12)-1;return {fr:NF[k],o,en:NE[k]+o}};
+const label=m=>{const p=parts(m);return p.fr+' '+p.o+' ('+p.en+')'};
+const toMidi=f=>69+12*Math.log2(f/440);
+const STR=[{n:'Mi',m:28},{n:'La',m:33},{n:'Ré',m:38},{n:'Sol',m:43}];
+const S={get(k,d){try{const v=localStorage.getItem('bm.'+k);return v==null?d:JSON.parse(v)}catch(e){return d}},set(k,v){try{v==null?localStorage.removeItem('bm.'+k):localStorage.setItem('bm.'+k,JSON.stringify(v))}catch(e){}}};
+const fmt=(x,d=0)=>(x<0?'−':'')+Math.abs(x).toFixed(d).replace('.',',');
+const sg=(x,d=0)=>(x>0?'+':'')+fmt(x,d);
+const mean=a=>a.reduce((s,x)=>s+x,0)/a.length;
+const sdev=a=>{if(a.length<2)return 0;const m=mean(a);return Math.sqrt(a.reduce((s,x)=>s+(x-m)**2,0)/(a.length-1))};
+const median=a=>{const b=[...a].sort((x,y)=>x-y),n=b.length;return n%2?b[(n-1)/2]:(b[n/2-1]+b[n/2])/2};
+const stat=(v,l)=>`<div class="stat"><b>${v}</b><span>${l}</span></div>`;
+
+const WK=`class Cap extends AudioWorkletProcessor{constructor(){super();this.b=new Float32Array(512);this.n=0;this.s=0}
+process(i){const c=i[0]&&i[0][0];if(!c)return true;if(this.n&&currentFrame!==this.s+this.n)this.flush();if(!this.n)this.s=currentFrame;this.b.set(c,this.n);this.n+=c.length;if(this.n>=512)this.flush();return true}
+flush(){this.port.postMessage({f:this.s,d:this.b.slice(0,this.n)});this.n=0}}
+registerProcessor('cap',Cap);`;
+
+let ctx=null,stream=null,srcN=null,capN=null,sr=48000,D=4,FSD=12000,SK=480,WN=2880;
+let LPR=null,RL=0,wr=0;
+let fHP,fL1,fL2,fC1,fC2,bassDet,clickDet;
+let floorDb=S.get('floor',-50),calib=S.get('calib',null);
+let lvAcc=0,lvN=0,peak=0,lvDb=-90,settings={};
+let pend=[],t0=0;
+const R={notes:null,loop:null,rhythm:null,delays:[]};
+let nt=null,rh=null,lp=null;
+
+function setupDSP(){
+  sr=ctx.sampleRate;D=Math.max(1,Math.round(sr/12000));FSD=sr/D;
+  SK=Math.round(0.010*sr);WN=Math.round(0.060*sr);
+  RL=Math.round(sr*3);LPR=new Float32Array(RL);wr=0;pend=[];
+  fHP=biq('hp',45,sr);fL1=biq('lp',800,sr,0.5412);fL2=biq('lp',800,sr,1.3066);
+  fC1=biq('hp',2000,sr,0.5412);fC2=biq('hp',2000,sr,1.3066);
+  bassDet=envDetector(1.6,0.06*sr,0.08*sr,0.08*sr);
+  clickDet=detector(64,4,0.05*sr,0.15*sr);
+}
+
+function onChunk(f,d){
+  const fl=10**(floorDb/10),cf=10**(-50/10);
+  for(let i=0;i<d.length;i++){
+    const fr=f+i,x=d[i],b=fL2(fL1(fHP(x)));
+    LPR[fr%RL]=b;lvAcc+=b*b;lvN++;
+    const ax=x<0?-x:x;if(ax>peak)peak=ax;
+    bassDet(b,fr,fl,onBass);
+    clickDet(fC2(fC1(x)),fr,cf,onClick);
+  }
+  wr=f+d.length;
+  drain();
+}
+function grab(start,len){const n=Math.floor(len/D),o=new Float32Array(n);for(let i=0;i<n;i++)o[i]=LPR[(start+i*D)%RL];return o}
+function onBass(t,e){pend.push({t,e,at:t+SK+WN});if(rh&&rh.listen)rh.on.push(t/sr)}
+function onClick(t){if(lp&&lp.listen)lp.on.push(t/sr)}
+function drain(){
+  while(pend.length&&wr>=pend[0].at){
+    const it=pend.shift();
+    it.p=mpm(grab(it.t+SK,WN),FSD,36,420);
+    it.lag=(ctx.currentTime-it.t/sr)*1000;
+    logOnset(it);noteHandle(it);
+  }
+}
+
+/* ---------- Entrée ---------- */
+async function startAudio(id){
+  $('err').textContent='';
+  if(!window.isSecureContext||!navigator.mediaDevices){$('err').textContent='Cette page doit être ouverte en https pour accéder à l\'entrée audio.';return}
+  try{
+    if(stream)stream.getTracks().forEach(t=>t.stop());
+    if(srcN){srcN.disconnect();capN.disconnect()}
+    const c={audio:{echoCancellation:false,noiseSuppression:false,autoGainControl:false,channelCount:1}};
+    if(id)c.audio.deviceId={exact:id};
+    stream=await navigator.mediaDevices.getUserMedia(c);
+    if(!ctx){
+      ctx=new AudioContext({latencyHint:'interactive'});
+      await ctx.audioWorklet.addModule(URL.createObjectURL(new Blob([WK],{type:'text/javascript'})));
+      t0=ctx.currentTime;
+    }
+    await ctx.resume();
+    setupDSP();
+    srcN=ctx.createMediaStreamSource(stream);
+    capN=new AudioWorkletNode(ctx,'cap',{numberOfInputs:1,numberOfOutputs:1,outputChannelCount:[1]});
+    capN.port.onmessage=e=>onChunk(e.data.f,e.data.d);
+    const mute=ctx.createGain();mute.gain.value=0;
+    srcN.connect(capN);capN.connect(mute).connect(ctx.destination);
+    settings=stream.getAudioTracks()[0].getSettings();
+    await listDevices();
+    showInfo();
+    ['nstart','rstart','lstart','dev'].forEach(k=>$(k).disabled=false);
+    $('start').textContent='Relancer l\'entrée';
+    bilan();
+  }catch(e){$('err').textContent='Entrée audio refusée ou introuvable : '+(e.message||e.name)}
+}
+async function listDevices(){
+  const ds=(await navigator.mediaDevices.enumerateDevices()).filter(d=>d.kind==='audioinput');
+  $('dev').innerHTML=ds.map((d,i)=>`<option value="${d.deviceId}">${(d.label||'Entrée '+(i+1)).replace(/</g,'&lt;')}</option>`).join('');
+  if(settings.deviceId)$('dev').value=settings.deviceId;
+}
+function showInfo(){
+  const tr=stream.getAudioTracks()[0];
+  const lat=((ctx.baseLatency||0)+(ctx.outputLatency||0))*1000;
+  const off=k=>settings[k]===false?'coupé':settings[k]===true?'ACTIF':'inconnu';
+  $('info').textContent=`${tr.label||'Entrée'} · ${sr} Hz · latence de sortie annoncée ${fmt(lat)} ms · annulation d'écho ${off('echoCancellation')}, réduction de bruit ${off('noiseSuppression')}, gain auto ${off('autoGainControl')}`;
+}
+$('start').onclick=()=>startAudio($('dev').disabled?null:$('dev').value);
+$('dev').onchange=()=>startAudio($('dev').value);
+if(navigator.mediaDevices)navigator.mediaDevices.ondevicechange=()=>{if(stream)listDevices()};
+$('sens').value=floorDb;
+const showSens=()=>{$('senst').textContent=fmt(floorDb)+' dB';$('fl').style.left=((floorDb+80)/80*100)+'%'};
+showSens();
+$('sens').oninput=e=>{floorDb=+e.target.value;S.set('floor',floorDb);showSens()};
+
+/* ---------- Boucle d'affichage ---------- */
+function frame(){
+  if(lvN){const db=10*Math.log10(lvAcc/lvN+1e-12);lvDb=Math.max(db,lvDb-1.5);lvAcc=0;lvN=0;
+    $('lv').style.width=Math.max(0,Math.min(100,(lvDb+80)/80*100))+'%';
+    $('lvt').textContent='Niveau : '+fmt(lvDb)+' dB';
+    $('clip').textContent=peak>0.98?'Saturation : baissez le volume de la basse':'';peak*=0.95}
+  if(rh&&ctx){
+    const now=ctx.currentTime-(ctx.outputLatency||0),k=Math.floor((now-rh.start)/rh.iv+0.001),ph=now-rh.start-k*rh.iv;
+    if(k>=0&&k<rh.N+16){$('beat').textContent=k<rh.N?String(k+1):String(k-rh.N+1)+' / 16';$('beat').classList.toggle('hit',ph<0.09)}
+  }
+  requestAnimationFrame(frame);
+}
+requestAnimationFrame(frame);
+
+/* ---------- Accordeur ---------- */
+$('chips').innerHTML=STR.map(s=>`<span class="chip" data-m="${s.m}">${s.n}</span>`).join('');
+let hist=[];
+setInterval(()=>{
+  if(!ctx||!wr)return;
+  const n=Math.round(0.12*sr),buf=grab(wr-n,n);
+  let e=0;for(const v of buf)e+=v*v;e/=buf.length;
+  const p=10*Math.log10(e+1e-12)>floorDb?mpm(buf,FSD,36,420):null;
+  if(!p||p.c<0.85){hist=[];$('tn').style.opacity=.35;$('nd').classList.remove('in');return}
+  hist.push(p.f);if(hist.length>3)hist.shift();
+  const f=median(hist),m=toMidi(f),r=Math.round(m),c=(m-r)*100,q=parts(r);
+  $('tn').style.opacity=1;$('tn').innerHTML=`${q.fr}<small> ${q.o}</small>`;
+  $('ts').textContent=`${q.en} · ${fmt(f,1)} Hz · ${sg(c)} cents`;
+  $('nd').style.left=(50+Math.max(-50,Math.min(50,c)))+'%';
+  $('nd').classList.toggle('in',Math.abs(c)<5);
+  document.querySelectorAll('.chip').forEach(el=>el.classList.toggle('on',+el.dataset.m===r));
+},70);
+
+/* ---------- Reconnaissance des notes ---------- */
+function drawFret(g){
+  const maxF=+$('nrange').value,x0=44,x1=350,fw=(x1-x0)/maxF,ys=[112,84,56,28];
+  let s='';
+  STR.forEach((st,i)=>{s+=`<text x="8" y="${ys[i]+5}" font-size="14" font-weight="700" fill="currentColor">${st.n}</text><line x1="${x0}" x2="${x1}" y1="${ys[i]}" y2="${ys[i]}" stroke="currentColor" stroke-opacity=".55" stroke-width="${1+(3-i)*0.6}"/>`});
+  for(let k=0;k<=maxF;k++){const x=x0+k*fw;s+=`<line x1="${x}" x2="${x}" y1="20" y2="120" stroke="currentColor" stroke-opacity="${k?0.3:0.9}" stroke-width="${k?1.5:5}"/>`;if(k)s+=`<text x="${x-fw/2}" y="136" font-size="11" text-anchor="middle" fill="currentColor" fill-opacity=".6">${k}</text>`}
+  if(g){const cx=g.fr?x0+(g.fr-0.5)*fw:x0-16;s+=`<circle cx="${cx}" cy="${ys[g.s]}" r="11" fill="var(--acc)"/><text x="${cx}" y="${ys[g.s]+4}" font-size="12" font-weight="800" text-anchor="middle" fill="#fff">${g.fr}</text>`}
+  $('fb').innerHTML=s;
+}
+drawFret(null);
+$('nrange').onchange=()=>drawFret(nt&&nt.i<nt.t.length?nt.t[nt.i]:null);
+function ntStart(){
+  const maxF=+$('nrange').value,count=+$('ncount').value,t=[];let prev=-1;
+  while(t.length<count){const s=Math.floor(Math.random()*4),fr=Math.floor(Math.random()*(maxF+1)),m=STR[s].m+fr;if(m===prev)continue;prev=m;t.push({s,fr,m})}
+  nt={t,i:0,r:[],ready:false};$('nskip').disabled=false;$('nstart').textContent='Recommencer';
+  renderNotes();ntShow();
+}
+function ntShow(){
+  if(nt.i>=nt.t.length){ntEnd();return}
+  const g=nt.t[nt.i],q=parts(g.m);
+  $('nt').innerHTML=`${q.fr}<small> ${q.o}</small>`;
+  $('nstr').textContent=`Corde de ${STR[g.s].n} — ${g.fr?'case '+g.fr:'à vide'}`;
+  $('nen').textContent=q.en;$('nprog').textContent=`${nt.i+1} / ${nt.t.length}`;
+  drawFret(g);nt.shownAt=ctx.currentTime;nt.ready=true;
+}
+function record(v,det,c,lag){
+  const g=nt.t[nt.i];nt.ready=false;nt.r.push({g,v,det,c,lag});if(lag!=null)R.delays.push(lag);
+  const txt={ok:'Juste',oct:'Bonne note, mauvaise octave',ko:'Fausse note',non:'Non reconnue',skip:'Passée'}[v];
+  $('nv').className='verdict v-'+(v==='skip'?'non':v);$('nv').textContent=txt+(det!=null?' — entendu '+label(det):'');
+  renderNotes();nt.i++;setTimeout(ntShow,v==='skip'?0:650);
+}
+function noteHandle(it){
+  if(!nt||!nt.ready||it.t/sr<nt.shownAt)return;
+  const g=nt.t[nt.i];
+  if(!it.p||it.p.c<0.6){record('non',null,0,it.lag);return}
+  const m=toMidi(it.p.f),df=m-g.m;
+  const v=Math.abs(df)<=0.5?'ok':Math.abs(Math.abs(df)-12)<=0.5?'oct':'ko';
+  record(v,m,(m-Math.round(m))*100,it.lag);
+}
+function ntEnd(){
+  nt.ready=false;$('nskip').disabled=true;$('nt').textContent='Fini';$('nstr').textContent='';$('nen').textContent='';$('nprog').textContent='';drawFret(null);
+  const c=k=>nt.r.filter(r=>r.v===k).length;
+  R.notes={n:nt.r.length,ok:c('ok'),oct:c('oct'),ko:c('ko'),non:c('non')+c('skip')};
+  bilan();
+}
+function renderNotes(){
+  const r=nt?nt.r:[],c=k=>r.filter(x=>x.v===k).length,n=r.length;
+  const lags=r.filter(x=>x.lag!=null).map(x=>x.lag);
+  $('nsum').innerHTML=n?stat(fmt((c('ok')+c('oct'))/n*100)+' %','reconnues (octave tolérée)')+stat(fmt(c('ok')/n*100)+' %','justes à l\'octave près')+stat(c('ko')+c('non')+c('skip'),'fausses ou manquées')+(lags.length?stat(fmt(median(lags))+' ms','délai de verdict (médiane)'):''):'';
+  const V={ok:'Juste',oct:'Octave',ko:'Fausse',non:'Non reconnue',skip:'Passée'};
+  $('nres').innerHTML=r.map((x,i)=>`<tr><td class="n">${i+1}</td><td>${label(x.g.m)}</td><td>${x.det!=null?label(x.det):'—'}</td><td class="v-${x.v==='skip'?'non':x.v}">${V[x.v]}</td><td class="n">${x.v==='ok'?sg(x.c)+' c':''}</td><td class="n">${x.lag!=null?fmt(x.lag)+' ms':''}</td></tr>`).reverse().join('');
+}
+$('nstart').onclick=ntStart;
+$('nskip').onclick=()=>{if(nt&&nt.ready)record('skip',null,0,null)};
+
+/* ---------- Rythme et latence ---------- */
+function click(t,acc,gain){
+  const o=ctx.createOscillator(),g=ctx.createGain();
+  o.frequency.value=acc?3600:3000;
+  g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(gain,t+0.002);g.gain.exponentialRampToValueAtTime(0.0005,t+0.035);
+  o.connect(g).connect(ctx.destination);o.start(t);o.stop(t+0.05);
+}
+function match(ref,ons,lo,hi){
+  const used=new Set(),out=[];
+  for(const b of ref){let bi=-1,bd=1e9;ons.forEach((o,i)=>{const d=o-b;if(d>=lo&&d<=hi&&!used.has(i)&&Math.abs(d)<bd){bd=Math.abs(d);bi=i}});if(bi>=0){used.add(bi);out.push((ons[bi]-b)*1000)}}
+  return out;
+}
+const busy=on=>['rstart','lstart','nstart'].forEach(k=>$(k).disabled=on);
+$('lstart').onclick=()=>{
+  busy(true);const st=ctx.currentTime+0.4,cl=[];
+  for(let k=0;k<8;k++){click(st+k*0.5,false,0.7);cl.push(st+k*0.5)}
+  lp={on:[],listen:true};$('lres').textContent='Mesure en cours… ne jouez pas.';
+  setTimeout(()=>{
+    lp.listen=false;busy(false);const o=match(cl,lp.on,0,0.45);
+    if(o.length<4){R.loop=null;$('lres').textContent=`Clics entendus : ${o.length} / 8. Montez le volume de la tablette, ou ignorez cette mesure si vous êtes au câble.`}
+    else{R.loop={m:mean(o),sd:sdev(o),n:o.length};$('lres').innerHTML=`Clics entendus : ${o.length} / 8 · aller-retour haut-parleur → micro : <b>${fmt(R.loop.m)} ms</b> · stabilité du système : <b>± ${fmt(R.loop.sd,1)} ms</b>`}
+    bilan();
+  },(st+4.5-ctx.currentTime)*1000);
+};
+$('rstart').onclick=()=>{
+  busy(true);$('rcal').disabled=true;
+  const bpm=+$('bpm').value,iv=60/bpm,N=4,st=ctx.currentTime+0.6,beats=[];
+  for(let k=0;k<N+16;k++){click(st+k*iv,k%4===0,0.35);if(k>=N)beats.push(st+k*iv)}
+  rh={start:st,iv,N,on:[],listen:true};
+  setTimeout(()=>{
+    rh.listen=false;const ctr=(calib!=null?calib:R.loop?R.loop.m:0)/1000;
+    const o=match(beats,rh.on,ctr-0.45*iv,ctr+0.45*iv);rh=null;busy(false);$('beat').textContent='';
+    if(o.length<6){R.rhythm=null;$('rsum').innerHTML=stat(o.length+' / 16','notes captées');$('calt').textContent='Trop peu de notes captées : baissez le seuil ou jouez plus fort.';bilan();return}
+    R.rhythm={m:mean(o),sd:sdev(o),n:o.length,min:Math.min(...o),max:Math.max(...o)};
+    $('rsum').innerHTML=stat(o.length+' / 16','notes captées')+stat(fmt(R.rhythm.m)+' ms','retard moyen (à calibrer)')+stat('± '+fmt(R.rhythm.sd,1)+' ms','régularité, vous et le système')+(calib!=null?stat(sg(R.rhythm.m-calib)+' ms','écart moyen après calibrage'):'');
+    $('rcal').disabled=false;showCal();bilan();
+  },(st+(N+16)*iv+0.5-ctx.currentTime)*1000);
+};
+const showCal=()=>{$('calt').textContent=calib!=null?`Calibrage enregistré : ${fmt(calib)} ms retranchés à chaque note.`:'Pas encore de calibrage.'};
+$('rcal').onclick=()=>{if(R.rhythm){calib=Math.round(R.rhythm.m);S.set('calib',calib);showCal();bilan()}};
+$('rreset').onclick=()=>{calib=null;S.set('calib',null);showCal();bilan()};
+showCal();
+
+/* ---------- Journal ---------- */
+const jrows=[];
+function logOnset(it){
+  const tm=it.t/sr-t0,lv=10*Math.log10(it.e+1e-12);
+  jrows.unshift(`<tr><td class="n">${fmt(tm,2)} s</td><td class="n">${fmt(lv)} dB</td><td>${it.p&&it.p.c>=0.6?label(toMidi(it.p.f)):'—'}</td><td class="n">${it.p?fmt(it.p.c,2):'—'}</td></tr>`);
+  if(jrows.length>30)jrows.pop();$('jr').innerHTML=jrows.join('');
+}
+
+/* ---------- Bilan ---------- */
+function bilan(){
+  const items=[];
+  const proc=ctx?['echoCancellation','noiseSuppression','autoGainControl'].every(k=>settings[k]!==true):null;
+  items.push([proc==null?'':proc?'ok':'ko','Entrée active, traitements du navigateur coupés',ctx?(proc?'Signal brut, comme prévu.':'Un traitement reste actif : la détection sera faussée.'):'Activez l\'entrée.']);
+  const n=R.notes;
+  if(n){const rate=(n.ok+n.oct)/n.n*100;items.push([rate>=95?'ok':'ko','Notes reconnues ≥ 95 %',`${fmt(rate)} % (dont ${n.oct} à l'octave près), sur ${n.n} notes.`])}
+  else items.push(['','Notes reconnues ≥ 95 %','Faites l\'essai 3.']);
+  if(R.loop)items.push([R.loop.sd<=10?'ok':'ko','Stabilité du système ≤ 10 ms',`± ${fmt(R.loop.sd,1)} ms (mesure automatique au micro).`]);
+  else if(R.rhythm)items.push([R.rhythm.sd<=10?'ok':'','Stabilité ≤ 10 ms',`± ${fmt(R.rhythm.sd,1)} ms en jouant. Ce chiffre inclut votre propre régularité : au-delà de 10 ms, il ne condamne pas la tablette.`]);
+  else items.push(['','Stabilité du système ≤ 10 ms','Faites l\'essai 4.']);
+  if(R.delays.length)items.push(['','Délai de verdict',`${fmt(median(R.delays))} ms entre l'attaque et la reconnaissance de la note (médiane). Le placement rythmique, lui, est mesuré sur l'attaque.`]);
+  if(R.rhythm||calib!=null)items.push(['','Latence à compenser',calib!=null?`${fmt(calib)} ms enregistrés.`:`${fmt(R.rhythm.m)} ms mesurés, pas encore enregistrés.`]);
+  $('bil').innerHTML=items.map(([s,t,d])=>`<li><i class="${s}">${s==='ok'?'✓':s==='ko'?'!':''}</i><div><b>${t}</b><div class="small">${d}</div></div></li>`).join('');
+}
+bilan();
+}
+</script>
+</body>
+</html>
