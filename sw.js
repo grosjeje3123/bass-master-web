@@ -1,8 +1,8 @@
 // Service worker : l'appli entière (pages, code, sons, données, lecteur de tablatures) est gardée
 // sur l'appareil dès la première visite, pour jouer hors connexion (métro).
 // À la construction, la liste des fichiers et le numéro de version sont écrits ci-dessous.
-const VERSION = 'f8a6b89634';
-const PRECACHE = ["./assets/Montserrat-400-latin-BLhwKU8k.woff2","./assets/Montserrat-500-latin-DRFEGfly.woff2","./assets/Montserrat-600-latin-UVxSCcoG.woff2","./assets/Montserrat-700-latin-BdjcYUrC.woff2","./assets/Montserrat-800-latin-axpkC1rd.woff2","./assets/index-CCwQLNys.css","./assets/index-CkskL0WE.js","./capture-worklet.js","./data/exercices.json","./data/parcours.json","./icon-192.png","./icon-512.png","./icon-64.png","./icon-maskable-512.png","./index.html","./manifest.webmanifest","./sons/hat_closed.pcm","./sons/hat_open.pcm","./sons/kick.pcm","./sons/snare.pcm"];
+const VERSION = '3ae9b35e79';
+const PRECACHE = ["./assets/Montserrat-400-latin-BLhwKU8k.woff2","./assets/Montserrat-500-latin-DRFEGfly.woff2","./assets/Montserrat-600-latin-UVxSCcoG.woff2","./assets/Montserrat-700-latin-BdjcYUrC.woff2","./assets/Montserrat-800-latin-axpkC1rd.woff2","./assets/index-CCwQLNys.css","./assets/index-ZOVJpA_f.js","./capture-worklet.js","./data/exercices.json","./data/parcours.json","./icon-192.png","./icon-512.png","./icon-64.png","./icon-maskable-512.png","./index.html","./manifest.webmanifest","./sons/basse_28.pcm","./sons/basse_31.pcm","./sons/basse_34.pcm","./sons/basse_37.pcm","./sons/basse_40.pcm","./sons/basse_43.pcm","./sons/basse_46.pcm","./sons/basse_49.pcm","./sons/basse_52.pcm","./sons/basse_55.pcm","./sons/hat_closed.pcm","./sons/hat_open.pcm","./sons/kick.pcm","./sons/snare.pcm"];
 const CACHE = `bass-master-${VERSION}`;
 
 self.addEventListener('install', (e) => {

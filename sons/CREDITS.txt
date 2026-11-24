@@ -6,3 +6,12 @@ Licence : Creative Commons 0 (domaine public).
 
 Récupérés via le kit « Jazzkit » de drum_sklad (https://github.com/psemiletov/drum_sklad),
 puis découpés, raccourcis et convertis en PCM 16 bits mono 44,1 kHz (fichiers .pcm, sans en-tête).
+
+Notes de basse électrique (fichiers basse_<numéro MIDI>.pcm)
+Licence : Creative Commons Attribution 3.0 (https://creativecommons.org/licenses/by/3.0/).
+
+- Collection « Tonejs-Instruments » de Nicholaus Brosowsky : https://github.com/nbrosowsky/tonejs-instruments
+- Enregistrements d'origine : Karoryfer Samples (https://www.karoryfer.com/karoryfer-samples)
+
+Modifiés : raccourcis à 3 s, calés sur l'attaque, mis au même niveau, fondus à la fin et convertis en
+PCM 16 bits mono 22,05 kHz.

@@ -19,5 +19,6 @@ Elle n'a encore jamais été essayée avec une vraie basse : les vérifications 
 
 Ce dépôt ne contient que l'appli construite ; la source est tenue à part.
 
+Notes de basse : collection Tonejs-Instruments (Nicholaus Brosowsky), enregistrements Karoryfer Samples, licence CC-BY 3.0.
 Sons de batterie : kit Gretsch enregistré par bigjoedrummer et shpira, licence CC0 (voir `sons/CREDITS.txt`).
 Police : Montserrat, licence SIL OFL (voir `fonts/OFL-Montserrat.txt`).
