@@ -1,0 +1,4 @@
+Bass Master
+
+Sons de batterie : kit Gretsch enregistré par bigjoedrummer et shpira, licence CC0 (voir sons/CREDITS.txt).
+Police : Montserrat, licence SIL Open Font License 1.1 (voir fonts/OFL-Montserrat.txt).

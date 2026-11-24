@@ -1,0 +1,231 @@
+{
+ "etapes": [
+  {
+   "id": "decouvrir",
+   "titre": "Découvrir la basse",
+   "resume": "L'instrument, l'accordage et la tablature : savoir de quoi on parle avant de jouer.",
+   "lecons": [
+    {
+     "id": "d1",
+     "titre": "L'instrument",
+     "texte": [
+      "Une basse électrique a quatre cordes. De la plus grave (la plus grosse, en haut quand tu joues) à la plus aiguë : Mi, La, Ré, Sol.",
+      "Le manche est découpé en cases par des barrettes de métal, les frettes. Appuyer sur une corde dans une case raccourcit la partie qui vibre : la note monte d'un demi-ton par case.",
+      "Une corde jouée sans appuyer est dite « à vide » : c'est la case 0."
+     ],
+     "exercices": [],
+     "figure": "manche"
+    },
+    {
+     "id": "d2",
+     "titre": "Brancher et accorder",
+     "texte": [
+      "L'appli écoute ta basse par un câble (une petite interface audio USB) ou par le micro de la tablette. Le câble est plus fiable : il n'entend ni la pièce, ni le clic.",
+      "Accorde toujours avant de jouer. Une basse désaccordée sonne faux, et l'appli ne reconnaît plus les notes.",
+      "Dans l'accordeur, joue chaque corde à vide et tourne la mécanique jusqu'à ce que l'aiguille soit au centre."
+     ],
+     "exercices": [],
+     "lien": "accordeur"
+    },
+    {
+     "id": "d3",
+     "titre": "Lire une tablature",
+     "texte": [
+      "La tablature dessine les quatre cordes : la ligne du bas est la corde de Mi (la plus grave), celle du haut la corde de Sol.",
+      "Un chiffre posé sur une ligne dit dans quelle case appuyer sur cette corde. 0 : corde à vide.",
+      "Le rythme est écrit dessous : une hampe seule pour une noire (un temps), des hampes reliées pour des croches (deux par temps). Les chiffres 1 2 3 4 comptent les temps."
+     ],
+     "exercices": [
+      "v-mi"
+     ]
+    },
+    {
+     "id": "d4",
+     "titre": "S'installer",
+     "texte": [
+      "Assis ou debout, la basse tient toute seule, grâce à la sangle ou à la cuisse : aucune main ne doit porter le manche.",
+      "Main droite : le pouce se pose sur le micro ou sur la corde de Mi, les doigts tombent naturellement sur les cordes.",
+      "Main gauche : le pouce derrière le manche, à peu près en face du majeur, le poignet souple. Les doigts arrivent sur les cordes par le dessus, arrondis."
+     ],
+     "exercices": []
+    }
+   ]
+  },
+  {
+   "id": "droite",
+   "titre": "La main droite",
+   "resume": "Des notes régulières sur les cordes à vide : c'est la main droite qui fait le son et le rythme.",
+   "lecons": [
+    {
+     "id": "m1",
+     "titre": "Une note par clic",
+     "texte": [
+      "Le doigt tire la corde vers la corde voisine plus grave et vient s'y poser. Sur la corde de Mi, il vient buter contre le pouce.",
+      "On alterne toujours l'index (i) et le majeur (m), comme deux jambes qui marchent. Le doigté est écrit sous la tablature.",
+      "Cherche un son plein et identique d'une note à l'autre, sans forcer."
+     ],
+     "exercices": [
+      "v-mi",
+      "v-la",
+      "v-re-sol"
+     ]
+    },
+    {
+     "id": "m2",
+     "titre": "Changer de corde",
+     "texte": [
+      "En changeant de corde, l'alternance index-majeur ne s'interrompt pas.",
+      "Le pouce suit la main : posé sur le micro pour la corde de Mi, il peut descendre sur la corde de Mi pour jouer les cordes de Ré et de Sol. Il étouffe alors les cordes graves, qui ne résonnent plus toutes seules."
+     ],
+     "exercices": [
+      "v-quatre",
+      "v-blanches"
+     ]
+    },
+    {
+     "id": "m3",
+     "titre": "Le silence",
+     "texte": [
+      "À la basse, arrêter une note compte autant que la jouer. Une corde à vide sonne longtemps : pour la faire taire, repose dessus le doigt qui va jouer ensuite.",
+      "Le silence d'un temps s'appelle un soupir."
+     ],
+     "exercices": [
+      "v-silences"
+     ]
+    },
+    {
+     "id": "m4",
+     "titre": "Les croches",
+     "texte": [
+      "Deux notes par temps : on compte « 1 et 2 et 3 et 4 et ». L'index joue sur les temps, le majeur sur les « et ».",
+      "Le piège est l'inégalité : un doigt plus fort ou plus en avance que l'autre. Écoute, et ralentis si besoin."
+     ],
+     "exercices": [
+      "v-croches",
+      "v-croches-la",
+      "v-traversee"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "gauche",
+   "titre": "La main gauche",
+   "resume": "Un doigt par case, des notes nettes, et les premiers noms de notes.",
+   "lecons": [
+    {
+     "id": "g1",
+     "titre": "Un doigt par case",
+     "texte": [
+      "Chaque doigt a sa case : index 1, majeur 2, annulaire 3, auriculaire 4. Les chiffres au-dessus de la tablature donnent le doigt.",
+      "Appuie juste derrière la frette, pas au milieu de la case : la note est nette avec moins de force.",
+      "En bas du manche, les cases sont larges. Si l'écart tire, rapproche la main de la case à jouer plutôt que de forcer."
+     ],
+     "exercices": [
+      "g-mi",
+      "g-la"
+     ]
+    },
+    {
+     "id": "g2",
+     "titre": "Sur les quatre cordes",
+     "texte": [
+      "La main garde sa position, seuls les doigts changent de corde. Le pouce reste derrière le manche.",
+      "Pour éviter les bruits, les doigts de la main gauche qui ne jouent pas effleurent les cordes voisines."
+     ],
+     "exercices": [
+      "g-toutes",
+      "g-1324"
+     ]
+    },
+    {
+     "id": "g3",
+     "titre": "Les premières notes",
+     "texte": [
+      "Sur la corde de Mi : Mi à vide, Fa en case 1, Sol en case 3. Sur la corde de La : La à vide, Si en case 2, Do en case 3.",
+      "Entre Mi et Fa, comme entre Si et Do, il n'y a qu'une case. Entre les autres notes voisines, il y en a deux."
+     ],
+     "exercices": [
+      "n-mi",
+      "n-la",
+      "n-mi-la"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "grooves",
+   "titre": "Premiers grooves",
+   "resume": "Jouer avec la batterie : la basse et la grosse caisse ne font qu'un.",
+   "lecons": [
+    {
+     "id": "r1",
+     "titre": "Avec la grosse caisse",
+     "texte": [
+      "Dans un groupe, la basse et la batterie forment la section rythmique. Le premier réflexe du bassiste : jouer avec la grosse caisse.",
+      "La batterie d'accompagnement se coupe ou se règle depuis l'exercice. Au micro, elle peut être prise pour des notes : elle est faite pour le jeu au câble."
+     ],
+     "exercices": [
+      "r-fond",
+      "r-double"
+     ]
+    },
+    {
+     "id": "r2",
+     "titre": "Les croches rock",
+     "texte": [
+      "Huit croches par mesure sur la même note : simple à lire, difficile à jouer vraiment régulièrement.",
+      "Change de note exactement sur le premier temps de la mesure."
+     ],
+     "exercices": [
+      "r-rock-mi",
+      "r-la-re"
+     ]
+    },
+    {
+     "id": "r3",
+     "titre": "Fondamentale, quinte, octave",
+     "texte": [
+      "La fondamentale est la note qui donne son nom à l'accord. Sa quinte se trouve une corde au-dessus, deux cases plus loin ; son octave deux cordes au-dessus, deux cases plus loin.",
+      "Ces deux formes se déplacent partout sur le manche : avec elles, on accompagne déjà beaucoup de morceaux."
+     ],
+     "exercices": [
+      "r-quinte",
+      "r-octave"
+     ]
+    },
+    {
+     "id": "r4",
+     "titre": "Un blues en La",
+     "texte": [
+      "Le blues tourne sur trois accords. En La : La, Ré et Mi, dont les fondamentales sont trois cordes à vide."
+     ],
+     "exercices": [
+      "r-blues"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "gammes",
+   "titre": "Gammes et arpèges",
+   "resume": "Majeure, mineure, pentatoniques, arpèges des accords courants.",
+   "bientot": true,
+   "lecons": []
+  },
+  {
+   "id": "styles",
+   "titre": "Les styles",
+   "resume": "Rock, blues, reggae, funk, introduction au walking.",
+   "bientot": true,
+   "lecons": []
+  },
+  {
+   "id": "lignes",
+   "titre": "Construire une ligne",
+   "resume": "Notes de passage, approches, variations sur une grille.",
+   "bientot": true,
+   "lecons": []
+  }
+ ]
+}

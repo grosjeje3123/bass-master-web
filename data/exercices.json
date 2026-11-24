@@ -1,0 +1,334 @@
+{
+ "familles": [
+  {
+   "id": "vide",
+   "titre": "Cordes à vide",
+   "resume": "La main droite seule : un son régulier, puis l'alternance index-majeur et le passage d'une corde à l'autre.",
+   "exercices": [
+    {
+     "id": "v-mi",
+     "titre": "Mi à vide, en noires",
+     "tempo": 60,
+     "pas": 1,
+     "mesures": 2,
+     "notes": "E0 E0 E0 E0 | E0 E0 E0 E0",
+     "consigne": "Une note par clic, sur la corde la plus grave. Alterne index (i) et majeur (m).",
+     "md": "i m i m i m i m"
+    },
+    {
+     "id": "v-la",
+     "titre": "La à vide, en noires",
+     "tempo": 60,
+     "pas": 1,
+     "mesures": 2,
+     "notes": "A0 A0 A0 A0 | A0 A0 A0 A0",
+     "consigne": "Même geste sur la corde de La. Après chaque note, le doigt vient se poser sur la corde de Mi.",
+     "md": "i m i m i m i m"
+    },
+    {
+     "id": "v-re-sol",
+     "titre": "Ré, puis Sol",
+     "tempo": 60,
+     "pas": 1,
+     "mesures": 2,
+     "notes": "D0 D0 D0 D0 | G0 G0 G0 G0",
+     "consigne": "Une mesure par corde. Le pouce suit la main : il se pose sur la corde de Mi ou de La.",
+     "md": "i m i m i m i m"
+    },
+    {
+     "id": "v-quatre",
+     "titre": "Les quatre cordes",
+     "tempo": 60,
+     "pas": 1,
+     "mesures": 2,
+     "notes": "E0 E0 A0 A0 | D0 D0 G0 G0",
+     "consigne": "Deux notes par corde, de la plus grave à la plus aiguë.",
+     "md": "i m i m i m i m",
+     "noms": true
+    },
+    {
+     "id": "v-blanches",
+     "titre": "Des notes longues",
+     "tempo": 60,
+     "pas": 1,
+     "mesures": 2,
+     "notes": "E0 . A0 . | D0 . G0 .",
+     "consigne": "Chaque note dure deux temps : laisse-la sonner jusqu'à la suivante.",
+     "md": "i m i m",
+     "noms": true
+    },
+    {
+     "id": "v-silences",
+     "titre": "Noires et silences",
+     "tempo": 60,
+     "pas": 1,
+     "mesures": 2,
+     "notes": "E0 x E0 x | A0 x A0 x",
+     "consigne": "Joue sur les temps 1 et 3, étouffe la corde sur les temps 2 et 4 en reposant les doigts dessus.",
+     "md": "i m i m"
+    },
+    {
+     "id": "v-croches",
+     "titre": "Mi en croches",
+     "tempo": 60,
+     "pas": 2,
+     "mesures": 2,
+     "notes": "E0 E0 E0 E0 E0 E0 E0 E0 | E0 E0 E0 E0 E0 E0 E0 E0",
+     "consigne": "Deux notes par clic, parfaitement égales. L'index et le majeur doivent sonner pareil.",
+     "md": "i m i m i m i m i m i m i m i m"
+    },
+    {
+     "id": "v-croches-la",
+     "titre": "La en croches",
+     "tempo": 60,
+     "pas": 2,
+     "mesures": 2,
+     "notes": "A0 A0 A0 A0 A0 A0 A0 A0 | A0 A0 A0 A0 A0 A0 A0 A0",
+     "consigne": "Même régularité sur la corde de La.",
+     "md": "i m i m i m i m i m i m i m i m"
+    },
+    {
+     "id": "v-traversee",
+     "titre": "Deux croches par corde",
+     "tempo": 55,
+     "pas": 2,
+     "mesures": 2,
+     "notes": "E0 E0 A0 A0 D0 D0 G0 G0 | G0 G0 D0 D0 A0 A0 E0 E0",
+     "consigne": "On monte puis on redescend. L'alternance index-majeur continue en changeant de corde.",
+     "md": "i m i m i m i m i m i m i m i m"
+    },
+    {
+     "id": "v-une-mesure",
+     "titre": "Une mesure par corde, en croches",
+     "tempo": 60,
+     "pas": 2,
+     "mesures": 4,
+     "notes": "E0 E0 E0 E0 E0 E0 E0 E0 | A0 A0 A0 A0 A0 A0 A0 A0 | D0 D0 D0 D0 D0 D0 D0 D0 | G0 G0 G0 G0 G0 G0 G0 G0",
+     "consigne": "Quatre mesures sans s'arrêter : garde le même volume sur les quatre cordes.",
+     "md": "i m i m i m i m i m i m i m i m i m i m i m i m i m i m i m i m"
+    }
+   ]
+  },
+  {
+   "id": "gauche",
+   "titre": "Main gauche",
+   "resume": "Un doigt par case, juste derrière la frette. D'abord lentement : c'est la netteté qui compte.",
+   "exercices": [
+    {
+     "id": "g-mi",
+     "titre": "Quatre cases sur la corde de Mi",
+     "tempo": 50,
+     "pas": 1,
+     "mesures": 2,
+     "notes": "E1 E2 E3 E4 | E4 E3 E2 E1",
+     "consigne": "Index case 1, majeur case 2, annulaire case 3, auriculaire case 4. Garde les doigts déjà posés.",
+     "md": "i m i m i m i m",
+     "mg": "1 2 3 4 4 3 2 1"
+    },
+    {
+     "id": "g-la",
+     "titre": "Quatre cases sur la corde de La",
+     "tempo": 50,
+     "pas": 1,
+     "mesures": 2,
+     "notes": "A1 A2 A3 A4 | A4 A3 A2 A1",
+     "consigne": "Même exercice une corde plus haut.",
+     "md": "i m i m i m i m",
+     "mg": "1 2 3 4 4 3 2 1"
+    },
+    {
+     "id": "g-toutes",
+     "titre": "Quatre cases, quatre cordes",
+     "tempo": 50,
+     "pas": 1,
+     "mesures": 4,
+     "notes": "E1 E2 E3 E4 | A1 A2 A3 A4 | D1 D2 D3 D4 | G1 G2 G3 G4",
+     "consigne": "Une mesure par corde. La main ne bouge pas, seuls les doigts changent de corde.",
+     "md": "i m i m i m i m i m i m i m i m",
+     "mg": "1 2 3 4 1 2 3 4 1 2 3 4 1 2 3 4"
+    },
+    {
+     "id": "g-1324",
+     "titre": "Permutation 1 3 2 4",
+     "tempo": 50,
+     "pas": 1,
+     "mesures": 2,
+     "notes": "E1 E3 E2 E4 | A1 A3 A2 A4",
+     "consigne": "Les doigts ne se suivent plus : chacun doit trouver sa case tout seul.",
+     "md": "i m i m i m i m",
+     "mg": "1 3 2 4 1 3 2 4"
+    },
+    {
+     "id": "g-1243",
+     "titre": "Permutation 1 2 4 3",
+     "tempo": 50,
+     "pas": 1,
+     "mesures": 2,
+     "notes": "E1 E2 E4 E3 | A1 A2 A4 A3",
+     "consigne": "L'auriculaire et l'annulaire travaillent ensemble.",
+     "md": "i m i m i m i m",
+     "mg": "1 2 4 3 1 2 4 3"
+    },
+    {
+     "id": "g-croches",
+     "titre": "Quatre cases en croches",
+     "tempo": 50,
+     "pas": 2,
+     "mesures": 2,
+     "notes": "E1 E2 E3 E4 A1 A2 A3 A4 | D1 D2 D3 D4 G1 G2 G3 G4",
+     "consigne": "Deux notes par clic, sur les quatre cordes.",
+     "md": "i m i m i m i m i m i m i m i m",
+     "mg": "1 2 3 4 1 2 3 4 1 2 3 4 1 2 3 4"
+    }
+   ]
+  },
+  {
+   "id": "notes",
+   "titre": "Les notes du manche",
+   "resume": "Mettre un nom sur les cases : les notes des cordes de Mi et de La, puis une gamme.",
+   "exercices": [
+    {
+     "id": "n-mi",
+     "titre": "Mi, Fa, Sol",
+     "tempo": 60,
+     "pas": 1,
+     "mesures": 2,
+     "notes": "E0 E1 E3 E1 | E0 E3 E0 .",
+     "consigne": "Corde de Mi : à vide, c'est Mi ; case 1, Fa ; case 3, Sol.",
+     "mg": "0 1 3 1 0 3 0",
+     "noms": true
+    },
+    {
+     "id": "n-la",
+     "titre": "La, Si, Do",
+     "tempo": 60,
+     "pas": 1,
+     "mesures": 2,
+     "notes": "A0 A2 A3 A2 | A0 A3 A0 .",
+     "consigne": "Corde de La : à vide, c'est La ; case 2, Si ; case 3, Do.",
+     "mg": "0 2 3 2 0 3 0",
+     "noms": true
+    },
+    {
+     "id": "n-mi-la",
+     "titre": "De Mi à Do",
+     "tempo": 60,
+     "pas": 1,
+     "mesures": 2,
+     "notes": "E0 E1 E3 A0 | A2 A3 A2 A0",
+     "consigne": "Les six notes à la suite, sur deux cordes.",
+     "mg": "0 1 3 0 2 3 2 0",
+     "noms": true
+    },
+    {
+     "id": "n-gamme-do",
+     "titre": "La gamme de Do majeur",
+     "tempo": 55,
+     "pas": 1,
+     "mesures": 2,
+     "notes": "A3 A5 D2 D3 | D5 G2 G4 G5",
+     "consigne": "Do, Ré, Mi, Fa, Sol, La, Si, Do. La main reste en place : index en case 2.",
+     "mg": "2 4 1 2 4 1 3 4",
+     "noms": true
+    },
+    {
+     "id": "n-penta-la",
+     "titre": "La pentatonique mineure de La",
+     "tempo": 55,
+     "pas": 1,
+     "mesures": 2,
+     "notes": "E5 E8 A5 A7 | D5 D7 A7 A5",
+     "consigne": "Cinq notes qui servent partout, du blues au rock. Index en case 5.",
+     "mg": "1 4 1 3 1 3 3 1",
+     "noms": true
+    }
+   ]
+  },
+  {
+   "id": "grooves",
+   "titre": "Premiers grooves",
+   "resume": "Jouer avec la batterie : la basse se cale sur la grosse caisse.",
+   "exercices": [
+    {
+     "id": "r-fond",
+     "titre": "La fondamentale sur la grosse caisse",
+     "tempo": 70,
+     "pas": 1,
+     "mesures": 2,
+     "notes": "E0 . E0 . | E0 . E0 .",
+     "consigne": "Une note sur les temps 1 et 3, exactement avec la grosse caisse.",
+     "md": "i m i m",
+     "batterie": "noires"
+    },
+    {
+     "id": "r-rock-mi",
+     "titre": "Croches rock en Mi",
+     "tempo": 70,
+     "pas": 2,
+     "mesures": 2,
+     "notes": "E0 E0 E0 E0 E0 E0 E0 E0 | E0 E0 E0 E0 E0 E0 E0 E0",
+     "consigne": "Huit croches par mesure, toutes au même volume : c'est la base du rock.",
+     "md": "i m i m i m i m i m i m i m i m",
+     "batterie": "rock"
+    },
+    {
+     "id": "r-double",
+     "titre": "Avec la grosse caisse doublée",
+     "tempo": 70,
+     "pas": 2,
+     "mesures": 2,
+     "notes": "E0 . . . E0 E0 . . | E0 . . . E0 E0 . .",
+     "consigne": "La basse joue exactement les coups de grosse caisse : 1, puis 3 et le « et » de 3.",
+     "batterie": "rock2"
+    },
+    {
+     "id": "r-quinte",
+     "titre": "Fondamentale et quinte",
+     "tempo": 70,
+     "pas": 1,
+     "mesures": 2,
+     "notes": "A0 . D2 . | A0 . D2 .",
+     "consigne": "La (corde à vide) puis Mi, sa quinte : une corde au-dessus, deux cases plus loin.",
+     "mg": "0 2 0 2",
+     "noms": true,
+     "batterie": "noires"
+    },
+    {
+     "id": "r-octave",
+     "titre": "Fondamentale et octave",
+     "tempo": 65,
+     "pas": 2,
+     "mesures": 2,
+     "notes": "E0 D2 E0 D2 E0 D2 E0 D2 | E0 D2 E0 D2 E0 D2 E0 D2",
+     "consigne": "Le même Mi, grave puis aigu : deux cordes au-dessus, deux cases plus loin.",
+     "mg": "0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1",
+     "noms": true,
+     "batterie": "rock"
+    },
+    {
+     "id": "r-la-re",
+     "titre": "Deux accords : La et Ré",
+     "tempo": 70,
+     "pas": 2,
+     "mesures": 2,
+     "notes": "A0 A0 A0 A0 A0 A0 A0 A0 | D0 D0 D0 D0 D0 D0 D0 D0",
+     "consigne": "Une mesure de La, une mesure de Ré. Change de corde pile sur le premier temps.",
+     "md": "i m i m i m i m i m i m i m i m",
+     "batterie": "rock"
+    },
+    {
+     "id": "r-blues",
+     "titre": "Les fondamentales d'un blues en La",
+     "tempo": 70,
+     "pas": 2,
+     "mesures": 4,
+     "notes": "A0 A0 A0 A0 A0 A0 A0 A0 | D0 D0 D0 D0 D0 D0 D0 D0 | E0 E0 E0 E0 E0 E0 E0 E0 | A0 A0 A0 A0 A0 A0 A0 A0",
+     "consigne": "La, Ré, Mi, La : les trois accords du blues, une mesure chacun.",
+     "md": "i m i m i m i m i m i m i m i m i m i m i m i m i m i m i m i m",
+     "noms": true,
+     "batterie": "rock"
+    }
+   ]
+  }
+ ]
+}

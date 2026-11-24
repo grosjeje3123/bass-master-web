@@ -1,8 +1,23 @@
-# Bass Master — essai de détection
+# Bass Master — version web
 
-Page web d'essai pour le projet Bass Master : elle vérifie qu'une tablette ou un téléphone entend une basse (au micro ou par câble / interface audio USB), reconnaît les notes jouées et mesure le placement rythmique.
+Méthode de basse interactive : l'appli écoute la basse, vérifie les notes et le rythme, et fait progresser leçon après leçon.
 
-- `index.html` : la page, en un seul fichier, sans dépendance. Tout le calcul se fait sur l'appareil ; aucun son n'est envoyé.
-- À ouvrir en https (GitHub Pages), l'accès au micro étant refusé sinon.
+- Appli : https://grosjeje3123.github.io/bass-master-web/
+- Page d'essai de détection (diagnostic brut : entrée audio, notes reconnues, latence) : `essai/`
 
-Contenu : choix de l'entrée audio, accordeur, test de reconnaissance des notes, mesure de la latence et du rythme, bilan comparé aux seuils du cahier des charges (95 % de notes reconnues, stabilité à 10 ms).
+Version d'essai. Ce qu'elle contient :
+
+- un Parcours en quatre étapes ouvertes (découvrir la basse, main droite, main gauche, premiers grooves), 15 leçons ;
+- 28 exercices en pratique libre : tablature, doigtés, manche, clic, batterie d'accompagnement ;
+- « Ma basse » : entrée audio (câble ou micro), seuil, calibrage du retard de l'appareil ;
+- un accordeur.
+
+La basse arrive par une interface audio USB (câble) ou par le micro : Chrome, Edge ou Samsung Internet. Tout le calcul se fait sur l'appareil ; aucun son n'est envoyé.
+Toute l'appli est gardée sur l'appareil dès la première visite, pour jouer hors connexion. La progression et les réglages restent sur l'appareil.
+
+Elle n'a encore jamais été essayée avec une vraie basse : les vérifications utilisent des sons fabriqués.
+
+Ce dépôt ne contient que l'appli construite ; la source est tenue à part.
+
+Sons de batterie : kit Gretsch enregistré par bigjoedrummer et shpira, licence CC0 (voir `sons/CREDITS.txt`).
+Police : Montserrat, licence SIL OFL (voir `fonts/OFL-Montserrat.txt`).
