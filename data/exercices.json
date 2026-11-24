@@ -329,6 +329,95 @@
      "batterie": "rock"
     }
    ]
+  },
+  {
+   "id": "lignes",
+   "titre": "Lignes et styles",
+   "resume": "De vraies lignes de basse avec la batterie : rock, pop, blues, reggae, disco, funk, walking.",
+   "exercices": [
+    {
+     "id": "l-rock",
+     "titre": "Rock : un riff en Mi",
+     "tempo": 90,
+     "pas": 2,
+     "mesures": 4,
+     "notes": "E0 E0 E0 E0 E3 E3 E0 E0 | E0 E0 E0 E0 A0 A0 E3 E3 | E0 E0 E0 E0 E3 E3 E0 E0 | A0 A0 E3 E3 E0 . . .",
+     "consigne": "Le Mi grave fait le moteur, le Sol et le La donnent le relief. Toutes les croches au même volume.",
+     "batterie": "rock"
+    },
+    {
+     "id": "l-ballade",
+     "titre": "Pop : ballade en Do",
+     "tempo": 70,
+     "pas": 2,
+     "mesures": 4,
+     "notes": "A3 . . D5 G5 . D5 . | E5 . . A7 D7 . A7 . | E1 . . A3 D3 . A3 . | E3 . . A5 D5 . E3 .",
+     "consigne": "Do, La mineur, Fa, Sol. Sur chaque accord : la fondamentale, sa quinte, son octave. Laisse chanter les notes longues.",
+     "batterie": "noires"
+    },
+    {
+     "id": "l-pop",
+     "titre": "Pop : huit mesures en Sol",
+     "tempo": 90,
+     "pas": 2,
+     "mesures": 8,
+     "notes": "E3 . . E3 E3 . A5 . | A5 . . A5 A5 . E5 . | E0 . . E0 E0 . A2 . | A3 . . A3 A3 . A2 . | E3 . . E3 E3 . D5 . | A5 . . A5 A5 . D7 . | E0 . . E0 E0 . A2 . | A3 . . A3 A3 A2 A0 E2",
+     "consigne": "Sol, Ré, Mi mineur, Do, deux fois. Le rythme reste le même ; à la fin, une descente ramène au Sol.",
+     "batterie": "rock"
+    },
+    {
+     "id": "l-blues",
+     "titre": "Blues : walking en La, douze mesures",
+     "tempo": 90,
+     "pas": 1,
+     "mesures": 12,
+     "notes": "E5 A4 A7 D4 | D7 D4 A7 A4 | E5 A4 A7 D4 | D7 D4 A7 A4 | A5 D4 D7 G4 | G7 G4 D7 D4 | E5 A4 A7 D4 | D7 D4 A7 A4 | A7 D6 D9 G6 | A5 D4 D7 G4 | E5 A4 A7 D4 | A7 D6 D9 D6",
+     "consigne": "Une note par temps, sans trou : fondamentale, tierce, quinte, sixte. La même forme se déplace sur La, Ré et Mi.",
+     "batterie": "blues"
+    },
+    {
+     "id": "l-reggae",
+     "titre": "Reggae en La mineur",
+     "tempo": 75,
+     "pas": 2,
+     "mesures": 4,
+     "notes": "x E5 E5 x A7 A5 E5 x | x E5 E5 x E8 E5 E3 x | x E3 E3 x A5 A2 E3 x | x E3 E3 x A2 A3 A5 x",
+     "consigne": "Le premier temps reste vide : c'est le silence qui fait le style. Notes rondes et courtes, bien étouffées.",
+     "batterie": "reggae"
+    },
+    {
+     "id": "l-disco",
+     "titre": "Disco : les octaves",
+     "tempo": 100,
+     "pas": 2,
+     "mesures": 4,
+     "notes": "E5 D7 E5 D7 E5 D7 E5 D7 | E5 D7 E5 D7 E5 D7 E5 D7 | E1 D3 E1 D3 E1 D3 E1 D3 | E3 D5 E3 D5 E3 D5 E3 E4",
+     "consigne": "Grave sur le temps, aigu entre les temps, la main gauche garde la même forme. La dernière note monte vers le La.",
+     "batterie": "disco"
+    },
+    {
+     "id": "l-funk",
+     "titre": "Funk en Mi",
+     "tempo": 70,
+     "pas": 4,
+     "mesures": 4,
+     "notes": "E0 . x E0 x D2 x E0 x E0 D2 x A0 . E3 . | E0 . x E0 x D2 x E0 x D2 . x D0 . D2 . | E0 . x E0 x D2 x E0 x E0 D2 x A0 . E3 . | E0 . x E0 x D2 x E0 E3 . A0 . A2 . D0 .",
+     "consigne": "Des doubles croches et des silences : ce qu'on ne joue pas compte autant que le reste. Commence lentement.",
+     "batterie": "funk"
+    },
+    {
+     "id": "l-walking",
+     "titre": "Jazz : walking en Fa",
+     "tempo": 90,
+     "pas": 1,
+     "mesures": 4,
+     "notes": "E3 A1 A5 A4 | A3 D2 D5 D4 | E1 E5 A3 A4 | A5 A3 E5 E4",
+     "consigne": "Sol mineur, Do, Fa, puis Ré pour revenir. La dernière note de chaque mesure glisse d'une case vers la suivante.",
+     "noms": true,
+     "batterie": "jazz",
+     "bemols": true
+    }
+   ]
   }
  ]
 }

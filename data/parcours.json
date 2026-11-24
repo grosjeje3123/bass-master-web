@@ -216,9 +216,88 @@
   {
    "id": "styles",
    "titre": "Les styles",
-   "resume": "Rock, blues, reggae, funk, introduction au walking.",
-   "bientot": true,
-   "lecons": []
+   "resume": "Une vraie ligne par style, avec la batterie : rock, pop, blues, reggae, disco, funk, jazz.",
+   "lecons": [
+    {
+     "id": "s1",
+     "titre": "Rock",
+     "texte": [
+      "Le rock demande des croches droites, régulières, toutes au même volume. La basse double souvent la guitare sur un riff : quelques notes, répétées.",
+      "Ici, le Mi grave revient sans cesse : c'est une pédale. Les autres notes, Sol et La, se jouent sur la même corde ou sa voisine."
+     ],
+     "exercices": [
+      "l-rock"
+     ]
+    },
+    {
+     "id": "s2",
+     "titre": "Pop",
+     "texte": [
+      "En pop, la basse suit les accords et laisse la place à la voix. Elle joue surtout la fondamentale, qu'elle relie à la suivante par la quinte, l'octave ou une note de passage.",
+      "Le rythme le plus courant : une note longue, une courte qui relance, puis deux notes posées. Garde-le identique d'un accord à l'autre.",
+      "La seconde ligne dure huit mesures : elle défile sous le curseur."
+     ],
+     "exercices": [
+      "l-ballade",
+      "l-pop"
+     ]
+    },
+    {
+     "id": "s3",
+     "titre": "Blues",
+     "texte": [
+      "Le blues tient en douze mesures et trois accords. En La : quatre mesures de La, deux de Ré, deux de La, puis Mi, Ré, La et un retour sur Mi.",
+      "La ligne « walking » marche en noires : fondamentale, tierce, quinte, sixte, en montant puis en redescendant. Une seule forme à la main gauche, déplacée d'accord en accord."
+     ],
+     "exercices": [
+      "l-blues"
+     ]
+    },
+    {
+     "id": "s4",
+     "titre": "Reggae",
+     "texte": [
+      "En reggae, la basse est devant : grave, ronde, mélodique. Elle laisse souvent le premier temps vide, là où les autres styles l'appuient.",
+      "Joue près du manche pour un son plus sourd, et étouffe chaque note avant la suivante."
+     ],
+     "exercices": [
+      "l-reggae"
+     ]
+    },
+    {
+     "id": "s5",
+     "titre": "Disco",
+     "texte": [
+      "La figure reine du disco : l'octave en croches, grave sur le temps avec la grosse caisse, aiguë entre les temps avec la charleston.",
+      "La main gauche ne change pas de forme : index sur la note grave, annulaire ou auriculaire deux cordes au-dessus, deux cases plus loin."
+     ],
+     "exercices": [
+      "l-disco"
+     ]
+    },
+    {
+     "id": "s6",
+     "titre": "Funk",
+     "texte": [
+      "Le funk se joue en doubles croches, quatre par temps, mais on est loin de toutes les jouer. Les silences découpent le rythme : il faut étouffer net.",
+      "Compte « 1 e et a 2 e et a ». Travaille d'abord très lentement, en « Rythme seul » si besoin, puis remets la vérification des notes."
+     ],
+     "exercices": [
+      "l-funk"
+     ]
+    },
+    {
+     "id": "s7",
+     "titre": "Jazz : le walking",
+     "texte": [
+      "Le walking jazz marche en noires, comme celui du blues, mais il relie les accords : la dernière note de chaque mesure se trouve à une case de la première note de la mesure suivante.",
+      "Les accords ici : Sol mineur, Do, Fa, puis Ré qui ramène à Sol mineur. Les notes altérées sont écrites en bémols, comme dans les partitions en Fa."
+     ],
+     "exercices": [
+      "l-walking"
+     ]
+    }
+   ]
   },
   {
    "id": "lignes",

@@ -7,8 +7,9 @@ Méthode de basse interactive : l'appli écoute la basse, vérifie les notes et 
 
 Version d'essai. Ce qu'elle contient :
 
-- un Parcours en quatre étapes ouvertes (découvrir la basse, main droite, main gauche, premiers grooves), 15 leçons ;
-- 28 exercices en pratique libre : tablature, doigtés, manche, clic, batterie d'accompagnement ;
+- un Parcours en cinq étapes ouvertes (découvrir la basse, main droite, main gauche, premiers grooves, les styles), 22 leçons ;
+- 36 exercices et lignes en pratique libre, dont huit lignes par style (rock, pop, blues, reggae, disco, funk, walking) ;
+- la partition en clé de fa au-dessus de la tablature (ou l'une des deux), les doigtés, le manche, le clic, une batterie d'accompagnement et l'écoute du modèle ;
 - « Ma basse » : entrée audio (câble ou micro), seuil, calibrage du retard de l'appareil ;
 - un accordeur.
 
