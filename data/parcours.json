@@ -392,15 +392,28 @@
      ]
     },
     {
+     "id": "s9",
+     "titre": "Le swing",
+     "texte": [
+      "Jusqu'ici, les deux croches d'un temps étaient égales : c'est le jeu binaire. En swing, le temps se pense en trois : la première croche en prend deux tiers, la seconde un tiers. Long, court, long, court.",
+      "Sur la partition, rien ne change : on écrit des croches ordinaires, avec la mention « swing ». C'est le balancement du blues, du shuffle et du jazz.",
+      "La batterie le joue à la charleston : écoute-la d'abord avec « Écouter », puis pose tes croches dessus."
+     ],
+     "exercices": [
+      "r-swing"
+     ]
+    },
+    {
      "id": "s3",
      "titre": "Blues",
      "texte": [
       "On retrouve la grille de douze mesures. La ligne « walking » marche en noires, une note par temps, sans trou.",
       "Deux motifs : en montant, fondamentale, tierce, quinte, sixte ; en descendant, octave, sixte, quinte, tierce. La seconde ligne ajoute la septième mineure, qui donne la couleur du blues.",
-      "Ce blues est joué « binaire », en croches égales. Le balancement ternaire du shuffle viendra plus tard."
+      "La batterie joue en swing. Le walking en noires tombe sur les temps ; le shuffle, lui, double chaque note en croches swinguées."
      ],
      "exercices": [
       "l-blues",
+      "l-shuffle",
       "l-blues-2"
      ]
     },
@@ -408,7 +421,7 @@
      "id": "s4",
      "titre": "Reggae",
      "texte": [
-      "En reggae, la basse est devant : grave, ronde, mélodique. Elle laisse souvent le premier temps vide, là où d'autres styles l'appuient, et retrouve la grosse caisse sur le troisième.",
+      "En reggae, la basse est devant : grave, ronde, mélodique. Elle laisse souvent le premier temps vide, là où d'autres styles l'appuient, et retrouve sur le troisième la grosse caisse et le « cross-stick », la baguette frappée sur le cercle de la caisse claire.",
       "Joue près du manche pour un son plus sourd. Les notes longues doivent avoir du poids."
      ],
      "exercices": [
@@ -433,7 +446,7 @@
      "texte": [
       "Le walking jazz marche en noires, comme celui du blues, mais son rôle est de relier les accords.",
       "Une technique pour cela : l'approche chromatique. La dernière note de la mesure se place à une case de la note visée. La seconde ligne montre qu'on peut aussi arriver par une note de la gamme.",
-      "La batterie se limite ici à la charleston sur les temps 2 et 4. Les notes altérées sont écrites en bémols, comme dans les partitions en Fa."
+      "La batterie joue en swing : la cymbale ride fait « ding, ding-a-ding », la charleston se ferme au pied sur les temps 2 et 4. Les notes altérées sont écrites en bémols, comme dans les partitions en Fa ; le Fa dièse de l'accord de Ré7 garde son dièse."
      ],
      "exercices": [
       "l-walking",
@@ -524,6 +537,17 @@
      "exercices": [
       "cl-variation"
      ]
+    },
+    {
+     "id": "c6",
+     "titre": "Atelier : invente ta ligne",
+     "texte": [
+      "À toi maintenant. L'atelier fait tourner une grille avec la batterie et le piano, et te laisse jouer ce que tu veux.",
+      "Trois missions, de plus en plus libres : les fondamentales seules, puis avec la quinte et l'octave, puis une ligne à toi. Chaque note que tu joues s'inscrit dans sa mesure, colorée selon son rôle dans l'accord.",
+      "Il n'y a pas de bonne réponse unique : un passage est réussi quand la fondamentale tombe sur le premier temps de chaque mesure et que la ligne tient dans l'harmonie."
+     ],
+     "exercices": [],
+     "lien": "atelier"
     }
    ]
   }

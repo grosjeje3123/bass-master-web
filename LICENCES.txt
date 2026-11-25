@@ -2,4 +2,6 @@ Bass Master
 
 Sons de batterie : kit Gretsch enregistré par bigjoedrummer et shpira, licence CC0 (voir sons/CREDITS.txt).
 Notes de basse : collection Tonejs-Instruments de Nicholaus Brosowsky, enregistrements Karoryfer Samples, licence CC-BY 3.0 (voir sons/CREDITS.txt).
+Notes de piano : collection Tonejs-Instruments de Nicholaus Brosowsky, enregistrements VSCO 2 CE (Versilian Studios), licence CC-BY 3.0.
+Cross-stick : Virtuosity Drums (Versilian Studios), licence CC0.
 Police : Montserrat, licence SIL Open Font License 1.1 (voir fonts/OFL-Montserrat.txt).

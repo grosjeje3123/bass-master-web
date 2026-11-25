@@ -403,6 +403,18 @@
      "accords": "La7 | La7 | La7 | La7 | Ré7 | Ré7 | La7 | La7 | Mi7 | Ré7 | La7 | Mi7"
     },
     {
+     "id": "r-swing",
+     "titre": "Croches swinguées",
+     "tempo": 70,
+     "pas": 2,
+     "mesures": 2,
+     "notes": "E0 E0 E0 E0 E0 E0 E0 E0 | A0 A0 A0 A0 A0 A0 A0 A0",
+     "consigne": "Long, court, long, court : la note du temps dure deux tiers du temps, celle du « et » un tiers. Cale-toi sur la charleston.",
+     "md": "i m i m i m i m i m i m i m i m",
+     "batterie": "shuffle",
+     "swing": true
+    },
+    {
      "id": "r-doubles",
      "titre": "Premières doubles croches",
      "tempo": 60,
@@ -566,8 +578,9 @@
      "mesures": 12,
      "notes": "E5 A4 A7 D4 | D7 D4 A7 A4 | E5 A4 A7 D4 | D7 D4 A7 A4 | A5 D4 D7 G4 | G7 G4 D7 D4 | E5 A4 A7 D4 | D7 D4 A7 A4 | A7 D6 D9 G6 | A5 D4 D7 G4 | E5 A4 A7 D4 | A7 D6 D9 D6",
      "consigne": "Une note par temps. En montant : fondamentale, tierce, quinte, sixte. En descendant : octave, sixte, quinte, tierce. La même forme sur La, Ré et Mi.",
-     "batterie": "blues",
-     "accords": "La7 | La7 | La7 | La7 | Ré7 | Ré7 | La7 | La7 | Mi7 | Ré7 | La7 | Mi7"
+     "batterie": "shuffle",
+     "accords": "La7 | La7 | La7 | La7 | Ré7 | Ré7 | La7 | La7 | Mi7 | Ré7 | La7 | Mi7",
+     "swing": true
     },
     {
      "id": "l-blues-2",
@@ -577,8 +590,21 @@
      "mesures": 12,
      "notes": "E5 A4 A7 D4 | D7 D5 D4 A7 | E5 A4 A7 D5 | D7 D5 D4 A4 | A5 D4 D7 G4 | G7 G5 G4 D7 | E5 A4 A7 D4 | D7 D5 D4 A6 | A7 D6 D9 G7 | A5 D4 D7 G5 | E5 A4 A7 D5 | E0 E4 A2 E4",
      "consigne": "La septième mineure (Sol sur La7, Do sur Ré7, Ré sur Mi7) donne la couleur du blues. La dernière mesure descend dans le grave avant de revenir au La.",
-     "batterie": "blues",
-     "accords": "La7 | La7 | La7 | La7 | Ré7 | Ré7 | La7 | La7 | Mi7 | Ré7 | La7 | Mi7"
+     "batterie": "shuffle",
+     "accords": "La7 | La7 | La7 | La7 | Ré7 | Ré7 | La7 | La7 | Mi7 | Ré7 | La7 | Mi7",
+     "swing": true
+    },
+    {
+     "id": "l-shuffle",
+     "titre": "Blues : shuffle en La",
+     "tempo": 80,
+     "pas": 2,
+     "mesures": 12,
+     "notes": "E5 E5 A4 A4 A7 A7 D4 D4 | E5 E5 A4 A4 A7 A7 D4 D4 | E5 E5 A4 A4 A7 A7 D4 D4 | E5 E5 A4 A4 A7 A7 D4 D4 | A5 A5 D4 D4 D7 D7 G4 G4 | A5 A5 D4 D4 D7 D7 G4 G4 | E5 E5 A4 A4 A7 A7 D4 D4 | E5 E5 A4 A4 A7 A7 D4 D4 | A7 A7 D6 D6 D9 D9 G6 G6 | A5 A5 D4 D4 D7 D7 G4 G4 | E5 E5 A4 A4 A7 A7 D4 D4 | A7 A7 D6 D6 D9 D9 D6 D6",
+     "consigne": "Chaque note du walking est doublée, en croches swinguées : long, court. C'est le balancement du blues, à jouer avec la charleston.",
+     "batterie": "shuffle",
+     "accords": "La7 | La7 | La7 | La7 | Ré7 | Ré7 | La7 | La7 | Mi7 | Ré7 | La7 | Mi7",
+     "swing": true
     },
     {
      "id": "l-reggae",
@@ -619,12 +645,13 @@
      "tempo": 75,
      "pas": 1,
      "mesures": 4,
-     "notes": "E3 A1 A5 A4 | A3 D2 D5 D4 | E1 E5 A3 A4 | A5 A3 E5 E4",
+     "notes": "E3 A1 A5 A4 | A3 D2 D5 D4 | E1 E5 A3 A4 | A5 D4# A3 E4",
      "consigne": "La dernière note de chaque mesure se trouve à une case de la première note de la mesure suivante : c'est l'approche chromatique.",
      "noms": true,
      "batterie": "jazz",
      "bemols": true,
-     "accords": "Solm7 | Do7 | Fa | Ré7"
+     "accords": "Solm7 | Do7 | Fa | Ré7",
+     "swing": true
     },
     {
      "id": "l-walking-2",
@@ -637,7 +664,8 @@
      "noms": true,
      "batterie": "jazz",
      "bemols": true,
-     "accords": "Solm7 | Do7 | Famaj7 | Rém7"
+     "accords": "Solm7 | Do7 | Famaj7 | Rém7",
+     "swing": true
     },
     {
      "id": "l-funk",
