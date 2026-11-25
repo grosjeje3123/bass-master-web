@@ -3,7 +3,7 @@
   {
    "id": "vide",
    "titre": "Cordes à vide",
-   "resume": "La main droite seule : un son régulier, puis l'alternance index-majeur et le passage d'une corde à l'autre.",
+   "resume": "La main droite seule : un son régulier, l'alternance index-majeur, les durées et les silences.",
    "exercices": [
     {
      "id": "v-mi",
@@ -58,6 +58,15 @@
      "noms": true
     },
     {
+     "id": "v-durees",
+     "titre": "Ronde, blanches, noires, croches",
+     "tempo": 60,
+     "pas": 2,
+     "mesures": 4,
+     "notes": "E0 . . . . . . . | E0 . . . E0 . . . | E0 . E0 . E0 . E0 . | E0 E0 E0 E0 E0 E0 E0 E0",
+     "consigne": "Une note de quatre temps, puis deux de deux temps, quatre d'un temps, huit d'un demi-temps. Le clic ne change pas : c'est toi qui le découpes."
+    },
+    {
      "id": "v-silences",
      "titre": "Noires et silences",
      "tempo": 60,
@@ -94,7 +103,7 @@
      "pas": 2,
      "mesures": 2,
      "notes": "E0 E0 A0 A0 D0 D0 G0 G0 | G0 G0 D0 D0 A0 A0 E0 E0",
-     "consigne": "On monte puis on redescend. L'alternance index-majeur continue en changeant de corde.",
+     "consigne": "On monte puis on redescend, en gardant l'alternance index-majeur.",
      "md": "i m i m i m i m i m i m i m i m"
     },
     {
@@ -106,44 +115,73 @@
      "notes": "E0 E0 E0 E0 E0 E0 E0 E0 | A0 A0 A0 A0 A0 A0 A0 A0 | D0 D0 D0 D0 D0 D0 D0 D0 | G0 G0 G0 G0 G0 G0 G0 G0",
      "consigne": "Quatre mesures sans s'arrêter : garde le même volume sur les quatre cordes.",
      "md": "i m i m i m i m i m i m i m i m i m i m i m i m i m i m i m i m"
+    },
+    {
+     "id": "v-mixte",
+     "titre": "Noires, croches et silences",
+     "tempo": 60,
+     "pas": 2,
+     "mesures": 2,
+     "notes": "E0 E0 E0 . x E0 E0 x | A0 . A0 A0 x A0 A0 x",
+     "consigne": "Continue à compter « 1 et 2 et 3 et 4 et », même pendant les notes longues et les silences."
+    },
+    {
+     "id": "v-lecture",
+     "titre": "Lire les cordes à vide sur la portée",
+     "tempo": 60,
+     "pas": 1,
+     "mesures": 2,
+     "notes": "E0 A0 D0 G0 | G0 D0 A0 E0",
+     "consigne": "Passe en affichage « Partition » et lis les notes : Mi sous la portée, La dans le premier interligne, Ré sur la ligne du milieu, Sol dans le dernier interligne."
     }
    ]
   },
   {
    "id": "gauche",
    "titre": "Main gauche",
-   "resume": "Un doigt par case, juste derrière la frette. D'abord lentement : c'est la netteté qui compte.",
+   "resume": "Des notes nettes sans forcer : quatre doigts au milieu du manche, trois dans le grave.",
    "exercices": [
     {
      "id": "g-mi",
-     "titre": "Quatre cases sur la corde de Mi",
-     "tempo": 50,
+     "titre": "Quatre doigts sur la corde de Mi",
+     "tempo": 55,
      "pas": 1,
      "mesures": 2,
-     "notes": "E1 E2 E3 E4 | E4 E3 E2 E1",
-     "consigne": "Index case 1, majeur case 2, annulaire case 3, auriculaire case 4. Garde les doigts déjà posés.",
+     "notes": "E5 E6 E7 E8 | E8 E7 E6 E5",
+     "consigne": "Cases 5 à 8 : index, majeur, annulaire, auriculaire. Place chaque doigt près de la frette, sans tenir la main en extension.",
      "md": "i m i m i m i m",
      "mg": "1 2 3 4 4 3 2 1"
     },
     {
      "id": "g-la",
-     "titre": "Quatre cases sur la corde de La",
-     "tempo": 50,
+     "titre": "Quatre doigts sur la corde de La",
+     "tempo": 55,
      "pas": 1,
      "mesures": 2,
-     "notes": "A1 A2 A3 A4 | A4 A3 A2 A1",
-     "consigne": "Même exercice une corde plus haut.",
+     "notes": "A5 A6 A7 A8 | A8 A7 A6 A5",
+     "consigne": "Même exercice une corde plus loin.",
      "md": "i m i m i m i m",
      "mg": "1 2 3 4 4 3 2 1"
     },
     {
+     "id": "g-grave",
+     "titre": "Les premières cases : index et auriculaire",
+     "tempo": 55,
+     "pas": 1,
+     "mesures": 2,
+     "notes": "E0 E1 E3 E1 | A0 A2 A3 A2",
+     "consigne": "Dans le grave, les cases sont larges : la case 3 se joue avec l'auriculaire. Relâche la pression entre les notes.",
+     "mg": "0 1 4 1 0 2 4 2",
+     "noms": true
+    },
+    {
      "id": "g-toutes",
-     "titre": "Quatre cases, quatre cordes",
-     "tempo": 50,
+     "titre": "Quatre doigts, quatre cordes",
+     "tempo": 55,
      "pas": 1,
      "mesures": 4,
-     "notes": "E1 E2 E3 E4 | A1 A2 A3 A4 | D1 D2 D3 D4 | G1 G2 G3 G4",
-     "consigne": "Une mesure par corde. La main ne bouge pas, seuls les doigts changent de corde.",
+     "notes": "E5 E6 E7 E8 | A5 A6 A7 A8 | D5 D6 D7 D8 | G5 G6 G7 G8",
+     "consigne": "Une mesure par corde. La main suit les doigts par de petits mouvements, sans changer de zone.",
      "md": "i m i m i m i m i m i m i m i m",
      "mg": "1 2 3 4 1 2 3 4 1 2 3 4 1 2 3 4"
     },
@@ -153,7 +191,7 @@
      "tempo": 50,
      "pas": 1,
      "mesures": 2,
-     "notes": "E1 E3 E2 E4 | A1 A3 A2 A4",
+     "notes": "E5 E7 E6 E8 | A5 A7 A6 A8",
      "consigne": "Les doigts ne se suivent plus : chacun doit trouver sa case tout seul.",
      "md": "i m i m i m i m",
      "mg": "1 3 2 4 1 3 2 4"
@@ -164,18 +202,18 @@
      "tempo": 50,
      "pas": 1,
      "mesures": 2,
-     "notes": "E1 E2 E4 E3 | A1 A2 A4 A3",
+     "notes": "E5 E6 E8 E7 | A5 A6 A8 A7",
      "consigne": "L'auriculaire et l'annulaire travaillent ensemble.",
      "md": "i m i m i m i m",
      "mg": "1 2 4 3 1 2 4 3"
     },
     {
      "id": "g-croches",
-     "titre": "Quatre cases en croches",
+     "titre": "Quatre doigts en croches",
      "tempo": 50,
      "pas": 2,
      "mesures": 2,
-     "notes": "E1 E2 E3 E4 A1 A2 A3 A4 | D1 D2 D3 D4 G1 G2 G3 G4",
+     "notes": "E5 E6 E7 E8 A5 A6 A7 A8 | D5 D6 D7 D8 G5 G6 G7 G8",
      "consigne": "Deux notes par clic, sur les quatre cordes.",
      "md": "i m i m i m i m i m i m i m i m",
      "mg": "1 2 3 4 1 2 3 4 1 2 3 4 1 2 3 4"
@@ -185,7 +223,7 @@
   {
    "id": "notes",
    "titre": "Les notes du manche",
-   "resume": "Mettre un nom sur les cases : les notes des cordes de Mi et de La, puis une gamme.",
+   "resume": "Mettre un nom sur les cases : les notes naturelles des quatre cordes, en première position.",
    "exercices": [
     {
      "id": "n-mi",
@@ -195,7 +233,7 @@
      "mesures": 2,
      "notes": "E0 E1 E3 E1 | E0 E3 E0 .",
      "consigne": "Corde de Mi : à vide, c'est Mi ; case 1, Fa ; case 3, Sol.",
-     "mg": "0 1 3 1 0 3 0",
+     "mg": "0 1 4 1 0 4 0",
      "noms": true
     },
     {
@@ -206,7 +244,7 @@
      "mesures": 2,
      "notes": "A0 A2 A3 A2 | A0 A3 A0 .",
      "consigne": "Corde de La : à vide, c'est La ; case 2, Si ; case 3, Do.",
-     "mg": "0 2 3 2 0 3 0",
+     "mg": "0 2 4 2 0 4 0",
      "noms": true
     },
     {
@@ -217,29 +255,29 @@
      "mesures": 2,
      "notes": "E0 E1 E3 A0 | A2 A3 A2 A0",
      "consigne": "Les six notes à la suite, sur deux cordes.",
-     "mg": "0 1 3 0 2 3 2 0",
+     "mg": "0 1 4 0 2 4 2 0",
      "noms": true
     },
     {
-     "id": "n-gamme-do",
-     "titre": "La gamme de Do majeur",
-     "tempo": 55,
+     "id": "n-re-sol",
+     "titre": "Ré, Mi, Fa, puis Sol, La, Si",
+     "tempo": 60,
      "pas": 1,
      "mesures": 2,
-     "notes": "A3 A5 D2 D3 | D5 G2 G4 G5",
-     "consigne": "Do, Ré, Mi, Fa, Sol, La, Si, Do. La main reste en place : index en case 2.",
-     "mg": "2 4 1 2 4 1 3 4",
+     "notes": "D0 D2 D3 D2 | G0 G2 G4 G2",
+     "consigne": "Les notes naturelles des deux cordes aiguës. Pour le Si, case 4, la main avance d'une case.",
+     "mg": "0 2 4 2 0 1 4 1",
      "noms": true
     },
     {
-     "id": "n-penta-la",
-     "titre": "La pentatonique mineure de La",
-     "tempo": 55,
+     "id": "n-melodie",
+     "titre": "Une petite mélodie en Do",
+     "tempo": 60,
      "pas": 1,
-     "mesures": 2,
-     "notes": "E5 E8 A5 A7 | D5 D7 A7 A5",
-     "consigne": "Cinq notes qui servent partout, du blues au rock. Index en case 5.",
-     "mg": "1 4 1 3 1 3 3 1",
+     "mesures": 4,
+     "notes": "A3 . D0 D2 | D3 . D2 D0 | A3 A2 A0 A2 | A3 . . .",
+     "consigne": "Do, Ré, Mi, Fa, et retour. Lis d'abord les noms, puis essaie en affichage « Partition ».",
+     "mg": "4 0 2 4 2 0 4 2 0 2 4",
      "noms": true
     }
    ]
@@ -267,7 +305,7 @@
      "pas": 2,
      "mesures": 2,
      "notes": "E0 E0 E0 E0 E0 E0 E0 E0 | E0 E0 E0 E0 E0 E0 E0 E0",
-     "consigne": "Huit croches par mesure, toutes au même volume : c'est la base du rock.",
+     "consigne": "Huit croches par mesure, égales et régulières.",
      "md": "i m i m i m i m i m i m i m i m",
      "batterie": "rock"
     },
@@ -282,30 +320,6 @@
      "batterie": "rock2"
     },
     {
-     "id": "r-quinte",
-     "titre": "Fondamentale et quinte",
-     "tempo": 70,
-     "pas": 1,
-     "mesures": 2,
-     "notes": "A0 . D2 . | A0 . D2 .",
-     "consigne": "La (corde à vide) puis Mi, sa quinte : une corde au-dessus, deux cases plus loin.",
-     "mg": "0 2 0 2",
-     "noms": true,
-     "batterie": "noires"
-    },
-    {
-     "id": "r-octave",
-     "titre": "Fondamentale et octave",
-     "tempo": 65,
-     "pas": 2,
-     "mesures": 2,
-     "notes": "E0 D2 E0 D2 E0 D2 E0 D2 | E0 D2 E0 D2 E0 D2 E0 D2",
-     "consigne": "Le même Mi, grave puis aigu : deux cordes au-dessus, deux cases plus loin.",
-     "mg": "0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1",
-     "noms": true,
-     "batterie": "rock"
-    },
-    {
      "id": "r-la-re",
      "titre": "Deux accords : La et Ré",
      "tempo": 70,
@@ -314,91 +328,321 @@
      "notes": "A0 A0 A0 A0 A0 A0 A0 A0 | D0 D0 D0 D0 D0 D0 D0 D0",
      "consigne": "Une mesure de La, une mesure de Ré. Change de corde pile sur le premier temps.",
      "md": "i m i m i m i m i m i m i m i m",
+     "batterie": "rock",
+     "accords": "La | Ré"
+    },
+    {
+     "id": "r-sync",
+     "titre": "Jouer entre les temps",
+     "tempo": 60,
+     "pas": 2,
+     "mesures": 2,
+     "notes": "E0 . x E0 . x E0 . | A0 . x A0 . x A0 .",
+     "consigne": "La deuxième note arrive sur le « et » de 2. Continue à compter les temps pendant qu'elle dure.",
+     "batterie": "rock"
+    },
+    {
+     "id": "r-quinte",
+     "titre": "Fondamentale et quinte",
+     "tempo": 70,
+     "pas": 1,
+     "mesures": 2,
+     "notes": "A0 . D2 . | A0 . D2 .",
+     "consigne": "La (corde à vide) puis Mi, sa quinte : une corde vers l'aigu, deux cases plus loin.",
+     "mg": "0 2 0 2",
+     "noms": true,
+     "batterie": "noires"
+    },
+    {
+     "id": "r-octave-lent",
+     "titre": "Premiers sauts d'octave",
+     "tempo": 60,
+     "pas": 1,
+     "mesures": 2,
+     "notes": "E0 . D2 . | A0 . G2 .",
+     "consigne": "La note grave, puis son octave. Étouffe la première corde avant de sauter.",
+     "mg": "0 1 0 1",
+     "noms": true,
+     "batterie": "noires"
+    },
+    {
+     "id": "r-octave",
+     "titre": "Fondamentale et octave, en croches",
+     "tempo": 65,
+     "pas": 2,
+     "mesures": 2,
+     "notes": "E0 D2 E0 D2 E0 D2 E0 D2 | E0 D2 E0 D2 E0 D2 E0 D2",
+     "consigne": "Le même Mi, grave puis aigu : deux cordes vers l'aigu, deux cases plus loin.",
+     "mg": "0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1",
+     "noms": true,
      "batterie": "rock"
     },
     {
      "id": "r-blues",
-     "titre": "Les fondamentales d'un blues en La",
+     "titre": "Trois fondamentales : La, Ré, Mi",
      "tempo": 70,
      "pas": 2,
      "mesures": 4,
      "notes": "A0 A0 A0 A0 A0 A0 A0 A0 | D0 D0 D0 D0 D0 D0 D0 D0 | E0 E0 E0 E0 E0 E0 E0 E0 | A0 A0 A0 A0 A0 A0 A0 A0",
-     "consigne": "La, Ré, Mi, La : les trois accords du blues, une mesure chacun.",
+     "consigne": "Les trois fondamentales du blues en La, trois cordes à vide. Une mesure chacune, puis retour au La.",
      "md": "i m i m i m i m i m i m i m i m i m i m i m i m i m i m i m i m",
      "noms": true,
-     "batterie": "rock"
+     "batterie": "rock",
+     "accords": "La | Ré | Mi | La"
+    },
+    {
+     "id": "r-blues-12",
+     "titre": "Les douze mesures du blues",
+     "tempo": 65,
+     "pas": 1,
+     "mesures": 12,
+     "notes": "A0 . A0 . | A0 . A0 . | A0 . A0 . | A0 . A0 . | D0 . D0 . | D0 . D0 . | A0 . A0 . | A0 . A0 . | E0 . E0 . | D0 . D0 . | A0 . A0 . | E0 . E0 .",
+     "consigne": "Suis la grille en ne jouant que les fondamentales, deux par mesure. Compte les mesures : c'est la forme qu'il faut retenir.",
+     "noms": true,
+     "batterie": "blues",
+     "accords": "La7 | La7 | La7 | La7 | Ré7 | Ré7 | La7 | La7 | Mi7 | Ré7 | La7 | Mi7"
+    },
+    {
+     "id": "r-doubles",
+     "titre": "Premières doubles croches",
+     "tempo": 60,
+     "pas": 4,
+     "mesures": 2,
+     "notes": "E0 . . . E0 E0 x x E0 . . . x x E0 x | A0 . . . A0 A0 x x A0 . . . x x A0 x",
+     "consigne": "Quatre subdivisions par temps : « 1 e et a ». Une seule corde, pour ne penser qu'aux attaques et aux silences.",
+     "batterie": "funk"
+    }
+   ]
+  },
+  {
+   "id": "gammes",
+   "titre": "Gammes et arpèges",
+   "resume": "Les notes qui vont ensemble : gamme majeure, gamme mineure, pentatoniques, arpèges des accords.",
+   "exercices": [
+    {
+     "id": "n-gamme-do",
+     "titre": "La gamme de Do majeur",
+     "tempo": 55,
+     "pas": 1,
+     "mesures": 2,
+     "notes": "A3 A5 D2 D3 | D5 G2 G4 G5",
+     "consigne": "Do, Ré, Mi, Fa, Sol, La, Si, Do. La main reste en place : index en case 2.",
+     "mg": "2 4 1 2 4 1 3 4",
+     "noms": true
+    },
+    {
+     "id": "ga-do",
+     "titre": "Do majeur : montée et descente",
+     "tempo": 55,
+     "pas": 1,
+     "mesures": 4,
+     "notes": "A3 A5 D2 D3 | D5 G2 G4 G5 | G5 G4 G2 D5 | D3 D2 A5 A3",
+     "consigne": "Monte et redescends la gamme. Repère les deux demi-tons : Mi-Fa et Si-Do, une seule case d'écart.",
+     "mg": "2 4 1 2 4 1 3 4 4 3 1 4 2 1 4 2",
+     "noms": true
+    },
+    {
+     "id": "ga-la-min",
+     "titre": "La mineur naturel",
+     "tempo": 55,
+     "pas": 1,
+     "mesures": 4,
+     "notes": "E5 E7 E8 A5 | A7 A8 D5 D7 | D7 D5 A8 A7 | A5 E8 E7 E5",
+     "consigne": "Les mêmes notes que Do majeur, en partant de La : la couleur change. Reste entre les cases 5 et 8.",
+     "mg": "1 3 4 1 3 4 1 3 3 1 4 3 1 4 3 1",
+     "noms": true
+    },
+    {
+     "id": "n-penta-la",
+     "titre": "La pentatonique mineure de La",
+     "tempo": 55,
+     "pas": 1,
+     "mesures": 2,
+     "notes": "E5 E8 A5 A7 | D5 D7 A7 A5",
+     "consigne": "Cinq notes qui servent partout, du blues au rock : La, Do, Ré, Mi, Sol. Index en case 5.",
+     "mg": "1 4 1 3 1 3 3 1",
+     "noms": true
+    },
+    {
+     "id": "ga-penta-do",
+     "titre": "La pentatonique majeure de Do",
+     "tempo": 60,
+     "pas": 1,
+     "mesures": 2,
+     "notes": "A3 A5 D2 D5 | G2 G5 G2 D5",
+     "consigne": "Les mêmes cinq notes que la pentatonique mineure de La, mais en partant du Do.",
+     "mg": "2 4 1 4 1 4 1 4",
+     "noms": true
+    },
+    {
+     "id": "ga-triades",
+     "titre": "Arpèges majeurs et mineurs",
+     "tempo": 60,
+     "pas": 1,
+     "mesures": 4,
+     "notes": "A3 D2 D5 D2 | A0 A3 D2 A3 | E1 A0 A3 A0 | E3 A2 D0 A2",
+     "consigne": "Fondamentale, tierce, quinte, tierce, sur quatre accords. Écoute la tierce : majeure sur Do, Fa et Sol, mineure sur La.",
+     "noms": true,
+     "batterie": "noires",
+     "accords": "Do | Lam | Fa | Sol"
+    },
+    {
+     "id": "ga-septiemes",
+     "titre": "Les accords de septième",
+     "tempo": 60,
+     "pas": 1,
+     "mesures": 4,
+     "notes": "A3 D2 D5 G4 | A5 D3 D7 G5 | E3 A2 D0 D3 | A3 D2 D5 .",
+     "consigne": "Quatre notes par accord : fondamentale, tierce, quinte, septième. Trois couleurs de septième, puis retour sur Do.",
+     "noms": true,
+     "batterie": "jazz",
+     "accords": "Domaj7 | Rém7 | Sol7 | Do"
     }
    ]
   },
   {
    "id": "lignes",
    "titre": "Lignes et styles",
-   "resume": "De vraies lignes de basse avec la batterie : rock, pop, blues, reggae, disco, funk, walking.",
+   "resume": "De vraies lignes de basse avec la batterie : rock, pop, blues, reggae, disco, jazz, funk.",
    "exercices": [
     {
      "id": "l-rock",
-     "titre": "Rock : un riff en Mi",
-     "tempo": 90,
+     "titre": "Rock : croches en Mi",
+     "tempo": 80,
      "pas": 2,
      "mesures": 4,
      "notes": "E0 E0 E0 E0 E3 E3 E0 E0 | E0 E0 E0 E0 A0 A0 E3 E3 | E0 E0 E0 E0 E3 E3 E0 E0 | A0 A0 E3 E3 E0 . . .",
-     "consigne": "Le Mi grave fait le moteur, le Sol et le La donnent le relief. Toutes les croches au même volume.",
+     "consigne": "Le Mi grave fait le moteur, le Sol et le La donnent le relief. Garde les croches égales.",
+     "batterie": "rock"
+    },
+    {
+     "id": "l-rock-2",
+     "titre": "Rock : un riff en Mi",
+     "tempo": 80,
+     "pas": 2,
+     "mesures": 4,
+     "notes": "E0 . E0 E0 E3 . A0 x | E0 E0 x E0 A2 A0 E3 . | E0 . E0 E0 E3 . A0 x | A0 . E3 E0 E0 . x x",
+     "consigne": "Une question, une réponse : les mesures 1 et 3 posent le riff, la 2 répond avec le Si, la 4 conclut. Respecte les silences.",
      "batterie": "rock"
     },
     {
      "id": "l-ballade",
      "titre": "Pop : ballade en Do",
-     "tempo": 70,
+     "tempo": 65,
      "pas": 2,
      "mesures": 4,
-     "notes": "A3 . . D5 G5 . D5 . | E5 . . A7 D7 . A7 . | E1 . . A3 D3 . A3 . | E3 . . A5 D5 . E3 .",
-     "consigne": "Do, La mineur, Fa, Sol. Sur chaque accord : la fondamentale, sa quinte, son octave. Laisse chanter les notes longues.",
-     "batterie": "noires"
+     "notes": "A3 . . A3 D2 . D0 . | A0 . . A0 A3 . A2 . | E1 . . E1 A3 . A0 . | E3 . . E3 D0 . A2 .",
+     "consigne": "Laisse sonner les notes longues. Les deux dernières notes de chaque mesure conduisent à l'accord suivant : le Si final ramène au Do.",
+     "batterie": "noires",
+     "accords": "Do | Lam | Fa | Sol"
     },
     {
      "id": "l-pop",
      "titre": "Pop : huit mesures en Sol",
-     "tempo": 90,
+     "tempo": 80,
      "pas": 2,
      "mesures": 8,
      "notes": "E3 . . E3 E3 . A5 . | A5 . . A5 A5 . E5 . | E0 . . E0 E0 . A2 . | A3 . . A3 A3 . A2 . | E3 . . E3 E3 . D5 . | A5 . . A5 A5 . D7 . | E0 . . E0 E0 . A2 . | A3 . . A3 A3 A2 A0 E2",
-     "consigne": "Sol, Ré, Mi mineur, Do, deux fois. Le rythme reste le même ; à la fin, une descente ramène au Sol.",
-     "batterie": "rock"
+     "consigne": "La même cellule sur quatre accords, deux fois. À la fin, une descente ramène au Sol.",
+     "batterie": "rock",
+     "accords": "Sol | Ré | Mim | Do | Sol | Ré | Mim | Do"
+    },
+    {
+     "id": "l-pop-2",
+     "titre": "Pop : huit mesures qui s'animent",
+     "tempo": 80,
+     "pas": 2,
+     "mesures": 8,
+     "notes": "E3 . . E3 D0 . D0 . | D0 . . D0 A0 . E2 . | E0 . E0 . E3 . A2 . | A3 . . A3 D2 . E2 . | E3 . . E3 A2 . D0 . | D0 . . D0 A0 A0 E2 . | E0 . E0 . E3 . A2 . | A3 . . A3 A3 A2 A0 E2",
+     "consigne": "Même grille, mais la ligne bouge davantage : le Fa dièse fait le lien entre les accords, la seconde moitié est plus mobile.",
+     "batterie": "rock",
+     "accords": "Sol | Ré | Mim | Do | Sol | Ré | Mim | Do"
     },
     {
      "id": "l-blues",
-     "titre": "Blues : walking en La, douze mesures",
-     "tempo": 90,
+     "titre": "Blues : walking en La",
+     "tempo": 75,
      "pas": 1,
      "mesures": 12,
      "notes": "E5 A4 A7 D4 | D7 D4 A7 A4 | E5 A4 A7 D4 | D7 D4 A7 A4 | A5 D4 D7 G4 | G7 G4 D7 D4 | E5 A4 A7 D4 | D7 D4 A7 A4 | A7 D6 D9 G6 | A5 D4 D7 G4 | E5 A4 A7 D4 | A7 D6 D9 D6",
-     "consigne": "Une note par temps, sans trou : fondamentale, tierce, quinte, sixte. La même forme se déplace sur La, Ré et Mi.",
-     "batterie": "blues"
+     "consigne": "Une note par temps. En montant : fondamentale, tierce, quinte, sixte. En descendant : octave, sixte, quinte, tierce. La même forme sur La, Ré et Mi.",
+     "batterie": "blues",
+     "accords": "La7 | La7 | La7 | La7 | Ré7 | Ré7 | La7 | La7 | Mi7 | Ré7 | La7 | Mi7"
+    },
+    {
+     "id": "l-blues-2",
+     "titre": "Blues : walking avec les septièmes",
+     "tempo": 75,
+     "pas": 1,
+     "mesures": 12,
+     "notes": "E5 A4 A7 D4 | D7 D5 D4 A7 | E5 A4 A7 D5 | D7 D5 D4 A4 | A5 D4 D7 G4 | G7 G5 G4 D7 | E5 A4 A7 D4 | D7 D5 D4 A6 | A7 D6 D9 G7 | A5 D4 D7 G5 | E5 A4 A7 D5 | E0 E4 A2 E4",
+     "consigne": "La septième mineure (Sol sur La7, Do sur Ré7, Ré sur Mi7) donne la couleur du blues. La dernière mesure descend dans le grave avant de revenir au La.",
+     "batterie": "blues",
+     "accords": "La7 | La7 | La7 | La7 | Ré7 | Ré7 | La7 | La7 | Mi7 | Ré7 | La7 | Mi7"
     },
     {
      "id": "l-reggae",
      "titre": "Reggae en La mineur",
-     "tempo": 75,
+     "tempo": 70,
      "pas": 2,
      "mesures": 4,
-     "notes": "x E5 E5 x A7 A5 E5 x | x E5 E5 x E8 E5 E3 x | x E3 E3 x A5 A2 E3 x | x E3 E3 x A2 A3 A5 x",
-     "consigne": "Le premier temps reste vide : c'est le silence qui fait le style. Notes rondes et courtes, bien étouffées.",
-     "batterie": "reggae"
+     "notes": "x x x E5 A7 . E5 . | x x E5 E8 A7 . A5 x | x x x E3 A5 . E3 . | x x E3 A2 A3 . E4 x",
+     "consigne": "Laisse passer le premier temps, puis donne du poids aux notes longues : la basse retrouve la grosse caisse sur le troisième temps.",
+     "batterie": "reggae",
+     "accords": "Lam | Lam | Sol | Sol"
     },
     {
      "id": "l-disco",
      "titre": "Disco : les octaves",
-     "tempo": 100,
+     "tempo": 85,
      "pas": 2,
      "mesures": 4,
      "notes": "E5 D7 E5 D7 E5 D7 E5 D7 | E5 D7 E5 D7 E5 D7 E5 D7 | E1 D3 E1 D3 E1 D3 E1 D3 | E3 D5 E3 D5 E3 D5 E3 E4",
-     "consigne": "Grave sur le temps, aigu entre les temps, la main gauche garde la même forme. La dernière note monte vers le La.",
-     "batterie": "disco"
+     "consigne": "Grave sur le temps, aigu entre les temps, la main gauche garde la même forme. La dernière note, Sol dièse, monte vers le La.",
+     "batterie": "disco",
+     "accords": "Lam | Lam | Fa | Sol"
+    },
+    {
+     "id": "l-disco-2",
+     "titre": "Disco : octaves et variations",
+     "tempo": 85,
+     "pas": 2,
+     "mesures": 4,
+     "notes": "E5 D7 E5 D7 E5 D7 A7 . | E5 D7 E5 x E5 D7 A7 D7 | E1 D3 E1 D3 E1 D3 A3 . | E3 D5 E3 D5 E3 D5 E3 E4",
+     "consigne": "Les octaves respirent : une quinte tenue en fin de mesure, un silence au milieu. Ne laisse pas résonner les cordes voisines.",
+     "batterie": "disco",
+     "accords": "Lam | Lam | Fa | Sol"
+    },
+    {
+     "id": "l-walking",
+     "titre": "Jazz : walking en Fa",
+     "tempo": 75,
+     "pas": 1,
+     "mesures": 4,
+     "notes": "E3 A1 A5 A4 | A3 D2 D5 D4 | E1 E5 A3 A4 | A5 A3 E5 E4",
+     "consigne": "La dernière note de chaque mesure se trouve à une case de la première note de la mesure suivante : c'est l'approche chromatique.",
+     "noms": true,
+     "batterie": "jazz",
+     "bemols": true,
+     "accords": "Solm7 | Do7 | Fa | Ré7"
+    },
+    {
+     "id": "l-walking-2",
+     "titre": "Jazz : walking, approches variées",
+     "tempo": 75,
+     "pas": 1,
+     "mesures": 4,
+     "notes": "E3 A1 A5 A4 | A3 D2 D5 D4 | E1 E5 A3 D2 | A5 D3 A3 E4",
+     "consigne": "On relie les accords tantôt par une case (approche chromatique), tantôt par une note de la gamme : le Mi descend d'un ton vers le Ré.",
+     "noms": true,
+     "batterie": "jazz",
+     "bemols": true,
+     "accords": "Solm7 | Do7 | Famaj7 | Rém7"
     },
     {
      "id": "l-funk",
      "titre": "Funk en Mi",
-     "tempo": 70,
+     "tempo": 65,
      "pas": 4,
      "mesures": 4,
      "notes": "E0 . x E0 x D2 x E0 x E0 D2 x A0 . E3 . | E0 . x E0 x D2 x E0 x D2 . x D0 . D2 . | E0 . x E0 x D2 x E0 x E0 D2 x A0 . E3 . | E0 . x E0 x D2 x E0 E3 . A0 . A2 . D0 .",
@@ -406,16 +650,78 @@
      "batterie": "funk"
     },
     {
-     "id": "l-walking",
-     "titre": "Jazz : walking en Fa",
-     "tempo": 90,
+     "id": "l-funk-2",
+     "titre": "Funk : question et réponse",
+     "tempo": 65,
+     "pas": 4,
+     "mesures": 4,
+     "notes": "E0 . x E0 x D2 x E0 x x A2 . D0 x E0 x | E0 . x E0 x D2 . x E3 x A0 . x A2 x x | E0 . x E0 x D2 x E0 x x A0 . E3 x E0 x | E0 . x E0 x D2 x E0 x E3 x A0 A2 . D0 x",
+     "consigne": "Le début de chaque mesure pose la question, la fin répond autrement à chaque fois. Les notes sont celles de la pentatonique mineure de Mi.",
+     "batterie": "funk"
+    }
+   ]
+  },
+  {
+   "id": "construire",
+   "titre": "Construire une ligne",
+   "resume": "Une même grille, Do, Sol, La mineur, Fa, habillée de plus en plus : comment un bassiste choisit ses notes.",
+   "exercices": [
+    {
+     "id": "cl-fond",
+     "titre": "Une grille, quatre fondamentales",
+     "tempo": 65,
      "pas": 1,
      "mesures": 4,
-     "notes": "E3 A1 A5 A4 | A3 D2 D5 D4 | E1 E5 A3 A4 | A5 A3 E5 E4",
-     "consigne": "Sol mineur, Do, Fa, puis Ré pour revenir. La dernière note de chaque mesure glisse d'une case vers la suivante.",
+     "notes": "A3 . A3 . | E3 . E3 . | A0 . A0 . | E1 . E1 .",
+     "consigne": "Seulement la fondamentale de chaque accord. Change de note au début de la mesure : la basse fait déjà son travail.",
      "noms": true,
-     "batterie": "jazz",
-     "bemols": true
+     "batterie": "noires",
+     "accords": "Do | Sol | Lam | Fa"
+    },
+    {
+     "id": "cl-accord",
+     "titre": "Ajouter la quinte et l'octave",
+     "tempo": 65,
+     "pas": 2,
+     "mesures": 4,
+     "notes": "A3 . D5 . G5 . D5 . | E3 . A5 . D5 . A5 . | E5 . A7 . D7 . A7 . | E1 . A3 . D3 . A3 .",
+     "consigne": "Fondamentale, quinte, octave, quinte. La grille n'a pas changé, la ligne est plus pleine.",
+     "batterie": "rock",
+     "accords": "Do | Sol | Lam | Fa"
+    },
+    {
+     "id": "cl-passage",
+     "titre": "Relier les accords",
+     "tempo": 65,
+     "pas": 1,
+     "mesures": 4,
+     "notes": "A3 . D2 D3 | D5 . A2 E4 | E5 . A3 E0 | E1 . E3 A2",
+     "consigne": "Écoute la dernière note de chaque mesure : elle est choisie pour mener à l'accord suivant. Le Sol dièse mène au La, le Mi au Fa, le Si au Do.",
+     "noms": true,
+     "batterie": "noires",
+     "accords": "Do | Sol | Lam | Fa"
+    },
+    {
+     "id": "cl-rythme",
+     "titre": "Changer le rythme, pas la grille",
+     "tempo": 65,
+     "pas": 2,
+     "mesures": 4,
+     "notes": "A3 . x A3 D2 . D5 x | E3 . x E3 D0 . A2 x | A0 . x A0 A3 . D2 x | E1 . x E1 A0 . A2 x",
+     "consigne": "Les mêmes accords, mais une partie des notes tombe entre les temps. Les silences donnent le relief.",
+     "batterie": "rock",
+     "accords": "Do | Sol | Lam | Fa"
+    },
+    {
+     "id": "cl-variation",
+     "titre": "Une ligne complète de huit mesures",
+     "tempo": 75,
+     "pas": 2,
+     "mesures": 8,
+     "notes": "A3 . . A3 D2 . D5 . | E3 . . E3 A2 . D0 . | A0 . . A0 A3 . D2 . | E1 . . E1 A0 . A2 . | A3 . D2 . D5 . D2 . | E3 . A2 . D0 . E4 . | E5 . A7 . A5 . E0 . | E1 . A0 . A3 A2 A0 A2",
+     "consigne": "Quatre mesures installent un motif, les quatre suivantes le font évoluer. La dernière prépare le retour au Do.",
+     "batterie": "rock",
+     "accords": "Do | Sol | Lam | Fa | Do | Sol | Lam | Fa"
     }
    ]
   }
