@@ -438,6 +438,213 @@
    ]
   },
   {
+   "id": "rythme",
+   "titre": "Lire le rythme",
+   "resume": "Les figures de rythme une à une, sur des notes simples : silences, contretemps, syncopes, doubles croches.",
+   "exercices": [
+    {
+     "id": "ry-soupir-3",
+     "titre": "Le soupir sur le 3",
+     "tempo": 70,
+     "pas": 1,
+     "mesures": 2,
+     "notes": "A0 A0 x A0 | D0 D0 x D0",
+     "consigne": "Sur le troisième temps, la corde se tait : le silence se joue aussi net qu'une note.",
+     "batterie": "noires",
+     "accords": "La | Ré"
+    },
+    {
+     "id": "ry-soupir-1",
+     "titre": "Le soupir sur le 1",
+     "tempo": 70,
+     "pas": 1,
+     "mesures": 2,
+     "notes": "x A0 A0 A0 | x D0 D0 D0",
+     "consigne": "Le premier temps est vide : la grosse caisse le joue sans toi. Compte « 1 » dans ta tête et entre sur le 2.",
+     "batterie": "noires",
+     "accords": "La | Ré"
+    },
+    {
+     "id": "ry-demi-pause",
+     "titre": "La demi-pause",
+     "tempo": 70,
+     "pas": 1,
+     "mesures": 4,
+     "notes": "A0 . x x | D0 . x x | A0 A0 x x | E0 . x x",
+     "consigne": "Deux temps de son, deux temps de silence. La demi-pause, posée sur la troisième ligne, vaut une blanche.",
+     "batterie": "rock",
+     "accords": "La | Ré | La | Mi"
+    },
+    {
+     "id": "ry-pause",
+     "titre": "La pause : une mesure de silence",
+     "tempo": 70,
+     "pas": 1,
+     "mesures": 4,
+     "notes": "A0 A0 A0 A0 | x x x x | D0 D0 D0 D0 | x x x x",
+     "consigne": "Une mesure jouée, une mesure vide. Pendant la pause, compte les quatre temps et étouffe la corde.",
+     "batterie": "rock",
+     "accords": "La | La | Ré | Ré"
+    },
+    {
+     "id": "ry-contretemps",
+     "titre": "Le contretemps",
+     "tempo": 65,
+     "pas": 2,
+     "mesures": 2,
+     "notes": "x A0 x A0 x A0 x A0 | x D0 x D0 x D0 x D0",
+     "consigne": "Toutes les notes tombent sur les « et », entre les clics. Le demi-soupir, sur le temps, se compte sans jouer.",
+     "batterie": "rock",
+     "accords": "La | Ré"
+    },
+    {
+     "id": "ry-piquees",
+     "titre": "Croches courtes",
+     "tempo": 70,
+     "pas": 2,
+     "mesures": 2,
+     "notes": "A0 x A0 x A0 x A0 x | D0 x D0 x E0 x E0 x",
+     "consigne": "Une croche, puis un demi-soupir : la note s'arrête à mi-temps. Coupe-la en reposant un doigt sur la corde.",
+     "batterie": "rock",
+     "accords": "La | Ré Mi"
+    },
+    {
+     "id": "ry-noire-croches",
+     "titre": "Noire, deux croches",
+     "tempo": 70,
+     "pas": 2,
+     "mesures": 2,
+     "notes": "A0 . A0 A0 A0 . A0 A0 | D0 . D0 D0 E0 . x x",
+     "consigne": "La noire dure jusqu'au temps suivant, les deux croches se partagent celui-ci. Compte « 1 et 2 et » sans t'arrêter.",
+     "batterie": "rock",
+     "accords": "La | Ré Mi"
+    },
+    {
+     "id": "ry-melange-1",
+     "titre": "Croches et silences",
+     "tempo": 70,
+     "pas": 2,
+     "mesures": 4,
+     "notes": "A0 A0 x A0 A0 . x A0 | D0 D0 x D0 D0 . x x | A0 A0 x A0 A0 . x A0 | E0 . E0 . x E0 x E0",
+     "consigne": "Les silences changent de place d'une mesure à l'autre. Lis d'abord la ligne en disant le rythme, puis joue-la.",
+     "batterie": "rock",
+     "accords": "La | Ré | La | Mi"
+    },
+    {
+     "id": "ry-syncope",
+     "titre": "Croche, noire, croche",
+     "tempo": 65,
+     "pas": 2,
+     "mesures": 2,
+     "notes": "A0 A0 . A0 A0 . A0 A0 | D0 D0 . D0 E0 . E0 .",
+     "consigne": "La noire du milieu commence sur le « et » de 1 et passe par-dessus le 2. Pense le 2 sans le jouer.",
+     "batterie": "rock",
+     "accords": "La | Ré Mi"
+    },
+    {
+     "id": "ry-pointee",
+     "titre": "La noire pointée",
+     "tempo": 70,
+     "pas": 2,
+     "mesures": 2,
+     "notes": "A0 . . A0 A0 . A0 A0 | D0 . . D0 E0 . . E0",
+     "consigne": "Un temps et demi, puis une croche sur le « et » de 2 : une note longue, une courte qui relance.",
+     "batterie": "rock",
+     "accords": "La | Ré Mi"
+    },
+    {
+     "id": "ry-sync-ligne",
+     "titre": "Une ligne syncopée",
+     "tempo": 70,
+     "pas": 2,
+     "mesures": 4,
+     "notes": "A0 . . A0 x A0 A0 . | E1 E1 . E1 x E1 E1 . | A3 . . A3 x A3 A3 . | E3 E3 . E3 E3 . E3 E3",
+     "consigne": "Les figures de la leçon dans une grille. La main gauche change de case à chaque mesure : Fa en case 1, Do et Sol en case 3.",
+     "noms": true,
+     "batterie": "rock",
+     "accords": "Lam | Fa | Do | Sol"
+    },
+    {
+     "id": "ry-quatre-doubles",
+     "titre": "Quatre doubles croches",
+     "tempo": 60,
+     "pas": 4,
+     "mesures": 2,
+     "notes": "A0 A0 A0 A0 A0 . . . A0 A0 A0 A0 A0 . . . | D0 D0 D0 D0 D0 . . . E0 E0 E0 E0 E0 . . .",
+     "consigne": "Quatre doubles croches, puis une noire. Compte « 1 e et a 2 » : les doigts alternent sans jamais s'arrêter.",
+     "md": "i m i m i m i m i m i m i m i m i m i m",
+     "batterie": "rock",
+     "accords": "La | Ré Mi"
+    },
+    {
+     "id": "ry-croche-doubles",
+     "titre": "Croche et doubles croches",
+     "tempo": 60,
+     "pas": 4,
+     "mesures": 2,
+     "notes": "A0 . A0 A0 A0 . A0 A0 A0 A0 A0 . A0 A0 A0 . | D0 . D0 D0 D0 . D0 D0 E0 E0 E0 . E0 . . .",
+     "consigne": "Croche puis deux doubles : « 1 . et a ». Deux doubles puis croche : « 3 e et . ». Dis les syllabes, lentement.",
+     "batterie": "rock",
+     "accords": "La | Ré Mi"
+    },
+    {
+     "id": "ry-galop",
+     "titre": "Croche pointée, double croche",
+     "tempo": 60,
+     "pas": 4,
+     "mesures": 2,
+     "notes": "A0 . . A0 A0 . . A0 A0 . . A0 A0 . . . | D0 . . D0 D0 . . D0 E0 . . E0 E0 . . .",
+     "consigne": "Long, très court : la double croche tombe sur le « a », juste avant le temps suivant. Plus serré que le swing.",
+     "batterie": "rock",
+     "accords": "La | Ré Mi"
+    },
+    {
+     "id": "ry-doubles-inverses",
+     "titre": "Double croche, croche pointée",
+     "tempo": 60,
+     "pas": 4,
+     "mesures": 2,
+     "notes": "A0 A0 . . A0 A0 . A0 A0 A0 . . A0 . . . | D0 D0 . . D0 D0 . D0 E0 E0 . . E0 . . .",
+     "consigne": "La note courte d'abord, la longue ensuite. Puis double, croche, double : la croche du milieu est une syncope dans le temps.",
+     "batterie": "rock",
+     "accords": "La | Ré Mi"
+    },
+    {
+     "id": "ry-quart",
+     "titre": "Le quart de soupir",
+     "tempo": 60,
+     "pas": 4,
+     "mesures": 2,
+     "notes": "x A0 A0 A0 A0 . . . x A0 A0 A0 A0 . . . | x D0 D0 D0 D0 . . . x E0 E0 E0 E0 . . .",
+     "consigne": "Le quart de soupir prend la place de la première double croche : on entre sur le « e ». Garde le mouvement des doigts, même sur le silence.",
+     "batterie": "rock",
+     "accords": "La | Ré Mi"
+    },
+    {
+     "id": "ry-funk-lecture",
+     "titre": "Lire une ligne de funk",
+     "tempo": 60,
+     "pas": 4,
+     "mesures": 2,
+     "notes": "A0 x x A0 x x A0 x A0 . A0 x x A0 x x | D0 x x D0 x x D0 x E0 . E0 x D2 x E0 x",
+     "consigne": "Le funk vit de ses silences : chaque note est coupée net. Lis lentement en disant « 1 e et a », puis monte le tempo.",
+     "batterie": "funk",
+     "accords": "La | Ré Mi"
+    },
+    {
+     "id": "ry-lecture",
+     "titre": "Lecture : tout mélangé",
+     "tempo": 55,
+     "pas": 4,
+     "mesures": 4,
+     "notes": "A0 . . . A0 . A0 A0 x x A0 . A0 A0 A0 A0 | E1 . . E1 E1 . . E1 E1 . . . x x E1 E1 | A3 A3 . . A3 A3 . A3 A3 . A3 x x A3 x x | E3 . E3 . E3 . E3 . E3 . . . x x x x",
+     "consigne": "Chaque mesure mélange les figures de l'étape. Lis d'abord sans jouer, en disant le rythme, puis joue lentement.",
+     "batterie": "rock",
+     "accords": "Lam | Fa | Do | Sol"
+    }
+   ]
+  },
+  {
    "id": "gammes",
    "titre": "Gammes et arpèges",
    "resume": "Les notes qui vont ensemble : gamme majeure, gamme mineure, pentatoniques, arpèges des accords.",

@@ -307,6 +307,94 @@
    ]
   },
   {
+   "id": "rythme",
+   "titre": "Lire le rythme",
+   "resume": "Les figures de rythme une à une, sur des notes simples : silences, contretemps, syncopes, doubles croches.",
+   "lecons": [
+    {
+     "id": "ry1",
+     "titre": "Les silences longs",
+     "texte": [
+      "Chaque durée de note a son silence. Le soupir vaut une noire : un temps. La demi-pause vaut une blanche : deux temps. La pause vaut une ronde, ou une mesure entière, quelle qu'elle soit.",
+      "La demi-pause et la pause sont deux petits rectangles. La demi-pause est posée sur la troisième ligne ; la pause, plus longue donc plus lourde, pend sous la quatrième.",
+      "Pendant un silence, on continue à compter, et la corde doit se taire : un doigt de la main droite ou de la main gauche se pose dessus."
+     ],
+     "exercices": [
+      "ry-soupir-3",
+      "ry-soupir-1",
+      "ry-demi-pause",
+      "ry-pause"
+     ],
+     "exemple": "ry-demi-pause"
+    },
+    {
+     "id": "ry2",
+     "titre": "Le contretemps",
+     "texte": [
+      "Le demi-soupir vaut une croche : un demi-temps de silence. Placé sur le temps, il fait tomber la note suivante sur le « et » : c'est le contretemps.",
+      "La note arrive entre deux clics. Le pied peut continuer à marquer les temps : la basse répond entre ses battements.",
+      "Placé après la note, le demi-soupir la raccourcit : une croche suivie d'un demi-soupir sonne court."
+     ],
+     "exercices": [
+      "ry-contretemps",
+      "ry-piquees",
+      "ry-noire-croches",
+      "ry-melange-1"
+     ],
+     "exemple": "ry-contretemps"
+    },
+    {
+     "id": "ry3",
+     "titre": "Les syncopes",
+     "texte": [
+      "Une syncope est une note attaquée entre deux temps et tenue par-dessus le temps suivant. La plus courante : croche, noire, croche. La noire commence sur le « et » de 1 et couvre le 2.",
+      "La noire pointée dure un temps et demi : jouée sur le 1, elle laisse la croche suivante sur le « et » de 2.",
+      "Les deux demandent la même chose : compter le temps qu'on ne joue pas. Dis « 1 et (2) et » à voix haute, le 2 entre parenthèses : pensé, pas joué."
+     ],
+     "exercices": [
+      "ry-syncope",
+      "ry-pointee",
+      "ry-sync-ligne"
+     ],
+     "exemple": "ry-syncope"
+    },
+    {
+     "id": "s8",
+     "titre": "Les doubles croches",
+     "texte": [
+      "Quatre notes par temps : on compte « 1 e et a, 2 e et a ». Sur la partition, les doubles croches sont reliées par deux barres.",
+      "Elles se combinent avec la croche dans un même temps : croche et deux doubles (« 1 . et a »), deux doubles et croche (« 1 e et . »), croche pointée et double (« 1 . . a »), double et croche pointée (« 1 e . . »).",
+      "Une barre relie toutes les notes du temps ; une seconde barre, plus courte, marque chaque double croche. C'est elle qu'il faut repérer d'un coup d'œil.",
+      "La main droite alterne toujours. Le mode « Rythme seul » permet de ne s'occuper que du placement, mais l'exercice ne se valide qu'avec la vérification des notes."
+     ],
+     "exercices": [
+      "ry-quatre-doubles",
+      "ry-croche-doubles",
+      "ry-galop",
+      "ry-doubles-inverses"
+     ],
+     "exemple": "ry-croche-doubles"
+    },
+    {
+     "id": "ry5",
+     "titre": "Les silences courts",
+     "texte": [
+      "Le quart de soupir vaut une double croche. Il a deux crochets, là où le demi-soupir n'en a qu'un.",
+      "Placé sur le temps, il fait entrer la note sur le « e » : le contretemps de la double croche, partout dans le funk.",
+      "Ces silences sont trop courts pour qu'on y pense un par un. Garde la main droite en mouvement régulier, comme si tu jouais toutes les doubles croches, et ne fais sonner que celles qui sont écrites.",
+      "La dernière ligne reprend toutes les figures de l'étape : c'est un exercice de lecture."
+     ],
+     "exercices": [
+      "ry-quart",
+      "r-doubles",
+      "ry-funk-lecture",
+      "ry-lecture"
+     ],
+     "exemple": "ry-quart"
+    }
+   ]
+  },
+  {
    "id": "gammes",
    "titre": "Gammes et arpèges",
    "resume": "Comprendre les notes qu'on joue : gammes majeure et mineure, pentatoniques, accords et septièmes.",
@@ -464,17 +552,6 @@
      "exercices": [
       "l-walking",
       "l-walking-2"
-     ]
-    },
-    {
-     "id": "s8",
-     "titre": "Les doubles croches",
-     "texte": [
-      "Quatre notes par temps : on compte « 1 e et a, 2 e et a ». Sur la partition, les doubles croches sont reliées par deux barres. Le silence d'une double croche est un quart de soupir.",
-      "Avant de les jouer dans une ligne, on les travaille sur une seule corde. Le mode « Rythme seul » permet de ne s'occuper que du placement."
-     ],
-     "exercices": [
-      "r-doubles"
      ]
     },
     {
