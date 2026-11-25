@@ -177,6 +177,18 @@
      ]
     },
     {
+     "id": "g7",
+     "titre": "Changer de position",
+     "texte": [
+      "Tu sais jouer dans le grave, avec trois doigts, et vers la case 5, avec quatre. Reste à passer de l'un à l'autre.",
+      "On ne tend pas les doigts pour attraper une case lointaine : on déplace toute la main, pouce compris, d'un seul geste. Le pouce se desserre le temps du trajet, puis la main se repose.",
+      "Le déplacement se prépare pendant la note qui précède : regarde la case d'arrivée avant de partir."
+     ],
+     "exercices": [
+      "g-deplacement"
+     ]
+    },
+    {
      "id": "g6",
      "titre": "Tons, demi-tons, dièses et bémols",
      "texte": [
@@ -332,6 +344,7 @@
      ],
      "exercices": [
       "n-penta-la",
+      "ga-penta-riff",
       "ga-penta-do"
      ]
     },
@@ -340,7 +353,7 @@
      "titre": "Les accords : fondamentale, tierce, quinte",
      "texte": [
       "Un accord se construit en prenant une note sur deux de la gamme : la fondamentale, la tierce et la quinte. Le bassiste les joue l'une après l'autre : c'est un arpège.",
-      "La tierce donne sa couleur à l'accord : majeure pour un accord majeur (Do), mineure pour un accord mineur (Lam). La quinte, elle, ne change pas."
+      "La tierce donne sa couleur à l'accord : majeure pour un accord majeur (Do), mineure pour un accord mineur (Lam). Entre ces deux accords, la quinte ne change pas."
      ],
      "exercices": [
       "ga-triades"
@@ -395,7 +408,7 @@
      "id": "s9",
      "titre": "Le swing",
      "texte": [
-      "Jusqu'ici, les deux croches d'un temps étaient égales : c'est le jeu binaire. En swing, le temps se pense en trois : la première croche en prend deux tiers, la seconde un tiers. Long, court, long, court.",
+      "Jusqu'ici, les deux croches d'un temps étaient égales : c'est le jeu binaire. En swing, la première s'allonge et la seconde raccourcit : long, court, long, court. Dans l'appli, la première prend deux tiers du temps et la seconde un tiers ; chez les musiciens, ce dosage varie avec le tempo et le style.",
       "Sur la partition, rien ne change : on écrit des croches ordinaires, avec la mention « swing ». C'est le balancement du blues, du shuffle et du jazz.",
       "La batterie le joue à la charleston : écoute-la d'abord avec « Écouter », puis pose tes croches dessus."
      ],
@@ -510,7 +523,7 @@
      "titre": "Relier les accords",
      "texte": [
       "Une bonne ligne ne saute pas d'un accord à l'autre : elle y va. La dernière note d'une mesure se choisit en fonction de l'accord qui suit.",
-      "Deux moyens : une note de la gamme juste à côté de la note visée, c'est la note de passage ; ou la case voisine, même hors de la gamme, c'est l'approche chromatique."
+      "Deux moyens. La note de passage relie deux notes de l'accord, ou deux accords, en passant par la note de la gamme qui se trouve entre elles ; elle peut se placer n'importe où dans la mesure. L'approche chromatique vise la note suivante depuis la case voisine, même hors de la gamme."
      ],
      "exercices": [
       "cl-passage"
