@@ -115,6 +115,7 @@
      "exercices": [
       "v-croches",
       "v-croches-la",
+      "v-une-mesure",
       "v-durees",
       "v-traversee",
       "v-mixte"
@@ -136,6 +137,45 @@
    ]
   },
   {
+   "id": "silences",
+   "titre": "Silences et contretemps",
+   "resume": "Lire et jouer le silence, du soupir à la pause, puis les notes posées entre les temps. Toujours sur les cordes à vide.",
+   "lecons": [
+    {
+     "id": "ry1",
+     "titre": "Les silences longs",
+     "texte": [
+      "Chaque durée de note a son silence. Le soupir vaut une noire : un temps. La demi-pause vaut une blanche : deux temps. La pause vaut une ronde, ou une mesure entière, quelle qu'elle soit.",
+      "La demi-pause et la pause sont deux petits rectangles. La demi-pause est posée sur la troisième ligne ; la pause, plus longue donc plus lourde, pend sous la quatrième.",
+      "Pendant un silence, on continue à compter, et la corde doit se taire : un doigt de la main droite ou de la main gauche se pose dessus."
+     ],
+     "exercices": [
+      "ry-soupir-3",
+      "ry-soupir-1",
+      "ry-demi-pause",
+      "ry-pause"
+     ],
+     "exemple": "ry-demi-pause"
+    },
+    {
+     "id": "ry2",
+     "titre": "Le contretemps",
+     "texte": [
+      "Le demi-soupir vaut une croche : un demi-temps de silence. Placé sur le temps, il fait tomber la note suivante sur le « et » : c'est le contretemps.",
+      "La note arrive entre deux clics. Le pied peut continuer à marquer les temps : la basse répond entre ses battements.",
+      "Placé après la note, le demi-soupir la raccourcit : une croche suivie d'un demi-soupir sonne court."
+     ],
+     "exercices": [
+      "ry-contretemps",
+      "ry-piquees",
+      "ry-noire-croches",
+      "ry-melange-1"
+     ],
+     "exemple": "ry-contretemps"
+    }
+   ]
+  },
+  {
    "id": "gauche",
    "titre": "La main gauche",
    "resume": "Des notes nettes sans forcer, puis les premières notes à connaître par leur nom.",
@@ -150,7 +190,9 @@
      ],
      "exercices": [
       "g-mi",
-      "g-la"
+      "g-la",
+      "g-1243",
+      "g-croches"
      ]
     },
     {
@@ -308,41 +350,9 @@
   },
   {
    "id": "rythme",
-   "titre": "Lire le rythme",
-   "resume": "Les figures de rythme une à une, sur des notes simples : silences, contretemps, syncopes, doubles croches.",
+   "titre": "Syncopes et doubles croches",
+   "resume": "Les notes à cheval sur les temps, la liaison, puis les doubles croches : sur des lignes en position V, jusqu'à la corde de Sol.",
    "lecons": [
-    {
-     "id": "ry1",
-     "titre": "Les silences longs",
-     "texte": [
-      "Chaque durée de note a son silence. Le soupir vaut une noire : un temps. La demi-pause vaut une blanche : deux temps. La pause vaut une ronde, ou une mesure entière, quelle qu'elle soit.",
-      "La demi-pause et la pause sont deux petits rectangles. La demi-pause est posée sur la troisième ligne ; la pause, plus longue donc plus lourde, pend sous la quatrième.",
-      "Pendant un silence, on continue à compter, et la corde doit se taire : un doigt de la main droite ou de la main gauche se pose dessus."
-     ],
-     "exercices": [
-      "ry-soupir-3",
-      "ry-soupir-1",
-      "ry-demi-pause",
-      "ry-pause"
-     ],
-     "exemple": "ry-demi-pause"
-    },
-    {
-     "id": "ry2",
-     "titre": "Le contretemps",
-     "texte": [
-      "Le demi-soupir vaut une croche : un demi-temps de silence. Placé sur le temps, il fait tomber la note suivante sur le « et » : c'est le contretemps.",
-      "La note arrive entre deux clics. Le pied peut continuer à marquer les temps : la basse répond entre ses battements.",
-      "Placé après la note, le demi-soupir la raccourcit : une croche suivie d'un demi-soupir sonne court."
-     ],
-     "exercices": [
-      "ry-contretemps",
-      "ry-piquees",
-      "ry-noire-croches",
-      "ry-melange-1"
-     ],
-     "exemple": "ry-contretemps"
-    },
     {
      "id": "ry3",
      "titre": "Les syncopes",
@@ -357,6 +367,20 @@
       "ry-sync-ligne"
      ],
      "exemple": "ry-syncope"
+    },
+    {
+     "id": "ry6",
+     "titre": "La liaison et l'anticipation",
+     "texte": [
+      "La liaison est un petit arc qui relie deux notes de même hauteur. On joue la première ; la seconde ne se rejoue pas, elle prolonge le son. En tablature, la case de la note liée est écrite entre parenthèses.",
+      "Elle sert quand une durée ne tient pas en une seule figure : une note qui passe la barre de mesure, ou qui cacherait le troisième temps. On écrit alors deux figures liées, pour que chaque temps reste visible.",
+      "L'anticipation en est l'usage le plus courant : la fondamentale de l'accord suivant est jouée sur le « et » de 4, juste avant la barre, et tenue. La basse arrive en avance, la grosse caisse marque le 1 : c'est ce décalage qui pousse la musique en avant, en pop comme en funk."
+     ],
+     "exercices": [
+      "ry-liaison",
+      "ry-anticipation"
+     ],
+     "exemple": "ry-anticipation"
     },
     {
      "id": "s8",
