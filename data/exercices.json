@@ -387,6 +387,50 @@
      "accords": "La | Ré"
     },
     {
+     "id": "a-temps",
+     "titre": "Accents sur les temps",
+     "tempo": 70,
+     "pas": 2,
+     "mesures": 2,
+     "notes": "E0> E0 E0> E0 E0> E0 E0> E0 | E0> E0 E0> E0 E0> E0 E0> E0",
+     "consigne": "La note du temps est plus forte que celle du « et » : le doigt tire la corde plus franchement. Écoute d'abord le modèle.",
+     "md": "i m i m i m i m i m i m i m i m",
+     "batterie": "rock"
+    },
+    {
+     "id": "a-contre",
+     "titre": "Accents sur les « et »",
+     "tempo": 70,
+     "pas": 2,
+     "mesures": 2,
+     "notes": "E0 E0> E0 E0> E0 E0> E0 E0> | E0 E0> E0 E0> E0 E0> E0 E0>",
+     "consigne": "Les mêmes croches, l'accent déplacé entre les temps : la ligne rebondit. Le temps reste là, plus léger.",
+     "md": "i m i m i m i m i m i m i m i m",
+     "batterie": "rock"
+    },
+    {
+     "id": "a-deux-quatre",
+     "titre": "Accents sur 2 et 4",
+     "tempo": 70,
+     "pas": 2,
+     "mesures": 2,
+     "notes": "A0 A0 A0> A0 A0 A0 A0> A0 | D0 D0 D0> D0 D0 D0 D0> D0",
+     "consigne": "L'accent tombe avec la caisse claire, sur les temps 2 et 4 : c'est l'appui du rock.",
+     "md": "i m i m i m i m i m i m i m i m",
+     "batterie": "rock",
+     "accords": "La | Ré"
+    },
+    {
+     "id": "a-phrase",
+     "titre": "Une phrase accentuée",
+     "tempo": 75,
+     "pas": 2,
+     "mesures": 4,
+     "notes": "E0> E0 E0 E3> E0 E0 A0> E0 | E0> E0 E0 E3> E3 E0 A0> . | E0> E0 E0 E3> E0 E0 A0> E0 | A0> A0 E3> E3 E0> . . .",
+     "consigne": "Les accents dessinent une mélodie à l'intérieur des croches : Mi, Sol, La. Les autres notes restent en retrait.",
+     "batterie": "rock"
+    },
+    {
      "id": "r-sync",
      "titre": "Jouer entre les temps",
      "tempo": 60,
@@ -869,6 +913,93 @@
    ]
   },
   {
+   "id": "manche",
+   "titre": "Explorer le manche",
+   "resume": "Sortir des premières cases : les notes jusqu'à la douzième, une même note à plusieurs endroits, les positions, le registre aigu.",
+   "exercices": [
+    {
+     "id": "mn-graves",
+     "titre": "Mi et La jusqu'à la case 12",
+     "tempo": 55,
+     "pas": 1,
+     "mesures": 4,
+     "notes": "E0 E1 E3 E5 | E7 E8 E10 E12 | A0 A2 A3 A5 | A7 A8 A10 A12",
+     "consigne": "Les notes naturelles de chaque corde, de la corde à vide à la case 12, où l'on retrouve la même note une octave plus haut. La main se déplace : un doigt, l'index, suffit pour commencer.",
+     "noms": true
+    },
+    {
+     "id": "mn-aigues",
+     "titre": "Ré et Sol jusqu'à la case 12",
+     "tempo": 55,
+     "pas": 1,
+     "mesures": 4,
+     "notes": "D0 D2 D3 D5 | D7 D9 D10 D12 | G0 G2 G4 G5 | G7 G9 G10 G12",
+     "consigne": "Même chemin sur les deux cordes aiguës. Repère les points du manche : cases 3, 5, 7, 9, et le double point de la case 12.",
+     "noms": true
+    },
+    {
+     "id": "mn-unissons",
+     "titre": "La même note, deux endroits",
+     "tempo": 55,
+     "pas": 1,
+     "mesures": 2,
+     "notes": "A0 E5 D0 A5 | G0 D5 D0 E10",
+     "consigne": "La case 5 d'une corde donne la même note que la corde suivante à vide ; la case 10 de la corde de Mi, le Ré de la corde de Ré. Compare le son : plus rond sur la grosse corde.",
+     "noms": true
+    },
+    {
+     "id": "mn-deux-positions",
+     "titre": "Une phrase, deux positions",
+     "tempo": 60,
+     "pas": 1,
+     "mesures": 4,
+     "notes": "A3 A5 D2 D5 | A3 . D2 . | E8 E10 A7 A10 | E8 . A7 .",
+     "consigne": "Do, Ré, Mi, Sol : d'abord près de la tête du manche, puis les mêmes notes vers la case 8. L'appli entend la même chose ; c'est à toi de changer d'endroit.",
+     "mg": "2 4 1 4 2 1 2 4 1 4 2 1",
+     "noms": true,
+     "batterie": "noires",
+     "accords": "Do | Do | Do | Do"
+    },
+    {
+     "id": "mn-positions",
+     "titre": "La même forme, quatre positions",
+     "tempo": 60,
+     "pas": 1,
+     "mesures": 4,
+     "notes": "E3 A5 D5 A5 | E5 A7 D7 A7 | E7 A9 D9 A9 | E8 A10 D10 A10",
+     "consigne": "Fondamentale, quinte, octave, quinte : la main garde sa forme et glisse d'une position à l'autre entre deux mesures. Le retour du Do au Sol est le plus long trajet : prépare-le.",
+     "mg": "1 3 4 3 1 3 4 3 1 3 4 3 1 3 4 3",
+     "noms": true,
+     "batterie": "noires",
+     "accords": "Sol | Lam | Sim | Do"
+    },
+    {
+     "id": "mn-chant-aigu",
+     "titre": "Chanter dans l'aigu",
+     "tempo": 70,
+     "pas": 2,
+     "mesures": 4,
+     "notes": "G9 . G12 G11 G9 . G7 . | D10 . G9 G7 G5 . G7 . | G7 . G11 G9 G7 . D9 . | G9 . . . D9 . G9 .",
+     "consigne": "Une mélodie sur la corde de Sol, jusqu'à la case 12. La main se déplace le long de la corde : relâche la pression pendant chaque trajet, pour ne pas faire entendre de glissé.",
+     "noms": true,
+     "batterie": "rock",
+     "accords": "Mim | Do | Ré | Mim"
+    },
+    {
+     "id": "mn-descente",
+     "titre": "Du haut en bas du manche",
+     "tempo": 60,
+     "pas": 1,
+     "mesures": 4,
+     "notes": "G9 G7 D9 D7 | D5 D2 A5 A2 | A0 E3 E0 . | E0 . . .",
+     "consigne": "Deux octaves de descente, du Mi aigu de la corde de Sol au Mi grave à vide : trois positions, puis les cordes à vide.",
+     "noms": true,
+     "batterie": "noires",
+     "accords": "Mim | Sol | Lam | Mim"
+    }
+   ]
+  },
+  {
    "id": "lignes",
    "titre": "Lignes et styles",
    "resume": "De vraies lignes de basse avec la batterie : rock, pop, blues, reggae, disco, soul, post-punk, jazz, funk.",
@@ -1129,6 +1260,130 @@
      "consigne": "Quatre mesures installent un motif, les quatre suivantes le font évoluer. La dernière prépare le retour au Do.",
      "batterie": "rock",
      "accords": "Do | Sol | Lam | Fa | Do | Sol | Lam | Fa"
+    }
+   ]
+  },
+  {
+   "id": "repertoire",
+   "titre": "Répertoire",
+   "resume": "Des morceaux entiers, en plusieurs parties : à jouer d'un bout à l'autre, ou partie par partie.",
+   "exercices": [
+    {
+     "id": "m-dernier-tram",
+     "titre": "Dernier tram",
+     "tempo": 92,
+     "pas": 2,
+     "mesures": 40,
+     "notes": "E0 . E0 E0 E0 . E0 . | E0 . E0 E0 E0 . E3 . | A3 . A3 A3 A3 . A3 . | A5 . A5 A5 A5 . A2 . | E0 . E0 D2 . A2 D0 . | E0 . E0 D2 . A2 E3 . | A3 . A3 D5 . D2 D0 . | A5 . A5 D7 . D4 D2 . | E0 . E0 D2 . A2 D0 . | E0 . E0 D2 . D0 A2 . | A3 . A3 D5 . D2 D0 . | A5 . A5 D7 . D4 E2 . | E3 E3 D5 E3 E3 D5 D4 D2 | A5 A5 G7 A5 A5 G7 D7 D4 | A7 A7 G9 A7 A7 G9 D9 . | A3 A3 G5 A3 A3 G5 D5 D4 | E3 E3 D5 E3 E3 D5 D4 D2 | A5 A5 G7 A5 A5 G7 D7 D4 | A7 A7 G9 A7 A7 G9 D9 . | A3 A3 G5 A3 D5 . D4 . | E0 . E0 D2 . A2 D0 D2 | E0 . E0 D2 D0 A2 E3 . | A3 . A3 D5 . D2 D0 D2 | A5 . A5 D7 . D4 D2 . | E0 . E0 D2 . A2 D0 D2 | E0 . E3 E0 . A2 D0 . | A3 . A3 D5 . D2 D0 D2 | A5 . A5 D7 . D4 D2 D0 | A0 . . . . . D2 . | A0 . . . . . E3 . | A3 . . . . . D2 . | A5 . . . D4 . E2 . | E3 E3 D5 E3 E3 D5 D4 D2 | A5 A5 G7 A5 A5 G7 D7 D4 | A7 A7 G9 A7 A7 G9 D9 . | A3 A3 G5 A3 A3 G5 D5 D4 | E3 E3 D5 E3 E3 D5 D4 D2 | A5 A5 G7 A5 A5 G7 D7 D4 | A7 A7 G9 A7 A7 G9 D9 . | A3 A3 G5 A3 D5 . D4 .",
+     "consigne": "Le couplet tient sur un motif grave, le refrain monte en octaves, le pont laisse sonner de longues notes. Travaille chaque partie, puis enchaîne.",
+     "batterie": "rock",
+     "accords": "Mim | Mim | Do | Ré | Mim | Mim | Do | Ré | Mim | Mim | Do | Ré | Sol | Ré | Mim | Do | Sol | Ré | Mim | Do | Mim | Mim | Do | Ré | Mim | Mim | Do | Ré | Lam | Lam | Do | Ré | Sol | Ré | Mim | Do | Sol | Ré | Mim | Do",
+     "sections": [
+      {
+       "nom": "Intro",
+       "mesures": 4,
+       "batterie": "noires"
+      },
+      {
+       "nom": "Couplet",
+       "mesures": 8,
+       "batterie": "rock2"
+      },
+      {
+       "nom": "Refrain",
+       "mesures": 8,
+       "batterie": "rock"
+      },
+      {
+       "nom": "Couplet 2",
+       "mesures": 8,
+       "batterie": "rock2"
+      },
+      {
+       "nom": "Pont",
+       "mesures": 4,
+       "batterie": "noires"
+      },
+      {
+       "nom": "Refrain final",
+       "mesures": 8,
+       "batterie": "rock"
+      }
+     ],
+     "style": "Indie rock"
+    },
+    {
+     "id": "m-cafe-serre",
+     "titre": "Café serré",
+     "tempo": 76,
+     "pas": 2,
+     "mesures": 32,
+     "notes": "A3 . . A3 A3 . D2 . | E5 . . E5 E5 . E8 . | A5 . . A5 A5 . D3 . | E3 . . E3 A2 . D0 . | A3 . D2 D5 G5 . G4 G2 | E5 . E8 A7 D7 . A7 A4 | A5 . D3 D7 G5 . G4 G2 | E3 . A2 D0 D3 D2 D0 A2 | A3 . D2 D5 G5 . D5 D2 | E5 . E8 A7 D7 . D5 A4 | A5 . D3 D7 G5 . D7 D3 | E3 . A2 D0 D3 . D0 D2 | D3 . . D3 G2 . G5 . | D5 . . D5 G4 . G7 . | A7 . . A7 D5 . D9 . | E5 . . E5 A3 . A7 . | D3 . . D3 G2 . G5 . | D5 . . D5 G4 . G7 . | A3 . D2 D5 G5 . . . | E3 . A2 D0 D3 D2 D0 A2 | A3 . D2 D5 G5 . G4 G2 | E5 . E8 A7 D7 . A7 A4 | A5 . D3 D7 G5 . G4 G2 | E3 . A2 D0 D3 D2 D0 A2 | A3 . D2 D5 G5 . D5 D2 | E5 . E8 A7 D7 . D5 A4 | A5 . D3 D7 G5 . D7 D3 | E3 . A2 D0 D3 D2 D0 A2 | A3 . D2 D5 G5 . D5 D2 | D3 . . D3 G2 . D3 . | A3 . . A3 D2 . D5 . | A3 . . . . . . .",
+     "consigne": "La basse chante : elle monte dans l'accord par la tierce et la quinte, puis redescend vers l'accord suivant. Le refrain respire davantage, avec de longues fondamentales.",
+     "batterie": "rock",
+     "accords": "Do | Lam | Rém7 | Sol7 | Do | Lam | Rém7 | Sol7 | Do | Lam | Rém7 | Sol7 | Fa | Sol | Mim | Lam | Fa | Sol | Do | Sol7 | Do | Lam | Rém7 | Sol7 | Do | Lam | Rém7 | Sol7 | Do | Fa | Do | Do",
+     "sections": [
+      {
+       "nom": "Intro",
+       "mesures": 4,
+       "batterie": "noires"
+      },
+      {
+       "nom": "Couplet",
+       "mesures": 8,
+       "batterie": "rock2"
+      },
+      {
+       "nom": "Refrain",
+       "mesures": 8,
+       "batterie": "rock"
+      },
+      {
+       "nom": "Couplet 2",
+       "mesures": 8,
+       "batterie": "rock2"
+      },
+      {
+       "nom": "Fin",
+       "mesures": 4,
+       "batterie": "rock2"
+      }
+     ],
+     "style": "Soul"
+    },
+    {
+     "id": "m-maree-basse",
+     "titre": "Marée basse",
+     "tempo": 72,
+     "pas": 2,
+     "mesures": 24,
+     "notes": "x x x x x x x x | x x x x x x x x | x x x E5 A7 . E5 . | x x E5 E8 A7 . A5 x | x x x E5 A7 . E5 . | x x E5 E8 A7 . A5 x | x x x A5 D7 . A5 . | x x A5 A8 D7 . D5 x | x x x E5 A7 . E5 . | x x E5 E8 A7 . E8 x | x x x A7 D9 . A7 . | x x A7 A10 D9 . E7 x | E5 . . . . . . . | x x x x E5 . E3 . | A5 . . . . . . . | A7 . . . x x E7 . | x x E5 E5 A7 . E5 . | x x E5 E8 A7 . A5 x | x x A5 A5 D7 . A5 . | x x A5 A8 D7 . D5 x | x x E5 E5 A7 . E5 . | x x E5 E8 A7 . E8 x | x x A7 A7 D9 . A7 . | x x A7 A10 D9 . E7 x",
+     "consigne": "Deux mesures de batterie seule, puis la basse entre. Elle laisse toujours passer le premier temps : compte-le. Dans le passage dub, il ne reste que quelques notes longues : tiens-les, puis fais silence.",
+     "batterie": "reggae",
+     "accords": "Lam | Lam | Lam | Lam | Lam | Lam | Rém | Rém | Lam | Lam | Mim | Mim | Lam | Lam | Rém | Mim | Lam | Lam | Rém | Rém | Lam | Lam | Mim | Mim",
+     "sections": [
+      {
+       "nom": "Intro",
+       "mesures": 4,
+       "batterie": "reggae"
+      },
+      {
+       "nom": "Thème",
+       "mesures": 8,
+       "batterie": "reggae"
+      },
+      {
+       "nom": "Dub",
+       "mesures": 4,
+       "batterie": "reggae"
+      },
+      {
+       "nom": "Thème 2",
+       "mesures": 8,
+       "batterie": "reggae"
+      }
+     ],
+     "style": "Reggae"
     }
    ]
   }

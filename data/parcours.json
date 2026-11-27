@@ -98,7 +98,7 @@
      "texte": [
       "À la basse, arrêter une note compte autant que la jouer. Une corde à vide sonne longtemps : pour la faire taire, repose dessus le doigt qui va jouer ensuite.",
       "Le silence d'un temps s'appelle un soupir ; celui d'un demi-temps, un demi-soupir.",
-      "L'appli juge le moment où tu attaques la note et sa hauteur, pas sa durée ni la netteté du silence : c'est à ton oreille de vérifier que la corde s'est bien tue."
+      "Au câble, l'appli vérifie que la corde se tait pendant les silences d'un temps ou plus, et qu'une note longue sonne jusqu'au bout. Les silences plus courts restent l'affaire de ton oreille : vérifie que la corde s'est bien tue."
      ],
      "exercices": [
       "v-silences"
@@ -233,6 +233,17 @@
       "n-re-sol",
       "n-melodie"
      ]
+    },
+    {
+     "id": "o1",
+     "titre": "Jouer d'oreille",
+     "texte": [
+      "Lire ne suffit pas : un bassiste retrouve aussi une note ou une petite phrase à l'oreille, sans partition. Cela se travaille, quelques minutes à la fois.",
+      "L'écran « Oreille » propose cinq jeux. Retrouver une note que l'appli fait entendre. Rejouer une courte phrase. Reconnaître un intervalle. Dire si un accord est majeur ou mineur. Rejouer un rythme.",
+      "Trois d'entre eux se jouent avec la basse ; les deux autres, avec des boutons, peuvent se faire sans instrument. Reviens-y souvent : les jeux s'étoffent à mesure que tu avances."
+     ],
+     "exercices": [],
+     "lien": "oreille"
     }
    ]
   },
@@ -314,6 +325,23 @@
       "r-rock-mi",
       "r-la-re"
      ]
+    },
+    {
+     "id": "r7",
+     "titre": "Les accents et les nuances",
+     "texte": [
+      "Jusqu'ici, toutes les notes avaient le même volume. Un accent, écrit « > » près de la note, demande de la jouer plus fort que ses voisines : le doigt tire la corde plus franchement, sans crisper la main.",
+      "Les mêmes croches changent de caractère selon la place des accents : sur les temps, elles marchent ; sur les « et », elles rebondissent ; sur 2 et 4, elles appuient la caisse claire.",
+      "La nuance, elle, est le volume d'ensemble : « piano », doux ; « forte », fort. Un bon exercice : rejouer une ligne que tu connais, une fois très doucement, une fois fort, sans changer de tempo.",
+      "Avec « Écouter », le modèle fait entendre les accents. Quand tu joues, l'appli compare la force de tes attaques et te dit si tes accents ressortent ; cela ne compte pas pour la validation."
+     ],
+     "exercices": [
+      "a-temps",
+      "a-contre",
+      "a-deux-quatre",
+      "a-phrase"
+     ],
+     "exemple": "a-deux-quatre"
     },
     {
      "id": "r5",
@@ -454,11 +482,13 @@
      "titre": "La gamme mineure",
      "texte": [
       "Avec les mêmes notes que Do majeur, mais en prenant La pour note de repos, on obtient La mineur naturel. C'est sur La que la phrase se pose, et la couleur est plus sombre.",
-      "Ce qui fait la différence, c'est la troisième note, la tierce : à deux tons de la fondamentale, elle est majeure ; à un ton et demi, elle est mineure. De La à Do, il y a un ton et demi."
+      "Ce qui fait la différence, c'est la troisième note, la tierce : à deux tons de la fondamentale, elle est majeure ; à un ton et demi, elle est mineure. De La à Do, il y a un ton et demi.",
+      "Cette différence s'entend avant de se comprendre : le jeu « Majeur ou mineur », dans l'écran Oreille, t'y entraîne."
      ],
      "exercices": [
       "ga-la-min"
-     ]
+     ],
+     "lien": "oreille"
     },
     {
      "id": "ga3",
@@ -497,6 +527,53 @@
      ],
      "exercices": [
       "ga-septiemes"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "manche",
+   "titre": "Explorer le manche",
+   "resume": "Sortir des premières cases : les notes jusqu'à la douzième, une même note à plusieurs endroits, les positions, le registre aigu.",
+   "lecons": [
+    {
+     "id": "mn1",
+     "titre": "Jusqu'à la douzième case",
+     "texte": [
+      "À la case 12, chaque corde redonne la note qu'elle joue à vide, une octave plus haut : le manche y porte un double point. Entre les deux, les notes naturelles se suivent dans le même ordre que partout ailleurs, avec un demi-ton entre Mi et Fa et entre Si et Do.",
+      "Les points du manche servent de repères : cases 3, 5, 7 et 9. Sur la corde de Mi, ce sont Sol, La, Si et Do dièse ; retiens surtout le La de la case 5 et le Si de la case 7.",
+      "Plus on monte, plus les cases sont étroites : les quatre doigts couvrent quatre cases sans effort."
+     ],
+     "exercices": [
+      "mn-graves",
+      "mn-aigues"
+     ]
+    },
+    {
+     "id": "mn2",
+     "titre": "Une note, plusieurs endroits",
+     "texte": [
+      "Une même note existe à plusieurs endroits du manche. La case 5 d'une corde donne la note de la corde suivante à vide : c'est d'ailleurs ainsi qu'on vérifie l'accordage à l'oreille.",
+      "Le choix n'est pas indifférent. Sur une grosse corde, la note est plus ronde ; sur une corde fine, plus claire. Et l'endroit où l'on joue décide des notes qu'on a sous les doigts juste après.",
+      "L'appli reconnaît la hauteur d'une note, pas la corde qui la joue : dans ces exercices, elle ne peut pas vérifier que tu changes bien d'endroit. Suis la tablature."
+     ],
+     "exercices": [
+      "mn-unissons",
+      "mn-deux-positions"
+     ]
+    },
+    {
+     "id": "mn3",
+     "titre": "Les positions et le registre aigu",
+     "texte": [
+      "Une position se nomme d'après la case où se pose l'index : position II, V, VII, IX. Une forme apprise dans une position se rejoue telle quelle dans une autre : seule la fondamentale change.",
+      "Dans l'aigu, la basse peut chanter une mélodie. Le son est plus fin, les notes s'éteignent plus vite : appuie bien, et laisse-les sonner.",
+      "Le dernier exercice traverse tout le manche, du Mi aigu de la corde de Sol au Mi grave à vide."
+     ],
+     "exercices": [
+      "mn-positions",
+      "mn-chant-aigu",
+      "mn-descente"
      ]
     }
    ]
@@ -627,6 +704,17 @@
       "l-funk",
       "l-funk-2"
      ]
+    },
+    {
+     "id": "s12",
+     "titre": "Jouer un morceau entier",
+     "texte": [
+      "Une ligne de quatre mesures s'apprend vite. Un morceau demande autre chose : retenir une forme, sentir venir le changement de partie, tenir deux minutes sans perdre le fil.",
+      "Le Répertoire propose des morceaux écrits pour l'appli, en plusieurs parties : intro, couplet, refrain, pont. La batterie change avec les parties et annonce chaque changement par une relance.",
+      "Travaille d'abord chaque partie à part, comme un exercice. Puis joue le morceau en entier : il est validé quand tu le joues une fois d'un bout à l'autre, presque sans faute."
+     ],
+     "exercices": [],
+     "lien": "repertoire"
     }
    ]
   },
