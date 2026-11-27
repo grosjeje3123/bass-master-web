@@ -42,7 +42,7 @@
      "titre": "La pulsation et la mesure",
      "texte": [
       "Le clic du métronome marque la pulsation : le battement régulier qu'on suit en tapant du pied. Chaque clic est un temps. Le tempo dit combien il y a de temps par minute : 60 bpm, c'est un temps par seconde.",
-      "Les temps se regroupent par quatre : c'est la mesure. On compte « 1, 2, 3, 4 », puis on recommence. Le clic du premier temps est plus aigu, pour qu'on sache toujours où l'on en est.",
+      "Dans cette méthode, les temps se regroupent par quatre : c'est la mesure. On compte « 1, 2, 3, 4 », puis on recommence. Le clic du premier temps est plus aigu, pour qu'on sache toujours où l'on en est.",
       "Sur la partition, une barre verticale sépare deux mesures. Avant chaque exercice, quatre clics de décompte donnent le tempo."
      ],
      "exercices": []
@@ -108,15 +108,15 @@
      "id": "m4",
      "titre": "Les croches",
      "texte": [
-      "Deux notes par temps : on compte « 1 et 2 et 3 et 4 et ». L'index joue sur les temps, le majeur sur les « et ». Sur la partition, les croches d'un même temps sont reliées par une barre.",
+      "Deux notes par temps : on compte « 1 et 2 et 3 et 4 et ». Dans une suite de croches sans interruption, l'index tombe sur les temps et le majeur sur les « et ». Sur la partition, les croches d'un même temps sont reliées par une barre.",
       "Le piège est l'inégalité : un doigt plus fort ou plus en avance que l'autre. Écoute, et ralentis si besoin.",
       "Le dernier exercice mélange noires, croches et silences : c'est là qu'on cesse de jouer machinalement une note par clic, et qu'on commence à lire un rythme."
      ],
      "exercices": [
       "v-croches",
       "v-croches-la",
-      "v-une-mesure",
       "v-durees",
+      "v-une-mesure",
       "v-traversee",
       "v-mixte"
      ]
@@ -127,19 +127,119 @@
      "texte": [
       "La basse se lit en clé de fa : le signe au début de la portée, dont les deux points encadrent la ligne du Fa. Les notes montent d'un degré à chaque ligne ou interligne.",
       "Retiens d'abord tes quatre cordes à vide. Mi : sur une petite ligne ajoutée sous la portée. La : dans le premier interligne. Ré : sur la ligne du milieu. Sol : dans le dernier interligne.",
-      "Une précision : la basse sonne une octave plus bas que ce qui est écrit. C'est une convention, commune à toutes les partitions de basse."
+      "Une précision : la basse sonne une octave plus bas que ce qui est écrit. C'est la convention habituelle des partitions de basse.",
+      "Le premier exercice suit l'ordre des cordes ; dans les deux suivants, l'ordre ne se devine plus : il faut lire."
      ],
      "exercices": [
-      "v-lecture"
+      "v-lecture",
+      "v-lecture-2",
+      "v-lecture-3"
      ],
      "exemple": "v-quatre"
     }
    ]
   },
   {
+   "id": "gauche",
+   "titre": "La main gauche",
+   "resume": "Des notes nettes sans forcer, puis les premières notes à connaître par leur nom.",
+   "lecons": [
+    {
+     "id": "g1",
+     "titre": "Quatre doigts, au milieu du manche",
+     "texte": [
+      "On commence vers la case 5, là où les cases sont plus étroites. Chaque doigt a la sienne : index (1), majeur (2), annulaire (3), auriculaire (4). Les chiffres au-dessus de la tablature donnent le doigt.",
+      "Appuie juste derrière la frette, pas au milieu de la case : la note est nette avec moins de force.",
+      "Rien ne doit tirer. Si la main se crispe, relâche et laisse-la accompagner le doigt qui joue."
+     ],
+     "exercices": [
+      "g-mi",
+      "g-la"
+     ]
+    },
+    {
+     "id": "g5",
+     "titre": "Dans le grave : trois doigts",
+     "texte": [
+      "Près de la tête du manche, les cases sont larges. Vouloir y garder un doigt par case force la main. On y joue plutôt avec trois doigts : index, majeur et auriculaire, qui couvrent trois cases.",
+      "La case 3 se joue donc avec l'auriculaire, aidé par l'annulaire posé à côté de lui.",
+      "Avec une seule note frettée, on joue déjà un riff. Au-dessus de la partition, « Mim », « La », « Sol » sont les accords que joue le piano : leur lecture s'apprend un peu plus loin. Pour l'instant, écoute-les."
+     ],
+     "exercices": [
+      "g-grave",
+      "g-premier-riff"
+     ]
+    },
+    {
+     "id": "g2",
+     "titre": "Sur les quatre cordes",
+     "texte": [
+      "La main reste dans la même zone du manche et suit les doigts par de petits mouvements. Le pouce reste derrière le manche.",
+      "Pour éviter les bruits, les doigts de la main gauche qui ne jouent pas effleurent les cordes voisines."
+     ],
+     "exercices": [
+      "g-toutes",
+      "g-croches",
+      "g-1324",
+      "g-1243"
+     ]
+    },
+    {
+     "id": "g7",
+     "titre": "Changer de position",
+     "texte": [
+      "Tu sais jouer dans le grave, avec trois doigts, et vers la case 5, avec quatre. Reste à passer de l'un à l'autre.",
+      "On ne tend pas les doigts pour attraper une case lointaine : on déplace toute la main, pouce compris, d'un seul geste. Le pouce se desserre le temps du trajet, puis la main se repose.",
+      "Le déplacement se prépare pendant la note qui précède : regarde la case d'arrivée avant de partir.",
+      "Le second exercice enchaîne trois positions dans une même phrase, en changeant aussi de corde : c'est ainsi qu'on se déplace dans une vraie ligne."
+     ],
+     "exercices": [
+      "g-deplacement",
+      "g-deplacement-2"
+     ]
+    },
+    {
+     "id": "g6",
+     "titre": "Tons, demi-tons, dièses et bémols",
+     "texte": [
+      "D'une case à la suivante, la note monte d'un demi-ton. Deux cases font un ton.",
+      "Les sept notes naturelles sont Do, Ré, Mi, Fa, Sol, La, Si. Entre Mi et Fa, et entre Si et Do, il n'y a qu'un demi-ton : une case. Entre deux autres notes naturelles qui se suivent (Do-Ré, Ré-Mi, Fa-Sol, Sol-La, La-Si), il y a un ton : deux cases.",
+      "La case du milieu porte deux noms. Un dièse (♯) monte la note d'un demi-ton, un bémol (♭) la descend : la case entre Fa et Sol est un Fa dièse, ou un Sol bémol. Un bécarre (♮) annule l'altération. Sur la partition, une altération vaut jusqu'à la barre de mesure, pour les notes de même nom à la même hauteur."
+     ],
+     "exercices": [],
+     "exemple": "g-mi"
+    },
+    {
+     "id": "g3",
+     "titre": "Les notes des cordes de Mi et de La",
+     "texte": [
+      "Sur la corde de Mi : Mi à vide, Fa en case 1, Sol en case 3. Sur la corde de La : La à vide, Si en case 2, Do en case 3.",
+      "Tu retrouves les demi-tons de la leçon précédente : une seule case entre Mi et Fa, et entre Si et Do."
+     ],
+     "exercices": [
+      "n-mi",
+      "n-la",
+      "n-mi-la"
+     ]
+    },
+    {
+     "id": "g4",
+     "titre": "Les notes des cordes de Ré et de Sol",
+     "texte": [
+      "Sur la corde de Ré : Ré à vide, Mi en case 2, Fa en case 3. Sur la corde de Sol : Sol à vide, La en case 2, Si en case 4.",
+      "Avec ces quatre cordes, tu connais toutes les notes naturelles de la première position. La petite mélodie les met en musique."
+     ],
+     "exercices": [
+      "n-re-sol",
+      "n-melodie"
+     ]
+    }
+   ]
+  },
+  {
    "id": "silences",
    "titre": "Silences et contretemps",
-   "resume": "Lire et jouer le silence, du soupir à la pause, puis les notes posées entre les temps. Toujours sur les cordes à vide.",
+   "resume": "Lire et jouer le silence, du soupir à la pause, puis les notes posées entre les temps. Sur les cordes à vide, pour ne penser qu'au rythme.",
    "lecons": [
     {
      "id": "ry1",
@@ -176,99 +276,6 @@
    ]
   },
   {
-   "id": "gauche",
-   "titre": "La main gauche",
-   "resume": "Des notes nettes sans forcer, puis les premières notes à connaître par leur nom.",
-   "lecons": [
-    {
-     "id": "g1",
-     "titre": "Quatre doigts, au milieu du manche",
-     "texte": [
-      "On commence vers la case 5, là où les cases sont plus étroites. Chaque doigt a la sienne : index (1), majeur (2), annulaire (3), auriculaire (4). Les chiffres au-dessus de la tablature donnent le doigt.",
-      "Appuie juste derrière la frette, pas au milieu de la case : la note est nette avec moins de force.",
-      "Rien ne doit tirer. Si la main se crispe, relâche et laisse-la accompagner le doigt qui joue."
-     ],
-     "exercices": [
-      "g-mi",
-      "g-la",
-      "g-1243",
-      "g-croches"
-     ]
-    },
-    {
-     "id": "g5",
-     "titre": "Dans le grave : trois doigts",
-     "texte": [
-      "Près de la tête du manche, les cases sont larges. Vouloir y garder un doigt par case force la main. On y joue plutôt avec trois doigts : index, majeur et auriculaire, qui couvrent trois cases.",
-      "La case 3 se joue donc avec l'auriculaire, aidé par l'annulaire posé à côté de lui."
-     ],
-     "exercices": [
-      "g-grave"
-     ]
-    },
-    {
-     "id": "g2",
-     "titre": "Sur les quatre cordes",
-     "texte": [
-      "La main reste dans la même zone du manche et suit les doigts par de petits mouvements. Le pouce reste derrière le manche.",
-      "Pour éviter les bruits, les doigts de la main gauche qui ne jouent pas effleurent les cordes voisines."
-     ],
-     "exercices": [
-      "g-toutes",
-      "g-1324"
-     ]
-    },
-    {
-     "id": "g7",
-     "titre": "Changer de position",
-     "texte": [
-      "Tu sais jouer dans le grave, avec trois doigts, et vers la case 5, avec quatre. Reste à passer de l'un à l'autre.",
-      "On ne tend pas les doigts pour attraper une case lointaine : on déplace toute la main, pouce compris, d'un seul geste. Le pouce se desserre le temps du trajet, puis la main se repose.",
-      "Le déplacement se prépare pendant la note qui précède : regarde la case d'arrivée avant de partir."
-     ],
-     "exercices": [
-      "g-deplacement"
-     ]
-    },
-    {
-     "id": "g6",
-     "titre": "Tons, demi-tons, dièses et bémols",
-     "texte": [
-      "D'une case à la suivante, la note monte d'un demi-ton. Deux cases font un ton.",
-      "Les sept notes naturelles sont Do, Ré, Mi, Fa, Sol, La, Si. Entre Mi et Fa, et entre Si et Do, il n'y a qu'un demi-ton : une case. Entre deux autres notes naturelles qui se suivent (Do-Ré, Ré-Mi, Fa-Sol, Sol-La, La-Si), il y a un ton : deux cases.",
-      "La case du milieu porte deux noms. Un dièse (♯) monte la note d'un demi-ton, un bémol (♭) la descend : la case entre Fa et Sol est un Fa dièse, ou un Sol bémol. Un bécarre (♮) annule l'altération. Sur la partition, une altération vaut jusqu'à la barre de mesure."
-     ],
-     "exercices": [],
-     "exemple": "g-mi"
-    },
-    {
-     "id": "g3",
-     "titre": "Les notes des cordes de Mi et de La",
-     "texte": [
-      "Sur la corde de Mi : Mi à vide, Fa en case 1, Sol en case 3. Sur la corde de La : La à vide, Si en case 2, Do en case 3.",
-      "Tu retrouves les demi-tons de la leçon précédente : une seule case entre Mi et Fa, et entre Si et Do."
-     ],
-     "exercices": [
-      "n-mi",
-      "n-la",
-      "n-mi-la"
-     ]
-    },
-    {
-     "id": "g4",
-     "titre": "Les notes des cordes de Ré et de Sol",
-     "texte": [
-      "Sur la corde de Ré : Ré à vide, Mi en case 2, Fa en case 3. Sur la corde de Sol : Sol à vide, La en case 2, Si en case 4.",
-      "Avec ces quatre cordes, tu connais toutes les notes naturelles de la première position. La petite mélodie les met en musique."
-     ],
-     "exercices": [
-      "n-re-sol",
-      "n-melodie"
-     ]
-    }
-   ]
-  },
-  {
    "id": "grooves",
    "titre": "Premiers grooves",
    "resume": "Jouer avec la batterie : la basse et la grosse caisse ne font qu'un.",
@@ -286,6 +293,17 @@
      ]
     },
     {
+     "id": "r6",
+     "titre": "Lire une grille d'accords",
+     "texte": [
+      "Une grille indique quel accord sonne dans chaque mesure. L'appli l'écrit au-dessus de la partition : « La », « Ré », « Lam » pour La mineur, « La7 » pour La sept (les accords de septième sont expliqués à l'étape des gammes).",
+      "Sur beaucoup de partitions, les accords sont notés par des lettres : A pour La, B pour Si, C pour Do, D pour Ré, E pour Mi, F pour Fa, G pour Sol. « Am » se lit La mineur.",
+      "Pour le bassiste, la grille est une carte : la note la plus sûre de chaque mesure est la fondamentale de l'accord."
+     ],
+     "exercices": [],
+     "exemple": "r-blues"
+    },
+    {
      "id": "r2",
      "titre": "Les croches rock",
      "texte": [
@@ -301,7 +319,7 @@
      "id": "r5",
      "titre": "Jouer entre les temps",
      "texte": [
-      "Une note attaquée entre deux temps et tenue par-dessus le temps suivant s'appelle une syncope. Elle donne de l'élan : on la retrouve dans presque tous les styles.",
+      "Une syncope est une note attaquée sur une partie faible, ici entre deux temps, et tenue par-dessus le temps suivant. Elle donne de l'élan : on la retrouve dans presque tous les styles.",
       "Un point après une note l'allonge de la moitié de sa durée : une noire pointée dure un temps et demi.",
       "Le secret est de continuer à compter : la note dure, mais le temps passe quand même."
      ],
@@ -315,24 +333,16 @@
      "texte": [
       "La fondamentale est la note qui donne son nom à l'accord. Sa quinte se trouve une corde vers l'aigu, deux cases plus loin ; son octave, deux cordes vers l'aigu, deux cases plus loin.",
       "Ces deux formes se déplacent le long du manche, tant qu'il reste assez de cordes vers l'aigu : avec elles, on accompagne déjà beaucoup de morceaux.",
-      "Le saut d'octave demande d'étouffer la corde qu'on quitte. On l'apprend lentement avant de le jouer en croches."
+      "Le saut d'octave demande d'étouffer la corde qu'on quitte. On l'apprend lentement : en blanches, en noires, puis en croches.",
+      "Tu peux déjà essayer par toi-même : dans l'atelier, les deux premières missions demandent exactement cela, les fondamentales d'une grille, puis la quinte et l'octave."
      ],
      "exercices": [
       "r-quinte",
       "r-octave-lent",
+      "r-octave-noires",
       "r-octave"
-     ]
-    },
-    {
-     "id": "r6",
-     "titre": "Lire une grille d'accords",
-     "texte": [
-      "Une grille indique quel accord sonne dans chaque mesure. L'appli l'écrit au-dessus de la partition : « La », « Ré », « Lam » pour La mineur, « La7 » pour La septième.",
-      "Sur beaucoup de partitions, les accords sont notés par des lettres : A pour La, B pour Si, C pour Do, D pour Ré, E pour Mi, F pour Fa, G pour Sol. « Am » se lit La mineur.",
-      "Pour le bassiste, la grille est une carte : la note la plus sûre de chaque mesure est la fondamentale de l'accord."
      ],
-     "exercices": [],
-     "exemple": "r-blues"
+     "lien": "atelier"
     },
     {
      "id": "r4",
@@ -351,13 +361,13 @@
   {
    "id": "rythme",
    "titre": "Syncopes et doubles croches",
-   "resume": "Les notes à cheval sur les temps, la liaison, puis les doubles croches : sur des lignes en position V, jusqu'à la corde de Sol.",
+   "resume": "Les notes à cheval sur les temps, la liaison, puis les doubles croches. Une seule note par accord : chaque exercice n'ajoute qu'une difficulté, le rythme.",
    "lecons": [
     {
      "id": "ry3",
      "titre": "Les syncopes",
      "texte": [
-      "Une syncope est une note attaquée entre deux temps et tenue par-dessus le temps suivant. La plus courante : croche, noire, croche. La noire commence sur le « et » de 1 et couvre le 2.",
+      "Une syncope commence sur une partie faible et se prolonge sur une partie forte : le plus souvent, une note attaquée entre deux temps et tenue par-dessus le temps suivant. La plus courante : croche, noire, croche. La noire commence sur le « et » de 1 et couvre le 2.",
       "La noire pointée dure un temps et demi : jouée sur le 1, elle laisse la croche suivante sur le « et » de 2.",
       "Les deux demandent la même chose : compter le temps qu'on ne joue pas. Dis « 1 et (2) et » à voix haute, le 2 entre parenthèses : pensé, pas joué."
      ],
@@ -372,7 +382,7 @@
      "id": "ry6",
      "titre": "La liaison et l'anticipation",
      "texte": [
-      "La liaison est un petit arc qui relie deux notes de même hauteur. On joue la première ; la seconde ne se rejoue pas, elle prolonge le son. En tablature, la case de la note liée est écrite entre parenthèses.",
+      "La liaison de prolongation est un petit arc qui relie deux notes de même hauteur. On joue la première ; la seconde ne se rejoue pas, elle prolonge le son. En tablature, la case de la note liée est écrite entre parenthèses.",
       "Elle sert quand une durée ne tient pas en une seule figure : une note qui passe la barre de mesure, ou qui cacherait le troisième temps. On écrit alors deux figures liées, pour que chaque temps reste visible.",
       "L'anticipation en est l'usage le plus courant : la fondamentale de l'accord suivant est jouée sur le « et » de 4, juste avant la barre, et tenue. La basse arrive en avance, la grosse caisse marque le 1 : c'est ce décalage qui pousse la musique en avant, en pop comme en funk."
      ],
@@ -386,12 +396,13 @@
      "id": "s8",
      "titre": "Les doubles croches",
      "texte": [
-      "Quatre notes par temps : on compte « 1 e et a, 2 e et a ». Sur la partition, les doubles croches sont reliées par deux barres.",
+      "Quatre notes par temps : on compte « 1 e et a, 2 e et a ». Sur la partition, les doubles croches sont reliées par deux barres. Leur silence est le quart de soupir.",
       "Elles se combinent avec la croche dans un même temps : croche et deux doubles (« 1 . et a »), deux doubles et croche (« 1 e et . »), croche pointée et double (« 1 . . a »), double et croche pointée (« 1 e . . »).",
       "Une barre relie toutes les notes du temps ; une seconde barre, plus courte, marque chaque double croche. C'est elle qu'il faut repérer d'un coup d'œil.",
-      "La main droite alterne toujours. Le mode « Rythme seul » permet de ne s'occuper que du placement, mais l'exercice ne se valide qu'avec la vérification des notes."
+      "Dans ces exercices, garde l'alternance index-majeur. Le mode « Rythme seul » permet de ne s'occuper que du placement, mais l'exercice ne se valide qu'avec la vérification des notes."
      ],
      "exercices": [
+      "r-doubles",
       "ry-quatre-doubles",
       "ry-croche-doubles",
       "ry-galop",
@@ -410,7 +421,6 @@
      ],
      "exercices": [
       "ry-quart",
-      "r-doubles",
       "ry-funk-lecture",
       "ry-lecture"
      ],
@@ -429,18 +439,21 @@
      "texte": [
       "Une gamme est une suite de notes qui vont ensemble. La gamme majeure suit toujours le même chemin : ton, ton, demi-ton, ton, ton, ton, demi-ton.",
       "En partant de Do, ce chemin ne passe que par des notes naturelles : Do, Ré, Mi, Fa, Sol, La, Si, Do. Les demi-tons tombent entre Mi et Fa, et entre Si et Do.",
-      "La forme se joue sans déplacer la main, index en case 2. Elle se transpose : jouée deux cases plus loin, c'est la gamme de Ré majeur."
+      "La forme se joue sans déplacer la main, index en case 2. Elle se transpose : jouée deux cases plus loin, c'est la gamme de Ré majeur ; jouée une corde plus bas, en partant du Sol, c'est celle de Sol majeur.",
+      "Pour garder le même chemin de tons et de demi-tons, Sol majeur a besoin d'une note altérée : le Fa dièse. La dernière ligne s'en sert dans une phrase, sur une grille en Sol."
      ],
      "exercices": [
       "n-gamme-do",
-      "ga-do"
+      "ga-do",
+      "ga-sol",
+      "ga-sol-melodie"
      ]
     },
     {
      "id": "ga2",
      "titre": "La gamme mineure",
      "texte": [
-      "Avec les mêmes notes que Do majeur, mais en partant de La, on obtient La mineur. La couleur est plus sombre.",
+      "Avec les mêmes notes que Do majeur, mais en prenant La pour note de repos, on obtient La mineur naturel. C'est sur La que la phrase se pose, et la couleur est plus sombre.",
       "Ce qui fait la différence, c'est la troisième note, la tierce : à deux tons de la fondamentale, elle est majeure ; à un ton et demi, elle est mineure. De La à Do, il y a un ton et demi."
      ],
      "exercices": [
@@ -451,12 +464,14 @@
      "id": "ga3",
      "titre": "Les pentatoniques",
      "texte": [
-      "En retirant deux notes de la gamme, on garde cinq notes qui sonnent bien dans presque tous les contextes : c'est la gamme pentatonique. Les riffs de rock, de blues et de funk en sortent très souvent.",
-      "La pentatonique mineure de La : La, Do, Ré, Mi, Sol. La pentatonique majeure de Do contient les mêmes notes, en partant de Do."
+      "En retirant deux notes de la gamme, on obtient une gamme de cinq notes, la pentatonique. De la gamme majeure, on retire la quatrième et la septième note : en Do, le Fa et le Si. De la gamme mineure, la deuxième et la sixième : en La, le Si et le Fa.",
+      "Il ne reste aucun demi-ton : ces cinq notes s'accordent facilement avec les accords de la tonalité. Les riffs de rock, de blues et de funk en sortent très souvent.",
+      "La pentatonique mineure de La : La, Do, Ré, Mi, Sol. La pentatonique majeure de Do contient les mêmes notes, en partant de Do. La troisième ligne reprend les figures de doubles croches sur ces cinq notes."
      ],
      "exercices": [
       "n-penta-la",
       "ga-penta-riff",
+      "ga-penta-doubles",
       "ga-penta-do"
      ]
     },
@@ -465,10 +480,11 @@
      "titre": "Les accords : fondamentale, tierce, quinte",
      "texte": [
       "Un accord se construit en prenant une note sur deux de la gamme : la fondamentale, la tierce et la quinte. Le bassiste les joue l'une après l'autre : c'est un arpège.",
-      "La tierce donne sa couleur à l'accord : majeure pour un accord majeur (Do), mineure pour un accord mineur (Lam). Entre ces deux accords, la quinte ne change pas."
+      "La tierce donne sa couleur à l'accord : majeure pour un accord majeur (Do : Do, Mi, Sol), mineure pour un accord mineur (Lam : La, Do, Mi). La quinte, elle, reste à la même distance de la fondamentale dans les deux cas : trois tons et demi."
      ],
      "exercices": [
-      "ga-triades"
+      "ga-triades",
+      "ga-arpeges-doubles"
      ]
     },
     {
@@ -534,7 +550,7 @@
      "texte": [
       "On retrouve la grille de douze mesures. La ligne « walking » marche en noires, une note par temps, sans trou.",
       "Deux motifs : en montant, fondamentale, tierce, quinte, sixte ; en descendant, octave, sixte, quinte, tierce. La seconde ligne ajoute la septième mineure, qui donne la couleur du blues.",
-      "La batterie joue en swing. Le walking en noires tombe sur les temps ; le shuffle, lui, double chaque note en croches swinguées."
+      "La batterie joue en swing. Le walking en noires tombe sur les temps ; dans la ligne en shuffle, chaque note est doublée en croches swinguées."
      ],
      "exercices": [
       "l-blues",
@@ -566,12 +582,34 @@
      ]
     },
     {
+     "id": "s10",
+     "titre": "Soul",
+     "texte": [
+      "En soul, la basse chante autant qu'elle accompagne. Elle part de la fondamentale, monte dans l'accord par la tierce et la quinte, puis redescend par des notes de passage vers l'accord suivant.",
+      "La ligne change de registre à chaque mesure : prépare les déplacements de la main gauche, et laisse les notes longues sonner pleinement."
+     ],
+     "exercices": [
+      "l-soul"
+     ]
+    },
+    {
+     "id": "s11",
+     "titre": "Post-punk",
+     "texte": [
+      "Ici, la basse passe devant : elle joue la mélodie, haut sur le manche, en croches droites et nettes.",
+      "Toute la ligne se joue en position VII, sans déplacer la main. Les fondamentales changent dans le grave ; au-dessus, le même motif revient à chaque mesure sur la corde de Sol."
+     ],
+     "exercices": [
+      "l-postpunk"
+     ]
+    },
+    {
      "id": "s7",
      "titre": "Jazz : le walking",
      "texte": [
       "Le walking jazz marche en noires, comme celui du blues, mais son rôle est de relier les accords.",
       "Une technique pour cela : l'approche chromatique. La dernière note de la mesure se place à une case de la note visée. La seconde ligne montre qu'on peut aussi arriver par une note de la gamme.",
-      "La batterie joue en swing : la cymbale ride fait « ding, ding-a-ding », la charleston se ferme au pied sur les temps 2 et 4. Les notes altérées sont écrites en bémols, comme dans les partitions en Fa ; le Fa dièse de l'accord de Ré7 garde son dièse."
+      "La batterie joue en swing : la cymbale ride fait « ding, ding-a-ding », la charleston se ferme au pied sur les temps 2 et 4. Fa majeur a un Si bémol : les notes altérées de ces lignes sont écrites en bémols, sauf le Fa dièse, qui est la tierce de l'accord de Ré7."
      ],
      "exercices": [
       "l-walking",
@@ -601,7 +639,7 @@
      "id": "c1",
      "titre": "Les fondamentales",
      "texte": [
-      "Toute cette étape tourne sur une grille de quatre accords : Do, Sol, La mineur, Fa. On la numérote aussi par degrés : I, V, VI, IV, c'est-à-dire le premier, le cinquième, le sixième et le quatrième accord de la gamme de Do.",
+      "Toute cette étape tourne sur une grille de quatre accords : Do, Sol, La mineur, Fa. On la numérote aussi par degrés : I, V, vi, IV, c'est-à-dire le premier, le cinquième, le sixième et le quatrième accord de la gamme de Do. Le vi s'écrit en minuscules parce que c'est un accord mineur.",
       "Première manière de l'accompagner : une seule note par accord, sa fondamentale. La basse remplit déjà son rôle. La complexité n'est pas un but."
      ],
      "exercices": [
@@ -612,7 +650,7 @@
      "id": "c2",
      "titre": "La quinte et l'octave",
      "texte": [
-      "Pour étoffer sans risque, on ajoute les deux notes qui vont avec tous les accords, majeurs ou mineurs : la quinte et l'octave.",
+      "Pour étoffer sans risque, on ajoute les deux notes qui conviennent aux accords majeurs comme aux accords mineurs : la quinte et l'octave.",
       "L'exercice est volontairement systématique : il montre le procédé, pas une ligne à jouer telle quelle."
      ],
      "exercices": [
@@ -624,7 +662,7 @@
      "titre": "Relier les accords",
      "texte": [
       "Une bonne ligne ne saute pas d'un accord à l'autre : elle y va. La dernière note d'une mesure se choisit en fonction de l'accord qui suit.",
-      "Deux moyens. La note de passage relie deux notes de l'accord, ou deux accords, en passant par la note de la gamme qui se trouve entre elles ; elle peut se placer n'importe où dans la mesure. L'approche chromatique vise la note suivante depuis la case voisine, même hors de la gamme."
+      "Deux moyens. La note de passage relie deux notes de l'accord, ou deux accords, en passant par la note qui se trouve entre elles ; elle peut se placer n'importe où dans la mesure. Elle appartient le plus souvent à la gamme, mais elle peut aussi être chromatique. L'approche chromatique vise la note suivante depuis la case voisine, même hors de la gamme."
      ],
      "exercices": [
       "cl-passage"
@@ -657,8 +695,8 @@
      "titre": "Atelier : invente ta ligne",
      "texte": [
       "À toi maintenant. L'atelier fait tourner une grille avec la batterie et le piano, et te laisse jouer ce que tu veux.",
-      "Trois missions, de plus en plus libres : les fondamentales seules, puis avec la quinte et l'octave, puis une ligne à toi. Chaque note que tu joues s'inscrit dans sa mesure, colorée selon son rôle dans l'accord.",
-      "Il n'y a pas de bonne réponse unique : un passage est réussi quand la fondamentale tombe sur le premier temps de chaque mesure et que la ligne tient dans l'harmonie."
+      "Trois missions, de plus en plus libres : les fondamentales seules, puis avec la quinte et l'octave, puis une ligne à toi. Un quatrième mode, « Sans consigne », ne juge rien. Chaque note que tu joues s'inscrit dans sa mesure, colorée selon son rôle dans l'accord.",
+      "Il n'y a pas de bonne réponse unique : un passage est réussi quand la fondamentale tombe sur le premier temps de chaque mesure, que la ligne tient dans l'harmonie et qu'elle est en place."
      ],
      "exercices": [],
      "lien": "atelier"

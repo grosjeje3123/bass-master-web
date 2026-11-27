@@ -133,6 +133,24 @@
      "mesures": 2,
      "notes": "E0 A0 D0 G0 | G0 D0 A0 E0",
      "consigne": "Passe en affichage « Partition » et lis les notes : Mi sous la portée, La dans le premier interligne, Ré sur la ligne du milieu, Sol dans le dernier interligne."
+    },
+    {
+     "id": "v-lecture-2",
+     "titre": "Lire les cordes à vide, dans le désordre",
+     "tempo": 60,
+     "pas": 1,
+     "mesures": 4,
+     "notes": "A0 G0 E0 D0 | G0 A0 D0 E0 | D0 E0 G0 A0 | E0 D0 A0 G0",
+     "consigne": "En affichage « Partition », sans la tablature : l'ordre des cordes ne se devine plus, il faut lire chaque note."
+    },
+    {
+     "id": "v-lecture-3",
+     "titre": "Lire les notes et les durées",
+     "tempo": 60,
+     "pas": 1,
+     "mesures": 4,
+     "notes": "D0 . A0 G0 | E0 E0 D0 . | G0 A0 . E0 | A0 . . .",
+     "consigne": "Toujours en affichage « Partition » : lis à la fois la corde et la durée, noire, blanche ou ronde."
     }
    ]
   },
@@ -173,6 +191,19 @@
      "consigne": "Dans le grave, les cases sont larges : la case 3 se joue avec l'auriculaire. Relâche la pression entre les notes.",
      "mg": "0 1 4 1 0 2 4 2",
      "noms": true
+    },
+    {
+     "id": "g-premier-riff",
+     "titre": "Un premier riff",
+     "tempo": 65,
+     "pas": 2,
+     "mesures": 4,
+     "notes": "E0 . E0 E3 E0 . E3 . | E0 . E0 E3 A0 . E3 . | A0 . A0 E3 A0 . A0 . | E3 . E3 A0 E3 . E0 .",
+     "consigne": "Trois notes suffisent : Mi et La à vide, Sol en case 3 avec l'auriculaire. Laisse respirer les notes longues, et écoute la batterie.",
+     "mg": "0 0 4 0 4 0 0 4 0 4 0 0 4 0 0 4 4 0 4 0",
+     "noms": true,
+     "batterie": "rock",
+     "accords": "Mim | Mim | La | Sol"
     },
     {
      "id": "g-toutes",
@@ -217,6 +248,19 @@
      "consigne": "Entre les cases 3 et 5, c'est toute la main qui se déplace, pouce compris. Relâche la pression pendant le trajet, sans faire glisser la note.",
      "mg": "1 4 1 3 4 3 1 4",
      "noms": true
+    },
+    {
+     "id": "g-deplacement-2",
+     "titre": "Trois positions, une phrase",
+     "tempo": 60,
+     "pas": 1,
+     "mesures": 4,
+     "notes": "E5 E8 A7 D7 | G5 G9 G7 D7 | A8 D7 D10 D7 | D5 A5 A2 E3",
+     "consigne": "Mesure 1 : index en case 5. Au milieu de la mesure 2, la main monte, index en case 7, et y reste pour la mesure 3. Mesure 4 : elle redescend en deux fois, jusqu'au grave. Relâche la pression avant chaque trajet.",
+     "mg": "1 4 3 4 1 3 1 1 2 1 4 1 1 1 2 4",
+     "noms": true,
+     "batterie": "noires",
+     "accords": "Lam | Do | Fa | Sol"
     },
     {
      "id": "g-croches",
@@ -373,6 +417,18 @@
      "notes": "E0 . D2 . | A0 . G2 .",
      "consigne": "La note grave, puis son octave. Étouffe la première corde avant de sauter.",
      "mg": "0 1 0 1",
+     "noms": true,
+     "batterie": "noires"
+    },
+    {
+     "id": "r-octave-noires",
+     "titre": "Les octaves en noires",
+     "tempo": 65,
+     "pas": 1,
+     "mesures": 2,
+     "notes": "E0 D2 E0 D2 | A0 G2 A0 G2",
+     "consigne": "Le même saut, une note par temps. La corde grave s'étouffe au moment où l'aiguë sonne.",
+     "mg": "0 1 0 1 0 1 0 1",
      "noms": true,
      "batterie": "noires"
     },
@@ -536,9 +592,8 @@
      "tempo": 65,
      "pas": 2,
      "mesures": 2,
-     "notes": "E5 D7 . E5 A7 . E8 A5 | A5 D7 . A8 A7 . D6 .",
-     "consigne": "La noire du milieu commence sur le « et » de 1 et passe par-dessus le 2. Pense le 2 sans le jouer. Main en position V : l'index sur la case 5.",
-     "mg": "1 3 1 3 4 1 1 3 4 3 2",
+     "notes": "E5 E5 . E5 E5 . E5 E5 | A5 A5 . A5 A7 . A7 .",
+     "consigne": "La noire du milieu commence sur le « et » de 1 et passe par-dessus le 2. Pense le 2 sans le jouer. Une seule note par accord : tout se joue dans le rythme.",
      "batterie": "rock",
      "accords": "Lam | Rém Mi"
     },
@@ -548,8 +603,8 @@
      "tempo": 70,
      "pas": 2,
      "mesures": 2,
-     "notes": "A3 . . A3 D2 . D5 G5 | D3 . . D3 E3 . . A2",
-     "consigne": "Un temps et demi, puis une croche sur le « et » de 2 : une note longue, une courte qui relance. Le Do aigu se prend sur la corde de Sol.",
+     "notes": "A3 . . A3 A3 . A3 A3 | D3 . . D3 E3 . . E3",
+     "consigne": "Un temps et demi, puis une croche sur le « et » de 2 : une note longue, une courte qui relance.",
      "noms": true,
      "batterie": "rock",
      "accords": "Do | Fa Sol"
@@ -572,7 +627,7 @@
      "tempo": 65,
      "pas": 2,
      "mesures": 2,
-     "notes": "E5 . E5 A7 . . D7 . | A5 . A5 D7 . . . .",
+     "notes": "E5 . E5 E5 . . E5 . | A5 . A5 A5 . . . .",
      "consigne": "La croche du « et » de 2 est liée à la note suivante : on ne la rejoue pas, elle tient jusqu'au 4. Compte le 3 sans jouer.",
      "batterie": "rock",
      "accords": "Lam | Rém"
@@ -584,7 +639,7 @@
      "pas": 2,
      "mesures": 4,
      "notes": "A3 . A3 . D5 . x E5 | . . E5 . A7 . x D3 | . . D3 . A3 . x D5 | . . D5 . A2 . D5 .",
-     "consigne": "Chaque accord arrive en avance : sa fondamentale tombe sur le « et » de 4 et tient par-dessus la barre. Ne la rejoue pas sur le 1 : la batterie le marque pour toi.",
+     "consigne": "Lam, Fa et Sol arrivent en avance : leur fondamentale tombe sur le « et » de 4 et tient par-dessus la barre. Ne la rejoue pas sur le 1 : la batterie le marque pour toi. Seul le Do, à la reprise, tombe sur le temps.",
      "noms": true,
      "batterie": "rock",
      "accords": "Do | Lam | Fa | Sol"
@@ -595,8 +650,8 @@
      "tempo": 60,
      "pas": 4,
      "mesures": 2,
-     "notes": "E5 E5 A7 A7 D7 . . . G5 G5 D7 D7 A7 . . . | A5 A5 D3 D3 D7 . . . A7 A7 D6 D6 A7 . . .",
-     "consigne": "Quatre doubles croches, puis une noire. Compte « 1 e et a 2 » : les doigts alternent sans jamais s'arrêter, même quand la main gauche change de corde.",
+     "notes": "E5 E5 E5 E5 E5 . . . E5 E5 E5 E5 E5 . . . | A5 A5 A5 A5 A5 . . . A7 A7 A7 A7 A7 . . .",
+     "consigne": "Quatre doubles croches, puis une noire. Compte « 1 e et a 2 » : les doigts alternent sans jamais s'arrêter.",
      "md": "i m i m i m i m i m i m i m i m i m i m",
      "batterie": "rock",
      "accords": "Lam | Rém Mi"
@@ -607,10 +662,10 @@
      "tempo": 60,
      "pas": 4,
      "mesures": 2,
-     "notes": "E5 . E8 A5 A7 . A5 E8 E5 E5 E8 . E5 E8 A5 . | D5 . D7 G5 G7 . G5 D7 D7 D7 D5 . E5 . . .",
-     "consigne": "Croche puis deux doubles : « 1 . et a ». Deux doubles puis croche : « 3 e et . ». La pentatonique de La, en position V, jusqu'à la corde de Sol.",
+     "notes": "E5 . E5 E5 E5 . E5 E5 E5 E5 E5 . E5 E5 E5 . | A5 . A5 A5 A5 . A5 A5 A7 A7 A7 . A7 . . .",
+     "consigne": "Croche puis deux doubles : « 1 . et a ». Deux doubles puis croche : « 3 e et . ». Dis les syllabes, lentement.",
      "batterie": "rock",
-     "accords": "Lam | Sol Lam"
+     "accords": "Lam | Rém Mi"
     },
     {
      "id": "ry-galop",
@@ -619,7 +674,7 @@
      "pas": 4,
      "mesures": 2,
      "notes": "A7 . . A7 A7 . . A7 A7 . . A7 A7 . . . | A3 . . A3 A3 . . A3 A5 . . A5 A5 . . .",
-     "consigne": "Long, très court : la double croche tombe sur le « a », juste avant le temps suivant. Plus serré que le swing. La main glisse sur la corde de La, de case 7 en case 3 puis 5.",
+     "consigne": "Long, très court : la double croche tombe sur le « a », juste avant le temps suivant. Plus serré que le swing. D'une mesure à l'autre, la main se déplace le long de la corde de La en relâchant la pression : case 7, puis 3, puis 5.",
      "noms": true,
      "batterie": "rock",
      "accords": "Mim | Do Ré"
@@ -630,8 +685,8 @@
      "tempo": 60,
      "pas": 4,
      "mesures": 2,
-     "notes": "E5 D7 . . E5 D7 . E5 E5 D7 . . E5 . . . | A5 G7 . . A5 G7 . A5 A7 G9 . . A7 . . .",
-     "consigne": "La note courte d'abord, la longue ensuite, en sautant à l'octave : deux cordes plus haut, deux cases plus loin. Puis double, croche, double : une syncope dans le temps.",
+     "notes": "E5 E5 . . E5 E5 . E5 E5 E5 . . E5 . . . | A5 A5 . . A5 A5 . A5 A7 A7 . . A7 . . .",
+     "consigne": "La note courte d'abord, la longue ensuite. Puis double, croche, double : la croche du milieu est une syncope dans le temps.",
      "batterie": "rock",
      "accords": "Lam | Rém Mi"
     },
@@ -641,7 +696,7 @@
      "tempo": 60,
      "pas": 4,
      "mesures": 2,
-     "notes": "x E5 E8 A5 A7 . . . x A7 A5 E8 E5 . . . | x A5 A8 D7 G7 . . . x A7 D6 D9 G9 . . .",
+     "notes": "x E5 E5 E5 E5 . . . x E5 E5 E5 E5 . . . | x A5 A5 A5 A5 . . . x A7 A7 A7 A7 . . .",
      "consigne": "Le quart de soupir prend la place de la première double croche : on entre sur le « e ». Garde le mouvement des doigts, même sur le silence.",
      "batterie": "rock",
      "accords": "Lam | Rém Mi"
@@ -698,6 +753,29 @@
      "noms": true
     },
     {
+     "id": "ga-sol",
+     "titre": "La gamme de Sol majeur",
+     "tempo": 55,
+     "pas": 1,
+     "mesures": 2,
+     "notes": "E3 E5 A2 A3 | A5 D2 D4 D5",
+     "consigne": "La même forme que Do majeur, les mêmes doigts, une corde plus bas : en partant du Sol, elle passe par un Fa dièse.",
+     "mg": "2 4 1 2 4 1 3 4",
+     "noms": true
+    },
+    {
+     "id": "ga-sol-melodie",
+     "titre": "Une phrase en Sol majeur",
+     "tempo": 70,
+     "pas": 2,
+     "mesures": 4,
+     "notes": "E3 . A2 D0 D2 . D4 . | D0 . D4 D2 A5 . E2 . | E0 . E3 A2 D2 . D0 . | A3 . D2 D0 A2 . E2 .",
+     "consigne": "Les notes de Sol majeur relient les accords. Écoute le Fa dièse : à la fin, il ramène au Sol. Suis la direction des phrases plutôt que de réciter la gamme.",
+     "noms": true,
+     "batterie": "rock",
+     "accords": "Sol | Ré | Mim | Do"
+    },
+    {
      "id": "ga-la-min",
      "titre": "La mineur naturel",
      "tempo": 55,
@@ -731,6 +809,17 @@
      "accords": "Lam | Lam | Lam | Lam"
     },
     {
+     "id": "ga-penta-doubles",
+     "titre": "La pentatonique en doubles croches",
+     "tempo": 60,
+     "pas": 4,
+     "mesures": 2,
+     "notes": "E5 . E8 A5 A7 . A5 E8 E5 E5 E8 . E5 E8 A5 . | D5 . D7 G5 G7 . G5 D7 D7 D7 D5 . E5 . . .",
+     "consigne": "Les figures de doubles croches, cette fois sur la pentatonique de La, en position V, jusqu'à la corde de Sol. Lentement : la main gauche et le rythme en même temps.",
+     "batterie": "rock",
+     "accords": "Lam | Sol Lam"
+    },
+    {
      "id": "ga-penta-do",
      "titre": "La pentatonique majeure de Do",
      "tempo": 60,
@@ -754,6 +843,18 @@
      "accords": "Do | Lam | Fa | Sol"
     },
     {
+     "id": "ga-arpeges-doubles",
+     "titre": "Arpèges en doubles croches",
+     "tempo": 60,
+     "pas": 4,
+     "mesures": 2,
+     "notes": "E5 E5 A7 A7 D7 . . . G5 G5 D7 D7 A7 . . . | A5 A5 D3 D3 D7 . . . A7 A7 D6 D6 A7 . . .",
+     "consigne": "Fondamentale, quinte et tierce de chaque accord, deux doubles croches par note. Les doigts de la main droite alternent même quand la main gauche change de corde.",
+     "md": "i m i m i m i m i m i m i m i m i m i m",
+     "batterie": "rock",
+     "accords": "Lam | Rém Mi"
+    },
+    {
      "id": "ga-septiemes",
      "titre": "Les accords de septième",
      "tempo": 60,
@@ -770,7 +871,7 @@
   {
    "id": "lignes",
    "titre": "Lignes et styles",
-   "resume": "De vraies lignes de basse avec la batterie : rock, pop, blues, reggae, disco, jazz, funk.",
+   "resume": "De vraies lignes de basse avec la batterie : rock, pop, blues, reggae, disco, soul, post-punk, jazz, funk.",
    "exercices": [
     {
      "id": "l-rock",
@@ -893,6 +994,29 @@
      "consigne": "Les octaves respirent : une quinte tenue en fin de mesure, un silence au milieu. Ne laisse pas résonner les cordes voisines.",
      "batterie": "disco",
      "accords": "Lam | Lam | Fa | Sol"
+    },
+    {
+     "id": "l-soul",
+     "titre": "Soul : une ligne qui chante",
+     "tempo": 75,
+     "pas": 2,
+     "mesures": 4,
+     "notes": "A3 . D2 D5 G5 . G4 G2 | E5 . E8 A7 D7 . A7 A4 | A5 . D3 D7 G5 . G4 G2 | E3 . A2 D0 D3 D2 D0 A2",
+     "consigne": "Chaque mesure monte dans l'accord, puis redescend vers le suivant : le Do dièse mène au Ré, le Si final ramène au Do. Joue lié, sans presser.",
+     "batterie": "rock2",
+     "accords": "Do | Lam | Rém7 | Sol7"
+    },
+    {
+     "id": "l-postpunk",
+     "titre": "Post-punk : la basse devant",
+     "tempo": 80,
+     "pas": 2,
+     "mesures": 4,
+     "notes": "A7 . G9 G7 D9 . G7 G9 | E8 . G9 G7 D10 . G7 G9 | A10 . D9 G7 G9 . G7 D9 | E10 . D7 G7 G9 . G7 D9",
+     "consigne": "Toute la ligne tient en position VII : index sur la case 7, auriculaire sur la case 10. La fondamentale change dans le grave, le motif aigu revient sur la corde de Sol.",
+     "mg": "1 3 1 3 1 3 2 3 1 4 1 3 4 3 1 3 1 3 4 1 1 3 1 3",
+     "batterie": "rock2",
+     "accords": "Mim | Do | Sol | Ré"
     },
     {
      "id": "l-walking",
